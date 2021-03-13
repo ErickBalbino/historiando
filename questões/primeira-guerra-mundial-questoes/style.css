@@ -1,0 +1,442 @@
+@charset "utf-8";
+
+/*Cabeçalho*/
+.cabecalho{
+    display: flex;
+    height: 130px;
+    background: #fff;
+    align-items: center;
+    border-bottom: 1px solid #000;
+}
+.cabecalho_menu-lista--item{
+    display: inline;
+    margin-left: 10px;
+}
+.cabecalho_menu-lista--item a{
+    font-size: 17px;
+    background-color: #22bb36;
+    padding: 13px;
+    border-radius: 30px;
+    font-size: 18px;
+    color: #fff;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.521);
+}
+.cabecalho_menu-lista--item a:hover{
+    position: relative;
+    background-color: #59da6a;
+    transition: ease-in-out 0.8s ;
+}
+.cabecalho_logo-site{
+    margin-left: 810px;
+    border-radius: 5px;
+}
+.cabecalho_mobile{
+    display: none;
+}
+
+/*Conteudo*/
+.corpo_site{
+    background-color: #ccc;
+}
+.conteudo_site{
+    background-color: rgb(245, 240, 240);
+    margin: auto;
+    text-align: justify;
+    padding-top: 50px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    padding-right: 15px;
+}
+section h1{
+    font-size: 30pt;
+    margin-bottom: 30px;
+    text-decoration: underline #0ff 4px;
+}
+.perfil{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.perfil_foto-imagem{
+    border-radius: 50%;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.perfil_txt{
+    margin-left: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.introducao{
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: justify;
+}
+/*Questões*/
+.txtquest1{
+    margin-top: 40px;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: justify;
+    width: 900px;
+}
+.txtquest2{
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: justify;
+    width: 900px;
+    margin-top: 100px;
+}
+.txtquest3{
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: justify;
+    width: 900px;
+    margin-top: 100px;
+}
+.txtquest4{
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: justify;
+    width: 900px;
+    margin-top: 100px;
+}
+.txtquest5{
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: justify;
+    width: 900px;
+    margin-top: 100px;
+}
+input{
+    cursor: pointer;
+}
+.alternativas{
+    font-size: 18px;
+    line-height: 1.5;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+/* Resposta das questões */
+.btnverificar{
+    display: inline-block;
+    font-size: 13pt;
+    font-weight: bold;
+    margin-bottom: 20px;
+    background-color: #22bb36;
+    color: #fff;
+    border-radius: 10px;
+    padding: 3px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.btnverificar:focus{
+    outline: none;
+}
+.resposta1{
+    padding: 0px 0px 10px 30px;
+    margin-bottom: 10px;
+    font-size: 1.05rem;
+    font-weight: bold;
+}
+.resposta2{
+    padding: 0px 0px 10px 30px;
+    margin-bottom: 10px;
+    font-size: 1.05rem;
+    font-weight: bold;
+}
+.resposta3{
+    padding: 0px 0px 10px 30px;
+    margin-bottom: 10px;
+    font-size: 1.05rem;
+    font-weight: bold;
+}
+.resposta4{
+    padding: 0px 0px 10px 30px;
+    margin-bottom: 10px;
+    font-size: 1.05rem;
+    font-weight: bold;
+}
+.resposta5{
+    padding: 0px 0px 10px 30px;
+    margin-bottom: 10px;
+    font-size: 1.05rem;
+    font-weight: bold;
+}
+details{
+    padding-top: 10px;
+    background-color: #aaa;
+    width: 900px;
+    border-radius: 10px;
+}
+summary{
+    display: flex;
+    background: #00f;
+    width: 900px;
+    height: 30px;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+summary:focus{
+    outline: none;
+}
+details p{
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: justify;
+    width: 700px;
+    margin-left: 80px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.detailsFinal{
+    margin-bottom: 40px;
+}
+
+/* Rodapé */
+.rodape{
+    background-color: #3d3d3d;
+    color: #0ff;
+    padding: 50px 0px 30px 0px;
+}
+.rodape_secao{
+    display: flex;
+    justify-content: space-around;
+}
+.rodape_introducao h2{
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+}
+.rodape_introducao p{ 
+    font-size: 1.1rem;
+    line-height: 1.15;
+}
+.rodape_redesSociais h2{
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+}
+.rodape_redesSociais p{
+    font-size: 1.1rem;
+    line-height: 1.15;
+}
+.icone_facebook{
+    margin-top: 5px;
+    margin-bottom: 2px;
+    margin-right: 5px;
+}
+.icone_linkedin{
+    margin-top: 5px;
+    margin-bottom: 2px;
+    margin-right: 5px;
+}
+icone_instagram{
+    margin-top: 5px;
+    margin-right: 10px;
+}
+.icone_github{
+    margin-top: 5px;
+    margin-left: 5px;
+}
+.rodape_copy{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 1.1rem;
+}
+
+    /* Medias queries*/
+
+    /* CELULARES */
+    @media (max-width: 768.92px){
+    .cabecalho_mobile{
+        display: block;
+        background-color: #00f;
+        height: 80px;
+        border-bottom: 2px, solid #000;
+    }
+    .cabecalho_logo-site--mobile{
+        display: flex;
+        justify-content: center;
+    }
+    .cabecalho{
+        width: 100%;
+        height: 70px;
+        background: linear-gradient(45deg, #0085ff, #ffa500);
+    }
+    .cabecalho_menu-lista--item{
+        display: inline;
+        margin-left: 4px;
+    }
+    .cabecalho_menu-lista--item a{
+        font-size: 16px;
+        background-color: #22bb36;
+        padding: 10px;
+        border-radius: 15px;
+        color: #fff;
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.521);
+
+    }
+    .cabecalho_menu-lista--item a:hover{
+        background-color: #59da6a;
+    }
+    .cabecalho_logo-site{
+        display: none;
+    }
+
+    /* corpo do site */
+    .conteudo_site{
+        margin: none;
+        padding-left: 5px;
+        padding-bottom: 5px;
+        padding-right: 5px;
+    }
+    section h1{
+        text-align: left;
+        font-size: 1.8rem;
+        margin-bottom: 40px;
+        text-decoration: underline #0ff 2px;
+    }
+    .introducao{
+        font-size: 1.05rem;
+        font-family: 'Times New Roman', Times, serif
+    }
+    .txtquest1{
+        font-family: 'Times New Roman', Times, serif;
+        margin-top: 40px;
+        font-size: 1.05rem;
+        line-height: 1.5;
+        width: auto;
+    }
+    .txtquest2{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1.05rem;
+        line-height: 1.5;
+        width: auto;
+        margin-top: 40px;
+    }
+    .txtquest3{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1.05rem;
+        line-height: 1.5;
+        text-align: justify;
+        width: auto;
+        margin-top: 40px;
+    }
+    .txtquest4{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1.05rem;
+        line-height: 1.5;
+        text-align: justify;
+        margin-top: 40px;
+        width: auto;
+    }
+    .txtquest5{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1.05rem;
+        line-height: 1.5;
+        text-align: justify;
+        width: auto;
+        margin-top: 40px;
+    }
+    .alternativas{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1.05rem;
+        line-height: 1.5;
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+    .btnverificar{
+        font-size: 1.05rem;
+        padding: 5px;
+    }
+    .resposta1{
+        padding: 0px 0px 10px 30px;
+        margin-bottom: 10px;
+        font-size: 1.05rem;
+    }
+    .resposta2{
+        padding: 0px 0px 10px 30px;
+        margin-bottom: 10px;
+        font-size: 1.05rem;
+    }
+    .resposta3{
+        padding: 0px 0px 10px 30px;
+        margin-bottom: 10px;
+        font-size: 1.05rem;
+    }
+    .resposta4{
+        padding: 0px 0px 10px 30px;
+        margin-bottom: 10px;
+        font-size: 1.05rem;
+    }
+    .resposta5{
+        padding: 0px 0px 10px 30px;
+        margin-bottom: 10px;
+        font-size: 1.05rem;
+    }
+    details{
+        padding-top: 10px;
+        background-color: #aaa;
+        width: auto;
+    }
+    summary{
+        width: auto;
+        height: 30px;
+        padding: 5px;
+        font-size: 1.1rem;
+    }
+    details p{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1.05rem;
+        line-height: 1.2;
+        text-align: justify;
+        width: auto;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        padding-right: 60px;
+    }
+    .perfil_foto-imagem{
+        border-radius: 50%;
+        margin-left: 10px;
+    }
+    .perfil_txt{
+        margin-left: 5px;
+        font-size: 1.05rem;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    /* Rodapé */
+    .rodape_secao{
+        display: block;
+    }
+    .rodape_introducao h2{
+        margin-bottom: 15px;
+        margin-left: 5px;
+    }
+    .rodape_introducao p{ 
+        padding: 10px;
+        text-align: justify;
+    }
+    .rodape_redesSociais h2{
+        padding: 5px;
+        margin-top: 20px;
+    }
+    .rodape_redesSociais p{
+        padding: 10px;
+        text-align: justify;
+    }
+    .icone_facebook{
+        margin-left: 10px;
+    }
+    .rodape_copy{
+        text-align: center;
+        margin-top: 30px;
+        font-size: 1.05rem;
+    }
+}
