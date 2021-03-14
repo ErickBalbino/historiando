@@ -48,7 +48,7 @@
 .cabecalho_menu-login{
     width: 20%;
 }
-.btnlogin{
+.btnSingIN{
     font-size: 1.2rem;
     padding: 10px;
     margin-left: 10px;
@@ -58,10 +58,25 @@
     border: none;
     cursor: pointer;
 }
-.btnlogin:hover{
+.btnSingIN:hover{
     background-color: #eee;
     color: #00f;
-    box-shadow: 1px 1px 5px #000;
+    box-shadow: 0.5px 0.5px 5px #000;
+}
+.btnSignUP{
+    font-size: 1.2rem;
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 20px;
+    background-color: #00f;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.btnSignUP:hover{
+    background-color: #eee;
+    color: #00f;
+    box-shadow: 0.5px 0.5px 5px #000;
 }
 
 /* Conteudo do site */
@@ -85,29 +100,23 @@
 .conteudo_conteudos{
     padding-top: 50px;
     width: 100%;
-    height: 1200px;
+    height: 1550px;  /* Ao adicionar mais uma div na coluna, adicionar 350 px aqui para manter a ordem. */
     background-color: #a52a2a;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-.item1, .item2, .item3, .item4, .item5, .item6{
+.item1, .item2, .item3, .item4, .item5, .item6, .item7, .item8{
     width: 400px;
     height: 300px;
     background-color: #0085FF;
-    margin-top: 10px;
     margin: auto;
     border-radius: 30px  30px 0px 0px;
     cursor: pointer;
 }
 #item:hover{
-    border: 1.5px solid #0f0;
+    border: 2px solid #0ff;
 }
-/* Conteudo 1 */
-.imagem-item1{
-    border-radius: 30px;
-}
-/* Conteudo 2 */
-.imagem-item2{
+.imagem-item{
     border-radius: 30px;
 }
 .titulo-item{
