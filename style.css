@@ -110,14 +110,14 @@
 .conteudo_conteudos{
     padding-top: 50px;
     width: 100%;
-    height: 1550px;  /* Ao adicionar mais uma div na coluna, adicionar 350 px aqui para manter a ordem. */
+    height: 1450px;  /* Ao adicionar mais uma div na coluna, adicionar 300 px aqui para manter a ordem. */
     background-color: #a52a2a;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 .item1, .item2, .item3, .item4, .item5, .item6, .item7, .item8{
     width: 400px;
-    height: 300px;
+    height: 250px;
     background-color: #0085FF;
     margin: auto;
     border-radius: 30px  30px 0px 0px;
@@ -137,4 +137,49 @@
     padding: 10px;
     font-size: 1.2rem;
 }
-
+/* Questões */
+.conteudo_questoes{
+    padding-top: 20px;
+    width: 100%;
+    height: 800px;
+    background-image: url(imagens/imagemFundo-questões.png);
+}
+.questoes-titulo{
+    font-size: 1.9rem;
+    font-family: 'Source Code Pro', monospace;
+    padding: 40px;
+}
+summary{
+    display: flex;
+    background: linear-gradient(45deg, #0085FF, #a52a2a);
+    height: 30px;
+    align-items: center;
+    width: 400px;
+    color: #fff;
+    border-radius: 10px;
+    padding: 5px;
+    justify-content: center;
+    font-size: 1.2rem;
+    transform: translateX(70px);
+}
+.qstGrecia{
+    margin-bottom: 15px;  /* Só pra dar espaço entre os details */
+}
+.qstRoma{
+    margin-bottom: 15px;  /* Só pra dar espaço entre os details */
+}
+.qst1guerra{
+    margin-bottom: 15px;  /* Só pra dar espaço entre os details */
+}
+.qst2guerra{
+    margin-bottom: 15px;  /* Só pra dar espaço entre os details */
+}
+.qstGuerrafria{
+    margin-bottom: 15px;  /* Só pra dar espaço entre os details */
+}
+.qstRevolucoesIndustriais{
+    margin-bottom: 15px;  /* Só pra dar espaço entre os details */
+}
+.qstGrandesNavegacoes{
+    margin-bottom: 15px;  /* Só pra dar espaço entre os details */
+}
