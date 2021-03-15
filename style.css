@@ -183,3 +183,62 @@ summary{
 .qstGrandesNavegacoes{
     margin-bottom: 15px;  /* Só pra dar espaço entre os details */
 }
+
+/* Rodapé */
+.rodape{
+    height: 300px;
+    background-color: #ff7040;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+/* introdução */
+.rodape_introducao{
+    border-right: 2px solid #0ff;
+    width: 40%;
+    transform: translateX(30px);
+}
+.introducao-titulo{
+    color: #fff;
+    font-size: 1.5rem;
+}
+.introducao-paragrafo{
+    line-height: 1.5;
+    color: #fff;
+    font-size: 1.1rem;
+    width: 450px;
+    padding-top: 10px;
+}
+/* Redes sociais */
+.rodape_sociais{
+    transform: translateY(-25px) translateX(40px);
+    width: 30%;
+}
+.sociais-titulo{
+    color: #fff;
+    font-size: 1.5rem;
+}
+.sociais-paragrafo{
+    line-height: 1.5;
+    color: #fff;
+    font-size: 1.1rem;
+    width: 400px;
+}
+/* endereço */
+.rodape_endereco{
+    width: 30%;
+    padding-left: 50px;
+    border-left: 2px solid #0ff;
+}
+.endereco-titulo{
+    color: #fff;
+    font-size: 1.5rem;
+}
+.endereco-paragrafo{
+    width: 300px;
+    color: #fff;
+    font-size: 1.1rem;
+    line-height: 1.1;
+    padding-top: 10px;
+}
