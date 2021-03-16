@@ -84,7 +84,7 @@
 .conteudo_apresentacao{
     width: 100%;
     height: 600px;
-    background-image: url(imagens/imagem-apresentação.png);
+    background-image: url(imagens/imagens-de-fundo/imagem-apresentação-full.png);
     position: relative;
 }
 .paragrafo_apresentacao{
@@ -142,7 +142,7 @@
     padding-top: 20px;
     width: 100%;
     height: 800px;
-    background-image: url(imagens/imagemFundo-questões.png);
+    background-image: url(imagens/imagens-de-fundo/imagemFundo-questões-full.png);
 }
 .questoes-titulo{
     font-size: 1.9rem;
@@ -212,7 +212,7 @@ summary{
 }
 /* Redes sociais */
 .rodape_sociais{
-    transform: translateY(-25px) translateX(40px);
+    transform: translateY(-3px) translateX(40px);
     width: 30%;
 }
 .sociais-titulo{
@@ -224,7 +224,13 @@ summary{
     color: #fff;
     font-size: 1.1rem;
     width: 400px;
+    padding-top: 8px;
 }
+.sociais-icones{
+    padding-top: 10px;
+    padding-left: 5px;
+}
+
 /* endereço */
 .rodape_endereco{
     width: 30%;
