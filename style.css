@@ -122,8 +122,11 @@
 #item:hover{
     border: 2px solid #0ff;
 }
-.imagem-item{
+.imagem-item-desktop{
     border-radius: 30px;
+}
+.imagem-item-mobile{
+    display: none;
 }
 .titulo-item{
     transform: translateY(-40px);
@@ -263,7 +266,7 @@ summary:focus{
 }
 
 /* MEDIAS QUERIES */
-    @media(min-width: 400px) and (max-width: 768.98px){
+    @media (max-width: 768.98px){
         .body{
             margin: 0;
             padding: 0;
@@ -288,7 +291,7 @@ summary:focus{
             height: 35px;
             display: block;
             width: 100%;
-            transform: translate(0px, 26px);
+            margin-bottom: 5px;
         }
         .cabecalho_menu-lista{
             display: flex;
@@ -307,45 +310,55 @@ summary:focus{
         }
         /* LOGIN */
         .cabecalho_menu-login{
-            display: inline;
-            position: relative;
-        }
-        .btnSingIN{
-            transform: translate(300px, -80px);
-            font-size: 1.05rem;
-        }
-        .btnSignUP{
-            transform: translate(290px, -80px);
-            font-size: 1.05rem;
+            display: none;
         }
         .conteudo_apresentacao{
-            background-image: url(imagens/imagens-de-fundo/apresentacao/imagem-apresentação-600.png);
-            height: 300px;
-            background-size: auto;
+            background-image: url(imagens/imagens-de-fundo/apresentacao/imagem-apresentação-800.png);
+            height: 270px;
+            background-size: 100%;
+            background-repeat: no-repeat;
         }
         .conteudo_conteudos{
             padding-top: 50px;
-            height: 1450px;  /* Ao adicionar mais uma div na coluna, adicionar 300 px aqui para manter a ordem. */
+            height: 1700px;  /* Ao adicionar mais uma div na coluna, adicionar 300 px aqui para manter a ordem. */
             background-color: #a52a2a;
-            display: grid;
-            grid-template-columns: 1fr;
+            display: flex;
+            flex-direction: column;
         }
         .imagem-item-desktop{
             display: none;
-            margin: auto;
+        }
+        .imagem-item-mobile{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border-radius: 30px 30px 0px 0px;
         }
         .item1, .item2, .item3, .item4, .item5, .item6, .item7, .item8{
-            width: 150px;
-            height: 100px;
+            width: 250px;
+            height: 150px;
             margin: auto;
             border-radius: 30px  30px 0px 0px;
             cursor: pointer;
         }
+        .titulo-item{
+            transform: translateY(-35px);
+            text-align: center;
+            background-color: #3d3d3d;
+            color: #fff;
+            padding: 10px;
+            font-size: 1.1rem;
+            width: 230px;
+        }
+        /* QUESTOES */
         .conteudo_questoes{
-            background-image: url(imagens/imagens-de-fundo/fundo-questoes/imagemFundo-questões-600.png);
-            height: 400px;
+            background-image: none;
+            height: 600px;
             background-repeat: no-repeat;
-
+        }
+        .questoes-titulo{
+            text-align: center;
+            font-size: 1.5rem;
         }
     }
 
