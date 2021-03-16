@@ -263,7 +263,7 @@ summary:focus{
 }
 
 /* MEDIAS QUERIES */
-    @media(min-width: 400px) and (max-width: 599px){
+    @media(min-width: 400px) and (max-width: 768.98px){
         .body{
             margin: 0;
             padding: 0;
