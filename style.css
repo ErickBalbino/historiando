@@ -89,7 +89,7 @@
 .conteudo_apresentacao{
     width: 100%;
     height: 700px;
-    background-image: url(imagens/imagens-de-fundo/apresentacao/imagem-apresentação-1200.png);
+    background-image: url(imagens/imagens-de-fundo/apresentacao/imagem-apresentação-1000.png);
     background-size: 1300px, 700px;
     position: relative;
 }
@@ -267,10 +267,9 @@ summary:focus{
 
 /* MEDIAS QUERIES */
     @media (max-width: 768.98px){
-        .body{
-            margin: 0;
-            padding: 0;
-        }
+       .conteudo{
+           margin: none;
+       }
         /* Cabeçalho */
         .cabecalho{
             display: inline-block;
@@ -278,7 +277,6 @@ summary:focus{
         }
         .cabecalho_menu{
             display: inline-block;
-            width: 100%;
         }
         /* LOGO */
         .cabecalho_menu-logo{
@@ -360,6 +358,96 @@ summary:focus{
             text-align: center;
             font-size: 1.5rem;
         }
+        summary{
+            width: 200px;
+            margin: auto;
+            font-size: 1.1rem;
+        }
+        /* RODAPÉ */
+       /* Rodapé */
+        .secao_rodape{
+            height: auto;
+            background-color: #ff7040;
+            display: flex;
+            width: 100%;
+            align-items: none;
+            flex-direction: column;
+        }
+        /* introdução */
+        .rodape_introducao{
+            border: none;
+            width: 100%;
+            transform: translateX(0px);
+        }
+        .introducao-titulo{
+            color: #fff;
+            font-size: 1.5rem;
+            padding: 70px 0px 10px 40px;
+        }
+        .introducao-paragrafo{
+            line-height: 1.5;
+            color: #fff;
+            font-size: 1.1rem;
+            width: 400px;
+            padding: 0px 0px 30px 40px;
+            text-align: justify;
+        }
+        /* Redes sociais */
+        .rodape_sociais{
+            transform: translateY(0px) translateX(0px);
+            width: 100%;
+        }
+        .sociais-titulo{
+            color: #fff;
+            font-size: 1.5rem;
+            padding: 30px 0px 10px 40px;
+        }
+        .sociais-paragrafo{
+            line-height: 1.5;
+            color: #fff;
+            font-size: 1.1rem;
+            padding: 0px 0px 0px 40px;
+            width: 400px;
+        }
+        #icone1{
+            padding: 0px 0px 20px 40px;
+        }
+        .sociais-icone{
+            height: 35px;
+            width: 35px;
+            border-radius: none;
+            background-color: #ff7040;
+            padding: 0px 0px 30px 10px;
+            margin: 0;
+        }
+        /* ENDEREÇO */
+        .rodape_endereco{
+            width: 100%;
+            padding: 0;
+            border-left: none;
+        }
+        .endereco-titulo{
+            color: #fff;
+            font-size: 1.5rem;
+            padding: 50px 0px 10px 40px;
+        }
+        .endereco-paragrafo{
+            width: 400px;
+            color: #fff;
+            font-size: 1.1rem;
+            line-height: 1.1;
+            padding: 0px 0px 50px 40px;
+        }
+        /* Copyright */
+        .rodape_copy{
+            background-color: #ff7040;
+            display: block;
+            color: #fff;
+            font-size: 1.1rem;
+            text-align: center;
+            height: 40px;
+        }
+
     }
 
     @media (min-width: 900px) and (max-width: 1000px){
