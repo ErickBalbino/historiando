@@ -275,6 +275,7 @@ summary:focus{
     @media (max-width: 768.98px){
        .conteudo{
            margin: none;
+           width: 100%;
        }
         /* Cabecalho */
         .cabecalho{
