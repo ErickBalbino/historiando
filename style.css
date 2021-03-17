@@ -89,9 +89,6 @@ html{
 }
 /* Conteudo do site */
 /* Apresentação */
-body{
-    overflow: none;
-}
 .conteudo_apresentacao{
     width: 100%;
     height: 700px;
@@ -329,8 +326,10 @@ summary:focus{
             display: none;
         }
         /* CONTEUDO APRESENTAÇÃO */
-        body{
-            overflow: hidden;
+        bodY{
+            margin: 0;
+            padding: 0;
+            width: 100%;
         }
         .conteudo_apresentacao{
             display: none;
