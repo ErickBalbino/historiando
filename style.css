@@ -417,50 +417,39 @@ summary:focus{
         /* RODAPÉ */
        /* Rodapé */
        .rodape{
-           width: 100%;
+           display: block;
        }
         .secao_rodape{
             height: auto;
             background-color: #ff7040;
-            display: flex;
-            align-items: none;
-            flex-direction: column;
+            display: block;
         }
         /* introdução */
         .rodape_introducao{
+            padding-top: 20px;
             border: none;
             transform: translateX(0px);
         }
         .introducao-titulo{
-            margin-top: 30px;
+            margin: 30px 0px 5px 5px;
             color: #fff;
             font-size: 1.5rem;
-            padding: 5px
         }
         .introducao-paragrafo{
-            line-height: 1.5;
-            color: #fff;
-            font-size: 1.1rem;
-            padding: 5px;
+            padding-left: 5px;
             text-align: justify;
-            margin-bottom: 50px;
-            width: 300px;
         }
         /* Redes sociais */
         .rodape_sociais{
             transform: translateY(0px) translateX(0px);
         }
         .sociais-titulo{
-            color: #fff;
-            font-size: 1.5rem;
-            padding: 5px;
+            padding-left: 5px;
+            margin-top: 50px;
         }
         .sociais-paragrafo{
-            line-height: 1.5;
-            color: #fff;
-            font-size: 1.1rem;
-            padding: 5px;
-            width: 300px;
+            padding-left: 5px;
+            text-align: justify;
         }
         #icone1{
             padding-left: 5px;
@@ -470,7 +459,7 @@ summary:focus{
             width: 35px;
             border-radius: none;
             background-color: #ff7040;
-            padding: 0px 0px 0px 5px;
+            padding-left: 5px;
         }
         /* ENDEREÇO */
         .rodape_endereco{
@@ -480,16 +469,15 @@ summary:focus{
         .endereco-titulo{
             color: #fff;
             font-size: 1.5rem;
-            padding: 5px;
+            padding-left: 5px;
+            margin-top: 10px;
             margin-top: 50px;
         }
         .endereco-paragrafo{
             color: #fff;
             font-size: 1.1rem;
-            line-height: 1.2;
-            padding: 5px;
-            margin-bottom: 30px;
-            width: 300px;
+            line-height: 1.5;
+            padding-left: 5px;
         }
         /* Copyright */
         .rodape_copy{
@@ -499,6 +487,6 @@ summary:focus{
             font-size: 1.1rem;
             text-align: center;
             height: 40px;
-            width: auto;
+            padding-top: 20px;
         }
     }   

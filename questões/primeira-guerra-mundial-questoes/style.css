@@ -188,6 +188,9 @@ summary{
 summary:focus{
     outline: none;
 }
+summary::-webkit-details-marker{
+            display: none;
+}
 details p{
     font-size: 18px;
     line-height: 1.5;
@@ -392,6 +395,9 @@ icone_instagram{
         padding: 5px;
         font-size: 1.1rem;
     }
+    summary::-webkit-details-marker{
+        display: none;
+}
     details p{
         font-family: 'Times New Roman', Times, serif;
         font-size: 1.05rem;
