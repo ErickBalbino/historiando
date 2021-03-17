@@ -277,11 +277,12 @@ summary:focus{
         .cabecalho{
             height: 60px;
             background-color: #0085FF;
-            display: inline-block;
+            display: block;
             width: 100%;
         }
         .cabecalho_menu{
-            display: inline-block;
+            display: block;
+            width: 100%;
         }
         /* Cabecalho logo */
         .cabecalho_menu-logo{
@@ -314,11 +315,6 @@ summary:focus{
         .cabecalho_menu-items--lista a:hover{
             transform: scale(1.1);
         }
-        /* Cabecalho login */
-        .cabecalho_menu-login{
-            display: none;
-        }
-        
         /* LOGIN */
         .cabecalho_menu-login{
             display: none;
@@ -326,19 +322,19 @@ summary:focus{
         /* CONTEUDO APRESENTAÇÃO */
         body{
             overflow: auto;
-            width: 100%;
         }
         .conteudo{
             width: 100%;
         }
         .conteudo_apresentacao{
             display: none;
+            width: 100%;
         }
         .conteudo_apresentacao-mobile{
-            display: inline-block;
+            display: block;
             padding: 5px;
             background-color: #feefd0;
-            margin-top: 7px
+            margin-top: 7px;
         }
         .apresentacao-titulo{
             font-size: 1.6rem;
@@ -356,7 +352,7 @@ summary:focus{
         }
         @keyframes myanimation {
             from{left: 0px}
-            to{left: 100px;}
+            to{left: 100px}
         }
         .apresentacao-paragrafo{
             font-size: 1.1rem;
@@ -415,6 +411,9 @@ summary:focus{
             font-size: 1.1rem;
             padding: 5px;
         }
+        summary::-webkit-details-marker{
+            display: none;
+        }
         /* RODAPÉ */
        /* Rodapé */
        .rodape{
@@ -445,11 +444,11 @@ summary:focus{
             padding: 5px;
             text-align: justify;
             margin-bottom: 50px;
+            width: auto;
         }
         /* Redes sociais */
         .rodape_sociais{
             transform: translateY(0px) translateX(0px);
-            width: 100%;
         }
         .sociais-titulo{
             color: #fff;
@@ -461,6 +460,7 @@ summary:focus{
             color: #fff;
             font-size: 1.1rem;
             padding: 5px;
+            width: auto;
         }
         #icone1{
             padding-left: 5px;
@@ -489,6 +489,7 @@ summary:focus{
             line-height: 1.2;
             padding: 5px;
             margin-bottom: 30px;
+            width: auto;
         }
         /* Copyright */
         .rodape_copy{
@@ -498,5 +499,6 @@ summary:focus{
             font-size: 1.1rem;
             text-align: center;
             height: 40px;
+            width: auto;
         }
     }   
