@@ -433,9 +433,10 @@ summary:focus{
             transform: translateX(0px);
         }
         .introducao-titulo{
-            margin: 30px 0px 5px 5px;
+            padding-left: 5px;
             color: #fff;
             font-size: 1.5rem;
+            margin-top: 30px;
         }
         .introducao-paragrafo{
             padding-left: 5px;
@@ -444,6 +445,7 @@ summary:focus{
         /* Redes sociais */
         .rodape_sociais{
             transform: translateY(0px) translateX(0px);
+            width: 100%;
         }
         .sociais-titulo{
             padding-left: 5px;
@@ -467,6 +469,7 @@ summary:focus{
         .rodape_endereco{
             padding: 0;
             border-left: none;
+            width: 100%;
         }
         .endereco-titulo{
             color: #fff;
