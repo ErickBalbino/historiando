@@ -428,6 +428,7 @@ summary:focus{
         }
         /* introdução */
         .rodape_introducao{
+            display: block;
             padding-top: 50px;
             border: none;
             transform: translateX(0px);
@@ -445,6 +446,7 @@ summary:focus{
         }
         /* Redes sociais */
         .rodape_sociais{
+            display: block;
             transform: translateY(0px) translateX(0px);
             width: 100%;
         }
@@ -468,6 +470,7 @@ summary:focus{
         }
         /* ENDEREÇO */
         .rodape_endereco{
+            display: block;
             padding: 0;
             border-left: none;
             width: 100%;
@@ -487,6 +490,7 @@ summary:focus{
         }
         /* Copyright */
         .rodape_copy{
+            display: block;
             background-color: #ff7040;
             display: block;
             color: #fff;
