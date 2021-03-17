@@ -205,6 +205,9 @@ summary:focus{
     font-size: 1.7rem;
     margin-bottom: 10px;
 }
+.mobile{
+    display: none;
+}
 .rodape_introducao p{ 
     font-size: 1.1rem;
     line-height: 1.15;
@@ -419,7 +422,7 @@ summary:focus{
             margin-bottom: 15px;
             margin-left: 5px;
         }
-        .rodape_introducao p{ 
+        .mobile{ 
             padding: 10px;
             text-align: justify;
         }
