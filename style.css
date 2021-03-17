@@ -418,13 +418,11 @@ summary:focus{
        /* Rodapé */
        .rodape{
            display: block;
-           width: 100%;
        }
         .secao_rodape{
             height: auto;
             background-color: #ff7040;
             display: block;
-            width: 100%;
         }
         /* introdução */
         .rodape_introducao{
