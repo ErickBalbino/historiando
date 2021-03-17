@@ -295,6 +295,7 @@ summary:focus{
             display: block;
             background-color: #943b3b;
             border-bottom: 1px solid #fff;
+            width: 100%;
         }
         .cabecalho_menu-lista{
             display: flex;
@@ -324,6 +325,9 @@ summary:focus{
         /* CONTEUDO APRESENTAÇÃO */
         bodY{
             overflow: scroll;
+        }
+        .conteudo{
+            width: 100%;
         }
         .conteudo_apresentacao{
             display: none;
@@ -410,6 +414,9 @@ summary:focus{
         }
         /* RODAPÉ */
        /* Rodapé */
+       .rodape{
+           width: 100%;
+       }
         .secao_rodape{
             height: auto;
             background-color: #ff7040;
