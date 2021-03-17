@@ -273,10 +273,6 @@ summary:focus{
 
 /* MEDIAS QUERIES */
     @media (max-width: 768.98px){
-       .conteudo{
-           margin: none;
-           width: 100%;
-       }
         /* Cabecalho */
         .cabecalho{
             height: 60px;
@@ -297,8 +293,7 @@ summary:focus{
         /* Cabecalho navbar */
         .cabecalho_menu-items{
             display: block;
-            width: 100%;
-            background-color: #da5f5f;
+            background-color: #943b3b;
             border-bottom: 1px solid #fff;
         }
         .cabecalho_menu-lista{
@@ -328,9 +323,6 @@ summary:focus{
         }
         /* CONTEUDO APRESENTAÇÃO */
         bodY{
-            margin: 0;
-            padding: 0;
-            width: 100%;
             overflow: scroll;
         }
         .conteudo_apresentacao{
@@ -422,7 +414,6 @@ summary:focus{
             height: auto;
             background-color: #ff7040;
             display: flex;
-            width: 100%;
             align-items: none;
             flex-direction: column;
         }
