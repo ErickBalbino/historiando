@@ -343,7 +343,7 @@ summary:focus{
             position: relative;
             background: linear-gradient(to right, rgba(0, 255, 0, 0.13), #0084ff3a);
             border-radius: 50%;
-            animation: 30s myanimation infinite;
+            animation: 20s myanimation infinite;
             transform: translateY(40px);
         }
         @keyframes myanimation {
