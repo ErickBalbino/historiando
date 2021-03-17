@@ -270,42 +270,50 @@ summary:focus{
        .conteudo{
            margin: none;
        }
-        /* Cabeçalho */
+        /* Cabecalho */
         .cabecalho{
+            height: 60px;
+            background-color: #0085FF;
             display: inline-block;
-            height: 76px;
+            width: 100%;
         }
         .cabecalho_menu{
             display: inline-block;
         }
-        /* LOGO */
+        /* Cabecalho logo */
         .cabecalho_menu-logo{
-            display: inline-block;
-            margin-left: 0;
+            display: block;
         }
-        /* MENU */
+        .cabecalho_menu-logo--imagem{
+            margin: auto;
+        }
+        /* Cabecalho navbar */
         .cabecalho_menu-items{
-            background-color: #a52a2a;
-            height: 35px;
             display: block;
             width: 100%;
-            margin-bottom: 5px;
+            background-color: #a52a2a;
         }
         .cabecalho_menu-lista{
             display: flex;
+            justify-content: space-evenly;
             align-items: center;
-            width: 100%;
+            height: 30px;
         }
         .cabecalho_menu-items--lista{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
+            padding: 0;
         }
         .cabecalho_menu-items--lista a{
-            margin-top: 7px;
+            color: #fff;
             font-size: 1.1rem;
         }
+        .cabecalho_menu-items--lista a:hover{
+            transform: scale(1.1);
+        }
+        /* Cabecalho login */
+        .cabecalho_menu-login{
+            display: none;
+        }
+        
         /* LOGIN */
         .cabecalho_menu-login{
             display: none;
@@ -315,6 +323,7 @@ summary:focus{
             height: 270px;
             background-size: 100%;
             background-repeat: no-repeat;
+            margin-top: 7px;
         }
         .conteudo_conteudos{
             padding-top: 50px;
