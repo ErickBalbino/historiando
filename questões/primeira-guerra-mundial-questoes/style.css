@@ -3,14 +3,14 @@
 /*Cabeçalho*/
 .cabecalho{
     display: flex;
-    height: 130px;
-    background: #fff;
+    height: 100px;
+    background: #0085ff;
     align-items: center;
     border-bottom: 1px solid #000;
 }
 .cabecalho_menu-lista--item{
     display: inline;
-    margin-left: 10px;
+    margin-left: 5px;
 }
 .cabecalho_menu-lista--item a{
     font-size: 17px;
@@ -24,10 +24,10 @@
 .cabecalho_menu-lista--item a:hover{
     position: relative;
     background-color: #59da6a;
-    transition: ease-in-out 0.8s ;
+    transition: ease-in-out 0.6s ;
 }
 .cabecalho_logo-site{
-    margin-left: 810px;
+    margin-left: 870px;
     border-radius: 5px;
 }
 .cabecalho_mobile{
@@ -260,13 +260,12 @@ icone_instagram{
     @media (max-width: 768.92px){
     .cabecalho_mobile{
         display: block;
-        background-color: #00f;
+        background-color: #0085ff;
         height: 80px;
         border-bottom: 2px, solid #000;
     }
     .cabecalho_logo-site--mobile{
         display: flex;
-        justify-content: center;
     }
     .cabecalho{
         width: 100%;
