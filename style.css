@@ -348,7 +348,7 @@ summary:focus{
         }
         @keyframes myanimation {
             from{left: 0px}
-            to{left: 150px;}
+            to{left: 100px;}
         }
         .apresentacao-paragrafo{
             font-size: 1.1rem;
