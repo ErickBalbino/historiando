@@ -428,7 +428,7 @@ summary:focus{
         }
         /* introdução */
         .rodape_introducao{
-            padding-top: 20px;
+            padding-top: 50px;
             border: none;
             transform: translateX(0px);
         }
@@ -475,7 +475,7 @@ summary:focus{
             color: #fff;
             font-size: 1.5rem;
             padding-left: 5px;
-            margin-top: 10px;
+            margin-top: 50px;
             margin-top: 50px;
         }
         .endereco-paragrafo{
@@ -492,6 +492,7 @@ summary:focus{
             font-size: 1.1rem;
             text-align: center;
             height: 40px;
-            padding-top: 20px;
+            padding-top: 50px;
+            width: 100%;
         }
     }   
