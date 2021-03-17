@@ -302,6 +302,7 @@ summary:focus{
             justify-content: space-evenly;
             align-items: center;
             height: 30px;
+            width: 100%;
         }
         .cabecalho_menu-items--lista{
             padding: 0;
@@ -325,6 +326,7 @@ summary:focus{
         /* CONTEUDO APRESENTAÇÃO */
         bodY{
             overflow: scroll;
+            width: 100%;
         }
         .conteudo{
             width: 100%;
