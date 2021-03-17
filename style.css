@@ -434,6 +434,9 @@ summary:focus{
         .rodape_icone{
             margin-left: 10px;
         }
+        .rodape_icone:focus{
+            outline: none;
+        }
         .rodape_endereco h2{
             padding: 5px;
             margin-bottom: 15px;
