@@ -90,8 +90,11 @@
     width: 100%;
     height: 700px;
     background-image: url(imagens/imagens-de-fundo/apresentacao/imagem-apresentação-1000.png);
-    background-size: 1300px, 700px;
+    background-size: 1300px;
     position: relative;
+}
+.conteudo_apresentacao-mobile{
+    display: none;   
 }
 /* Conteúdo */
 .conteudo_titulo{
@@ -291,7 +294,8 @@ summary:focus{
         .cabecalho_menu-items{
             display: block;
             width: 100%;
-            background-color: #a52a2a;
+            background-color: #da5f5f;
+            border-bottom: 1px solid #fff;
         }
         .cabecalho_menu-lista{
             display: flex;
@@ -318,13 +322,43 @@ summary:focus{
         .cabecalho_menu-login{
             display: none;
         }
+        /* CONTEUDO APRESENTAÇÃO */
         .conteudo_apresentacao{
-            background-image: url(imagens/imagens-de-fundo/apresentacao/imagem-apresentação-800.png);
-            height: 270px;
-            background-size: 100%;
-            background-repeat: no-repeat;
-            margin-top: 7px;
+            display: none;
         }
+        .conteudo_apresentacao-mobile{
+            display: inline-block;
+            padding: 5px;
+            background-color: #feefd0;
+            margin-top: 7px
+        }
+        .apresentacao-titulo{
+            font-size: 1.6rem;
+            font-family: 'Source Code Pro', monospace;
+            margin-top: 30px;
+        }
+        .circGradient{
+            width: 150px;
+            height: 150px;
+            position: relative;
+            background: linear-gradient(to right, rgba(0, 255, 0, 0.13), #0084ff3a);
+            border-radius: 50%;
+            animation: 30s myanimation infinite;
+            transform: translateY(40px);
+        }
+        @keyframes myanimation {
+            from{left: 0px}
+            to{left: 300px;}
+        }
+        .apresentacao-paragrafo{
+            font-size: 1.1rem;
+            font-family: 'Source Code Pro', monospace;
+            text-align: justify;
+            padding-top: 15px;
+            transform: translate(0px, -120px);
+            line-height: 1.5;
+        }
+        /* CONTEÚDO CONTEÚDOS */
         .conteudo_conteudos{
             padding-top: 50px;
             height: 1700px;  /* Ao adicionar mais uma div na coluna, adicionar 300 px aqui para manter a ordem. */
@@ -389,17 +423,19 @@ summary:focus{
             transform: translateX(0px);
         }
         .introducao-titulo{
+            margin-top: 30px;
             color: #fff;
             font-size: 1.5rem;
-            padding: 70px 0px 10px 40px;
+            padding: 5px
         }
         .introducao-paragrafo{
             line-height: 1.5;
             color: #fff;
             font-size: 1.1rem;
             width: 400px;
-            padding: 0px 0px 30px 40px;
+            padding: 5px;
             text-align: justify;
+            margin-bottom: 50px;
         }
         /* Redes sociais */
         .rodape_sociais{
@@ -409,25 +445,24 @@ summary:focus{
         .sociais-titulo{
             color: #fff;
             font-size: 1.5rem;
-            padding: 30px 0px 10px 40px;
+            padding: 5px;
         }
         .sociais-paragrafo{
             line-height: 1.5;
             color: #fff;
             font-size: 1.1rem;
-            padding: 0px 0px 0px 40px;
+            padding: 5px;
             width: 400px;
         }
         #icone1{
-            padding: 0px 0px 20px 40px;
+            padding-left: 5px;
         }
         .sociais-icone{
             height: 35px;
             width: 35px;
             border-radius: none;
             background-color: #ff7040;
-            padding: 0px 0px 30px 10px;
-            margin: 0;
+            padding: 0px 0px 0px 5px;
         }
         /* ENDEREÇO */
         .rodape_endereco{
@@ -438,14 +473,16 @@ summary:focus{
         .endereco-titulo{
             color: #fff;
             font-size: 1.5rem;
-            padding: 50px 0px 10px 40px;
+            padding: 5px;
+            margin-top: 50px;
         }
         .endereco-paragrafo{
             width: 400px;
             color: #fff;
             font-size: 1.1rem;
-            line-height: 1.1;
-            padding: 0px 0px 50px 40px;
+            line-height: 1.2;
+            padding: 5px;
+            margin-bottom: 30px;
         }
         /* Copyright */
         .rodape_copy{
