@@ -357,7 +357,7 @@ html{
         }
         @keyframes myanimation {
             from{left: 0px}
-            to{left: 100px}
+            to{left: 150px}
         }
         .apresentacao-paragrafo{
             font-size: 1.1rem;
@@ -422,6 +422,7 @@ html{
             font-size: 1.05rem;
             font-family: 'Times New Roman', Times, serif;
             border: none;
+            margin: auto;
         }
          /* Rodapé */
         .rodape_secao{
