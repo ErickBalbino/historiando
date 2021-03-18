@@ -12,6 +12,9 @@
     display: inline;
     margin-left: 5px;
 }
+#item1{
+    margin-left: 20px;
+}
 .cabecalho_menu-lista--item a{
     font-size: 17px;
     background-color: #22bb36;
@@ -239,10 +242,6 @@ details p{
     margin-top: 5px;
     margin-bottom: 2px;
     margin-right: 5px;
-}
-icone_instagram{
-    margin-top: 5px;
-    margin-right: 10px;
 }
 .icone_github{
     margin-top: 5px;

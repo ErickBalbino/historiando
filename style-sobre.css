@@ -1,0 +1,142 @@
+@charset "utf-8";
+
+/* inicio do cabeçalho */
+.cabecalho{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #0085ff;
+    height: 80px;
+    border-bottom: 1px solid #000;
+}
+.cabecalho_menu-items{
+    display: flex;
+}
+.cabecalho_menu-lista{
+    display: flex;
+}
+.cabecalho_menu-lista--item{
+    display: flex;
+    padding-left: 1em;
+    text-decoration: none;
+}
+.cabecalho_menu-lista--item a{
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #00f;
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 15px;
+}
+.cabecalho_menu-lista--item a:hover{
+    color: #fff;
+    background-color: #00f;
+}
+
+/* Conteudo */
+body{
+    background-color: #eee;
+}
+.conteudo_apresentacao{
+    width: 90%;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #aaa;
+    padding: 10px;
+    background-color: #ccc;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.apresentacao-titulo{
+    font-family: 'Padauk', sans-serif;
+    font-size: 1.7rem;
+    padding-top: 50px;
+    text-decoration: underline #ffa500;
+}
+.apresentacao-paragrafo{
+    font-family: 'Padauk', sans-serif;
+    font-size: 1.2rem;
+    text-align: justify;
+    padding: 20px 0px 20px 0px;
+    width: 700px;
+    line-height: 1.5;
+}
+/* Rodapé */
+.rodape{
+    background-color: #ff7040;
+    color: #fff;
+    padding: 50px 0px 30px 0px;
+}
+.rodape_secao{
+    display: flex;
+    justify-content: space-around;
+}
+.rodape_introducao h2{
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+}
+.mobile{
+    display: none;
+}
+.rodape_introducao p{ 
+    font-size: 1.1rem;
+    line-height: 1.15;
+}
+.rodape_redesSociais h2{
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+}
+.rodape_redesSociais p{
+    font-size: 1.1rem;
+    line-height: 1.15;
+}
+.icone_facebook{
+    margin-top: 5px;
+    margin-bottom: 2px;
+    margin-right: 6px;
+}
+.icone_linkedin{
+    margin-top: 5px;
+    margin-bottom: 2px;
+    margin-right: 6px;
+}
+.icone_instagram{
+    margin-top: 5px;
+    margin-right: 6px;
+}
+.icone_github{
+    margin-top: 5px;
+    margin-left: 6px;
+}
+.rodape_icone{
+    width: 20px;
+    height: 30px;
+    background-color: #eee;
+    border-radius: 70%;
+}
+.icone_facebook:hover{
+    transform: scale(1.1);
+}
+.icone_linkedin:hover{
+    transform: scale(1.1);
+}
+.icone_instagram:hover{
+    transform: scale(1.1);
+}
+.icone_github:hover{
+    transform: scale(1.1);
+}
+.rodape_endereco h2{
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+}
+.rodape_endereco p{
+    font-size: 1.1rem;
+    line-height: 1.15;
+    font-style: italic;
+}
+.rodape_copy{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 1.1rem;
+}
