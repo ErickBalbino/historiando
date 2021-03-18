@@ -392,7 +392,7 @@ html{
             cursor: pointer;
         }
         .titulo-item{
-            transform: translateY(-37px);
+            transform: translateY(-35px);
             text-align: center;
             background-color: #3d3d3d;
             color: #fff;
