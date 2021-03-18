@@ -266,6 +266,7 @@ icone_instagram{
     }
     .cabecalho_logo-site--mobile{
         display: flex;
+        justify-content: center;
     }
     .cabecalho{
         width: 100%;

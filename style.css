@@ -154,41 +154,46 @@ html{
     font-family: 'Source Code Pro', monospace;
     padding: 40px;
 }
-summary{
-    display: flex;
-    background: linear-gradient(45deg, #0085FF, #a52a2a);
-    height: 30px;
-    align-items: center;
-    width: 400px;
-    color: #fff;
-    border-radius: 10px;
+.btnquestao{
+    width: 200px;
+    display: grid;
+    grid-template-columns: 1fr;
     padding: 5px;
-    justify-content: center;
-    font-size: 1.2rem;
-    transform: translateX(70px);
+    background: linear-gradient(to right, #0085FF, #00f);
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+    font-size: 1.1rem;
+    font-family: 'Times New Roman', Times, serif;
+    border: none;
+    margin-left: 50px;
 }
-summary:focus{
+.btnquestao:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+.btnquestao:focus{
     outline: none;
 }
-.qstGrecia{
+#qstGreciaAntiga{
     margin-bottom: 15px;  /* Só pra dar espaço entre os details */
 }
-.qstRoma{
+#qstRomaAntiga{
     margin-bottom: 15px;  /* Só pra dar espaço entre os details */
 }
-.qst1guerra{
+#qstPrimeiraGuerra{
     margin-bottom: 15px;  /* Só pra dar espaço entre os details */
 }
-.qst2guerra{
+#qstSegundaGuerra{
     margin-bottom: 15px;  /* Só pra dar espaço entre os details */
 }
-.qstGuerrafria{
+#qstGuerraFria{
     margin-bottom: 15px;  /* Só pra dar espaço entre os details */
 }
-.qstRevolucoesIndustriais{
+#qstRevolucoesIndustriais{
     margin-bottom: 15px;  /* Só pra dar espaço entre os details */
 }
-.qstGrandesNavegacoes{
+#qstGrandesNavegacoes{
     margin-bottom: 15px;  /* Só pra dar espaço entre os details */
 }
 /* Rodapé */
@@ -405,14 +410,19 @@ summary:focus{
             text-align: center;
             font-size: 1.5rem;
         }
-        summary{
+        .btnquestao{
             width: 200px;
-            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background: linear-gradient(to right, #0085FF, #00f);
+            border-radius: 10px;
+            color: #fff;
+            text-align: center;
             font-size: 1.1rem;
-            padding: 5px;
-        }
-        summary::-webkit-details-marker{
-            display: none;
+            font-family: 'Times New Roman', Times, serif;
+            border: none;
+            margin-left: 50px;
         }
          /* Rodapé */
         .rodape_secao{
