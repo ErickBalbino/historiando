@@ -295,6 +295,8 @@ html{
         }
         .cabecalho_menu-logo--imagem{
             margin: auto;
+            width: 170px;
+            height: 80px;
         }
         /* Cabecalho navbar */
         .cabecalho_menu-items{
