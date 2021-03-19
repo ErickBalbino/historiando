@@ -3,7 +3,7 @@
 /* inicio do cabeçalho */
 .cabecalho{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     background-color: #0085ff;
     height: 80px;
@@ -23,29 +23,34 @@
 .cabecalho_menu-lista--item a{
     font-size: 1.2rem;
     font-family: Arial, Helvetica, sans-serif;
-    color: #00f;
-    background-color: #eee;
+    color: #fff;
+    background-color: #00f;
     padding: 10px;
     border-radius: 15px;
 }
 .cabecalho_menu-lista--item a:hover{
     color: #fff;
-    background-color: #00f;
+    transform: scale(1.05);
 }
 
 /* Conteudo */
 body{
     background-color: #eee;
 }
-.conteudo_apresentacao{
+.conteudo{
     width: 90%;
     margin: auto;
     border-radius: 10px;
     box-shadow: 2px 2px 5px #aaa;
-    padding: 10px;
     background-color: #ccc;
     margin-top: 50px;
     margin-bottom: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.conteudo_apresentação{
+    display: flex;
 }
 .apresentacao-titulo{
     font-family: 'Padauk', sans-serif;
@@ -60,6 +65,12 @@ body{
     padding: 20px 0px 20px 0px;
     width: 700px;
     line-height: 1.5;
+}
+.conteudo_foto{
+    display: flex;
+}
+.imagem-profile{
+    border-radius: 50%;
 }
 /* Rodapé */
 .rodape{
@@ -139,4 +150,364 @@ body{
     text-align: center;
     margin-top: 50px;
     font-size: 1.1rem;
+}
+
+@media(max-width: 767px){
+    .conteudo{
+        width: 90%;
+        margin: auto;
+        border-radius: 10px;
+        box-shadow: 2px 2px 5px #aaa;
+        background-color: #ccc;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+    }
+    .conteudo_apresentação{
+        display: flex;
+        width: 30%;
+        justify-content: center;
+    }
+    .apresentacao-titulo{
+        font-family: 'Padauk', sans-serif;
+        font-size: 1.7rem;
+        padding-top: 50px;
+        text-decoration: underline #ffa500;
+        padding-left: 10px;
+    }
+    .apresentacao-paragrafo{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1.2rem;
+        text-align: justify;
+        padding: 20px 0px 20px 0px;
+        width: 90%;
+        line-height: 1.5;
+        padding-left: 10px;
+    }
+    .emoji{
+        display: none;
+    }
+    .conteudo_foto{
+        display: flex;
+        align-items: center;
+        width: 40%;
+        justify-content: center;
+    }
+    .imagem-profile{
+        border-radius: 50%;
+        margin-right: 10px;
+        width: 500px;
+        height: 300px;
+        margin-bottom: 20px;
+    }
+    /* Rodapé */
+    .rodape_secao{
+        display: block;
+    }
+    .rodape_introducao h2{
+        margin-bottom: 15px;
+        margin-left: 5px;
+    }
+    .rodape_introducao p{
+        padding: 10px;
+    }
+    .desktop{
+        display: none;
+    }
+    .mobile{ 
+        display: inline-block;
+        padding-left: 10px;
+        text-align: justify;
+    }
+    .rodape_redesSociais h2{
+        padding: 5px;
+        margin-top: 50px;
+    }
+    .rodape_redesSociais p{
+        padding: 10px;
+        text-align: justify;
+    }
+    .rodape_icone{
+        margin-left: 10px;
+    }
+    .rodape_icone:focus{
+        outline: none;
+    }
+    .rodape_endereco h2{
+        padding: 5px;
+        margin-bottom: 15px;
+        margin-top: 50px;
+    }
+    .rodape_endereco p{
+        padding-left: 10px;
+        text-align: justify;
+        margin-bottom: 50px;
+    }
+    .rodape_copy{
+        text-align: center;
+        margin-top: 30px;
+        font-size: 1.1rem;
+    }  
+}
+@media (min-width: 768px) and (max-width: 999px){
+    .conteudo{
+        width: 90%;
+        margin: auto;
+        border-radius: 10px;
+        box-shadow: 2px 2px 5px #aaa;
+        background-color: #ccc;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .conteudo_apresentação{
+        display: flex;
+        width: 30%;
+    }
+    .apresentacao-titulo{
+        font-family: 'Padauk', sans-serif;
+        font-size: 1.7rem;
+        padding-top: 50px;
+        text-decoration: underline #ffa500;
+        padding-left: 10px;
+    }
+    .apresentacao-paragrafo{
+        font-family: 'Padauk', sans-serif;
+        font-size: 1.2rem;
+        text-align: justify;
+        padding: 20px 0px 20px 0px;
+        width: 90%;
+        line-height: 1.5;
+        padding-left: 10px;
+    }
+    .conteudo_foto{
+        display: flex;
+        align-items: center;
+        width: 40%;
+    }
+    .imagem-profile{
+        border-radius: 40%;
+        margin-right: 10px;
+        width: 250px;
+        height: 350px;
+    }
+    /* RODAPE */
+    .rodape{
+        background-color: #ff7040;
+        color: #fff;
+        padding: 50px 0px 30px 0px;
+    }
+    .rodape_secao{
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .rodape_introducao{
+        display: flex;
+        flex-direction: column;
+        width: 32%;
+    }
+    .rodape_introducao h2{
+        font-size: 1.7rem;
+        margin-bottom: 10px;
+        padding-left: 5px;
+    }
+    .mobile{
+        display: block;
+        padding-left: 5px;
+        text-align: left;
+    }
+    .desktop{
+        display: none;
+    }
+    .rodape_redesSociais{
+        width: 32%;
+    }
+    .rodape_redesSociais h2{
+        font-size: 1.7rem;
+        margin-bottom: 10px;
+    }
+    .rodape_redesSociais p{
+        font-size: 1.1rem;
+        line-height: 1.15;
+    }
+    .icone_facebook{
+        margin-top: 5px;
+        margin-bottom: 2px;
+        margin-right: 6px;
+    }
+    .icone_linkedin{
+        margin-top: 5px;
+        margin-bottom: 2px;
+        margin-right: 6px;
+    }
+    .icone_instagram{
+        margin-top: 5px;
+        margin-right: 6px;
+    }
+    .icone_github{
+        margin-top: 5px;
+        margin-left: 6px;
+    }
+    .rodape_icone{
+        width: 20px;
+        height: 30px;
+        background-color: #eee;
+        border-radius: 70%;
+    }
+    .icone_facebook:hover{
+        transform: scale(1.1);
+    }
+    .icone_linkedin:hover{
+        transform: scale(1.1);
+    }
+    .icone_instagram:hover{
+        transform: scale(1.1);
+    }
+    .icone_github:hover{
+        transform: scale(1.1);
+    }
+    .rodape_endereco h2{
+        font-size: 1.7rem;
+        margin-bottom: 10px;
+    }
+    .rodape_endereco p{
+        font-size: 1.1rem;
+        line-height: 1.15;
+        font-style: italic;
+    }
+    .rodape_copy{
+        text-align: center;
+        margin-top: 50px;
+        font-size: 1.1rem;
+    }
+    
+}
+@media (min-width: 1000px) and (max-width:1300px){
+    .conteudo{
+        width: 90%;
+        margin: auto;
+        border-radius: 10px;
+        box-shadow: 2px 2px 5px #aaa;
+        background-color: #ccc;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .conteudo_apresentação{
+        display: flex;
+        width: 50%;
+    }
+    .apresentacao-titulo{
+        font-family: 'Padauk', sans-serif;
+        font-size: 1.7rem;
+        padding-top: 50px;
+        text-decoration: underline #ffa500;
+        padding-left: 10px;
+    }
+    .apresentacao-paragrafo{
+        font-family: 'Padauk', sans-serif;
+        font-size: 1.2rem;
+        text-align: justify;
+        padding: 20px 0px 20px 0px;
+        width: 90%;
+        line-height: 1.5;
+        padding-left: 10px;
+    }
+    .conteudo_foto{
+        display: flex;
+        width: 50%;
+    }
+    .imagem-profile{
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+    /* Rodapé */
+    .rodape{
+        background-color: #ff7040;
+        color: #fff;
+        padding: 50px 0px 30px 0px;
+    }
+    .rodape_secao{
+        display: flex;
+        justify-content: space-around;
+    }
+    .rodape_introducao h2{
+        font-size: 1.7rem;
+        margin-bottom: 10px;
+        padding-left: 5px;
+    }
+    .mobile{
+        display: inline-block;
+        padding-left: 5px;
+    }
+    .desktop{
+        display: none;
+    }
+    .rodape_redesSociais h2{
+        font-size: 1.7rem;
+        margin-bottom: 10px;
+    }
+    .rodape_redesSociais p{
+        font-size: 1.1rem;
+        line-height: 1.15;
+    }
+    .icone_facebook{
+        margin-top: 5px;
+        margin-bottom: 2px;
+        margin-right: 6px;
+    }
+    .icone_linkedin{
+        margin-top: 5px;
+        margin-bottom: 2px;
+        margin-right: 6px;
+    }
+    .icone_instagram{
+        margin-top: 5px;
+        margin-right: 6px;
+    }
+    .icone_github{
+        margin-top: 5px;
+        margin-left: 6px;
+    }
+    .rodape_icone{
+        width: 20px;
+        height: 30px;
+        background-color: #eee;
+        border-radius: 70%;
+    }
+    .icone_facebook:hover{
+        transform: scale(1.1);
+    }
+    .icone_linkedin:hover{
+        transform: scale(1.1);
+    }
+    .icone_instagram:hover{
+        transform: scale(1.1);
+    }
+    .icone_github:hover{
+        transform: scale(1.1);
+    }
+    .rodape_endereco h2{
+        font-size: 1.7rem;
+        margin-bottom: 10px;
+    }
+    .rodape_endereco p{
+        font-size: 1.1rem;
+        line-height: 1.15;
+        font-style: italic;
+        padding-right: 5px;
+    }
+    .rodape_copy{
+        text-align: center;
+        margin-top: 50px;
+        font-size: 1.1rem;
+    }
 }
