@@ -12,6 +12,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
 }
 /* Cabecalho logo */
 .cabecalho_menu-logo--imagem{
@@ -102,14 +103,32 @@
     margin-bottom: 2px;
     margin-right: 5px;
 }
+.icone_facebook:hover{
+    transform: scale(1.1);
+}
 .icone_linkedin{
     margin-top: 5px;
     margin-bottom: 2px;
     margin-right: 5px;
 }
+.icone_linkedin:hover{
+    transform: scale(1.1);
+}
+.icone_instagram:hover{
+    transform: scale(1.1);
+}
 .icone_github{
     margin-top: 5px;
     margin-left: 5px;
+}
+.icone_github:hover{
+    transform: scale(1.1);
+}
+#icone{
+    width: 40px;
+    height: 40px;
+    border-radius: 60%;
+    background-color: #eee;
 }
 .rodape_copy{
     text-align: center;
