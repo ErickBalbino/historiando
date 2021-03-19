@@ -160,16 +160,16 @@ body{
         text-decoration: none;
     }
     .cabecalho_menu-lista--item a{
-        font-size: 1.1rem;
+        font-size: 1.05rem;
         font-family: Arial, Helvetica, sans-serif;
         color: #fff;
         background-color: #00f;
-        padding: 10px;
+        padding: 7px;
         border-radius: 15px;
     }
     .logo_imagem{
-        width: 100px;
-        height: 60px;
+        width: 150px;
+        height: 80px;
     }
     /* CONTEUDO */
     .conteudo{
@@ -194,7 +194,7 @@ body{
         font-family: 'Padauk', sans-serif;
         font-size: 1.6rem;
         padding-top: 50px;
-        text-decoration: underline #00ff22;
+        text-decoration: underline #ffa500;
         padding-left: 10px;
     }
     .apresentacao-paragrafo{
