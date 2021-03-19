@@ -156,7 +156,7 @@ body{
     /* inicio do cabeçalho */
     .cabecalho_menu-lista--item{
         display: flex;
-        padding-left: 1em;
+        padding-left: 7px;
         text-decoration: none;
     }
     .cabecalho_menu-lista--item a{
@@ -164,12 +164,12 @@ body{
         font-family: Arial, Helvetica, sans-serif;
         color: #fff;
         background-color: #00f;
-        padding: 5px;
+        padding: 10px;
         border-radius: 15px;
     }
     .logo_imagem{
-        width: 150px;
-        height: 80px;
+        width: 100vw;
+        height: 80vh;
     }
     /* CONTEUDO */
     .conteudo{
