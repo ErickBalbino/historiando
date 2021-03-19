@@ -168,8 +168,8 @@ body{
         border-radius: 15px;
     }
     .logo_imagem{
-        width: 150px;
-        height: 80px;
+        width: 100px;
+        height: 60px;
     }
     /* CONTEUDO */
     .conteudo{
@@ -194,7 +194,7 @@ body{
         font-family: 'Padauk', sans-serif;
         font-size: 1.6rem;
         padding-top: 50px;
-        text-decoration: underline #ffa500;
+        text-decoration: underline #00ff22;
         padding-left: 10px;
     }
     .apresentacao-paragrafo{
