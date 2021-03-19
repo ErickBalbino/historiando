@@ -6,28 +6,18 @@
     background-color: #0085FF;
     display: flex;
     align-items: center;
-    width: 100%;
-    padding: 1rem 0;
-    background-attachment: fixed;
+    justify-content: space-between;
 }
 .cabecalho_menu{
-    width: 100%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
 }
 /* Cabecalho logo */
-.cabecalho_menu-logo{
-    width: 30%;
-}
 .cabecalho_menu-logo--imagem{
     margin-left: 20px;
 }
 /* Cabecalho navbar */
-.cabecalho_menu-items{
-    width: 50%;
-    height: 100%;
-}
 .cabecalho_menu-lista{
     display: flex;
     justify-content: flex-start;
@@ -45,9 +35,6 @@
     transform: scale(1.1);
 }
 /* Cabecalho login */
-.cabecalho_menu-login{
-    width: 20%;
-}
 .btnSingIN{
     font-size: 1.2rem;
     padding: 10px;
