@@ -195,10 +195,9 @@ body{
         transform: translateX(99%) translateY(3%);
     }
     .menu_lateral-items{
-        background-color: #000;
-        opacity: 0.8;
+        background-color: #3d3d3d;
         width: 80%;
-        height: auto;
+        height: 100%;
         position: absolute;
         left: -80%;
         top: -19px;
@@ -206,11 +205,11 @@ body{
     .menu_lateral-lista{
         position: absolute;
         top: 20%;
-        height: auto;
+        height: 100%;
         width: 100%;
     }
     .menu_lateral-lista--item a{
-        background-color: #000;
+        background-color: #3d3d3d;
         display: block;
         color: #fff;
         padding: 20px 5px;
@@ -224,7 +223,7 @@ body{
         background-color: #444;
     }
     .cabecalho_menu-lista--item a:visited{
-        background-color: #000;
+        background-color: #3d3d3d;
     }
     /* LOGO */
     .logo_imagem{
