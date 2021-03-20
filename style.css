@@ -99,6 +99,9 @@ html{
 .conteudo_apresentacao-mobile{
     display: none;   
 }
+.cabecalho_menu-lateral{
+    display: none;
+}
 /* Conteúdo */
 .conteudo_titulo{
     font-size: 1.6rem;
@@ -322,9 +325,27 @@ html{
         .cabecalho_menu-items--lista a:hover{
             transform: scale(1.1);
         }
+        .cabecalho_menu-lateral{
+            display: none;
+        }
+        .menu_lateral-imagem{
+            display: none;
+        }
         /* LOGIN */
         .cabecalho_menu-login{
             display: none;
+        }
+        /* Menu lateral */
+        .cabecalho_menu-lateral{
+            display: inline-block;
+        }
+        .checkbtn{
+            display: none;
+        }
+        .menu_lateral-imagem{
+            width: 40px;
+            height: 30px;
+    
         }
         /* CONTEUDO APRESENTAÇÃO */
         body{
