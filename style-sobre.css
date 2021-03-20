@@ -192,20 +192,20 @@ body{
         cursor: pointer;
     }
     .checkbtn:checked ~ nav{
-        transform: translateX(99%);
+        transform: translateX(99%) translateY(3%);
     }
     .menu_lateral-items{
         background-color: #000;
         opacity: 0.8;
-        width: 50%;
+        width: 80%;
         height: 100%;
         position: absolute;
-        left: -50%;
-        top: -10px;
+        left: -80%;
+        top: -19px;
     }
     .menu_lateral-lista{
         position: absolute;
-        top: 15%;
+        top: 20%;
         height: 100%;
         width: 100%;
     }
@@ -233,8 +233,6 @@ body{
         margin-left: 30px;
     }
     /* CONTEUDO */
-    body{
-    }
     .conteudo{
         width: 90%;
         margin: auto;
