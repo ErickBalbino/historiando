@@ -28,7 +28,7 @@ a{
 }
 .cabecalho_menu-lista--item{
     display: flex;
-    padding-left: 1em;
+    padding-left: 0.5em;
     text-decoration: none;
 }
 .cabecalho_menu-lista--item a{
@@ -38,6 +38,8 @@ a{
     background-color: #00f;
     padding: 10px;
     border-radius: 15px;
+    width: 70px;
+    justify-content: center;
 }
 .cabecalho_menu-lista--item a:hover{
     color: #fff;
@@ -201,10 +203,10 @@ body{
     }
     .menu_lateral-items{
         background-color: #3d3d3d;
-        width: 80%;
+        width: 60%;
         height: 100%;
         position: absolute;
-        left: -80%;
+        left: -60%;
         top: -19px;
     }
     .menu_lateral-lista{

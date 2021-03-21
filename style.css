@@ -283,7 +283,7 @@ html{
     @media (max-width: 700px){
         /* Cabecalho */
         .cabecalho{
-            height: 60px;
+            height: 70px;
             background-color: #0085FF;
             display: block;
             width: 100%;
@@ -298,9 +298,9 @@ html{
             margin: auto;
         }
         .cabecalho_menu-logo--imagem{
-            margin: auto;
-            width: 160px;
-            height: 60px;
+            margin-left: auto;
+            width: 200px;
+            height: 70px;
         }
         /* Cabecalho navbar */
         .cabecalho_menu-items{
@@ -404,7 +404,7 @@ html{
             cursor: pointer;
         }
         .titulo-item{
-            transform: translateY(-35px);
+            transform: translateY(-34px);
             text-align: center;
             background-color: #3d3d3d;
             color: #fff;
@@ -491,6 +491,7 @@ html{
             display: flex;
             align-items: center;
             width: 100%;
+            flex-direction: row-reverse;
         }
         .cabecalho_menu{
             width: 100%;
@@ -502,7 +503,8 @@ html{
         .cabecalho_menu-logo{
             display: flex;
             justify-content: space-between;
-            width: 80%;
+            width: 20%;
+            margin-left: 120px;
         }
         .cabecalho_menu-logo--imagem{
             margin-left: 20px;
@@ -517,7 +519,7 @@ html{
         }
         /* MENU LATERAL */
         .cabecalho_menu-lateral{
-            width: 10%;
+            width: 70%;
             display: flex;
             align-items: center;
             height: 100%;
@@ -532,16 +534,19 @@ html{
             cursor: pointer;
             z-index: 1;
         }
+        .menu_lateral-imagem{
+            margin-left: 10px;
+        }
         .checkbtn:checked ~ nav{
-            transform: translateX(-99%);
+            transform: translateX(99%);
             height: 100%;
         }
         .menu_lateral-items{
             background-color: #3d3d3d;
-            width: 80%;
+            width: 50%;
             height: 100%;
             position: absolute;
-            right: -80%;
+            left: -50%;
             top: -19px;
         }
         .menu_lateral-lista{
@@ -562,7 +567,7 @@ html{
             font-size: 1.1rem;
         }
         .menu_lateral-lista--item a:hover{
-            background-color: #444;
+            background-color: #666;
         }
         .cabecalho_menu-lista--item a:visited{
             background-color: #3d3d3d;
@@ -604,13 +609,18 @@ html{
             cursor: pointer;
         }
         .titulo-item{
-            transform: translateY(-35px);
+            transform: translateY(-37px);
             text-align: center;
             background-color: #3d3d3d;
             color: #fff;
             padding: 10px;
             font-size: 1.1rem;
             width: 230px;
+        }
+        /* Questões */
+        .conteudo_questoes{
+            background-image: url(imagens/imagens-de-fundo/fundo-questoes/imagemFundo-questões-1200.png);
+            background-repeat: no-repeat;
         }
         /* Rodapé */
         .rodape_secao{
@@ -659,6 +669,238 @@ html{
         }         
     }
 
-    @media(min-width:801px) and (max-width:1000px){
-        
+    @media(min-width:801px) and (max-width:950px){
+        /* Cabecalho */
+        .cabecalho{
+            height: 60px;
+            background-color: #0085FF;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            justify-content: space-evenly;
+            flex-direction: row-reverse;
+        }
+        .cabecalho_menu{
+            width: 100%;
+            display: flex;
+            align-items: center;
+        }
+        /* Cabecalho logo */
+        .cabecalho_menu-logo{
+            display: flex;
+            justify-content: space-between;
+            width: 30%;
+        }
+        .cabecalho_menu-logo--imagem{
+            margin-left: 0px;
+            width: 250px;
+        }
+        /* Cabecalho navbar */
+        .cabecalho_menu-items{
+            display: flex;
+            width: 70%;
+            justify-content: space-evenly;
+        }
+        .cabecalho_menu-items--lista{
+            width: 100%;
+            justify-content: center;
+        }
+        .cabecalho_menu-items--lista a{
+            font-size: 1.1rem;
+        }
+        /* Cabecalho login */
+        .cabecalho_menu-login{
+            display: none;
+        }
+        /* Conteudo do site */
+        /* Apresentação */
+        .conteudo_apresentacao{
+            width: 100%;
+            height: 500px;
+            background-image: url(imagens/imagens-de-fundo/apresentacao/imagem-apresentação-900.png);
+            background-size: auto;
+            position: relative;
+            z-index: -1;
+        }
+        .conteudo_apresentacao-mobile{
+            display: none;   
+        }
+        /* Conteudo */
+        .conteudo_conteudos{
+            padding-top: 50px;
+            height: 1000px;  /* Ao adicionar mais uma div na coluna, adicionar 300 px aqui para manter a ordem. */
+            background-color: #a52a2a;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        .imagem-item-desktop{
+            display: none;
+        }
+        .imagem-item-mobile{
+            display: grid;
+            margin: auto;
+            border-radius: 30px 30px 0px 0px;
+            width: 300px;
+            height: 200px;
+        }
+        .item1, .item2, .item3, .item4, .item5, .item6, .item7, .item8{
+            width: 300px;
+            height: 200px;
+            margin: auto;
+            border-radius: 30px  30px 0px 0px;
+            cursor: pointer;
+        }
+        .titulo-item{
+            transform: translateY(-37px);
+            text-align: center;
+            background-color: #3d3d3d;
+            color: #fff;
+            padding: 10px;
+            font-size: 1.1rem;
+            width: 280px; /* 20px a menos que o width do item */
+        }
+        /* QUESTOES */
+        .conteudo_questoes{
+            background-image: url(imagens/imagens-de-fundo/fundo-questoes/imagemFundo-questões-1400.png);
+            background-repeat: no-repeat;
+        }
+        /* RODAPE */
+        .rodape_introducao{
+            padding-left: 10px;
+            width: 50%;
+        }
+        .desktop{
+            display: none;
+        }
+        .mobile{
+            display: inline-block;
+            text-align: justify;
+            width: 80%;
+        }
+        .rodape_redesSociais p{
+            display: inline-block;
+            width: 90%;
+        }
+    }
+
+    @media(min-width: 951px) and (max-width: 1200px){
+        /* CABECALHO */
+        .cabecalho{
+            height: 60px;
+            background-color: #0085FF;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            padding: 1rem 0;
+            background-attachment: fixed;
+        }
+        .cabecalho_menu{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        /* Cabecalho logo */
+        .cabecalho_menu-logo{
+            width: 30%;
+        }
+        .cabecalho_menu-logo--imagem{
+            
+        }
+        /* Cabecalho navbar */
+        .cabecalho_menu-items{
+            width: 50%;
+            height: 100%;
+        }
+        .cabecalho_menu-lista{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        .cabecalho_menu-items--lista{
+            display: flex;
+            padding-right: 30px;
+        }
+        .cabecalho_menu-items--lista a{
+            color: #fff;
+            font-size: 1.1rem;
+        }
+        .cabecalho_menu-items--lista a:hover{
+            transform: scale(1.1);
+        }
+        /* Cabecalho login */
+        .cabecalho_menu-login{
+            width: 20%;
+        }
+        .btnSingIN{
+            font-size: 1.05rem;
+            padding: 8px;
+            border-radius: 15px;
+            background-color: #00f;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        .btnSingIN:hover{
+            background-color: #eee;
+            color: #00f;
+            box-shadow: 0.5px 0.5px 5px #000;
+        }
+        .btnSingIN:focus{
+            outline: none;
+        }
+        .btnSignUP{
+            font-size: 1.05rem;
+            padding: 8px;
+            border-radius: 15px;
+            background-color: #00f;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        .btnSignUP:hover{
+            background-color: #eee;
+            color: #00f;
+            box-shadow: 0.5px 0.5px 5px #000;
+        }
+        .btnSignUP:focus{
+            outline: none;
+        }
+        /* Conteudo do site */
+        /* Apresentação */
+        .conteudo_apresentacao{
+            width: 100%;
+            height: 550px;
+            background-image: url(imagens/imagens-de-fundo/apresentacao/imagem-apresentação-1000.png);
+            background-size: 1150px;
+            position: relative;
+        }
+        .conteudo_apresentacao-mobile{
+            display: none;   
+        }
+        .cabecalho_menu-lateral{
+            display: none;
+        }
+        /* QUESTOES */
+        .conteudo_questoes{
+            background-image: url(imagens/imagens-de-fundo/fundo-questoes/imagemFundo-questões-1600.png);
+            background-repeat: no-repeat;
+        }
+        /* RODAPE */
+        .rodape_introducao{
+            width: 40%;
+        }
+        .desktop{
+            display: none;
+        }
+        .mobile{
+            display: inline-block;
+        }
+        .rodape_redesSociais{
+            width: 25%;
+            margin-right: 10px;
+        }
+        .rodape_endereco{
+            width: 25%;
+        }
     }
