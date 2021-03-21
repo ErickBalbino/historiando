@@ -529,7 +529,6 @@ html{
             display: none;
         }
         .menu_lateral-label{
-            display: flex;
             position: absolute;
             cursor: pointer;
             z-index: 1;
@@ -538,8 +537,7 @@ html{
             margin-left: 10px;
         }
         .checkbtn:checked ~ nav{
-            transform: translateX(99%) translateY(43%);
-            height: 100%;
+            transform: translateX(99%);
         }
         .menu_lateral-items{
             background-color: #fff;
@@ -547,15 +545,16 @@ html{
             height: 100%;
             position: absolute;
             left: -50%;
+            top: -20px;
         }
         .menu_lateral-lista{
             position: absolute;
-            top: 20%;
+            top: 25%;
             height: 100%;
             width: 100%;
+            background-color: #eee;
         }
         .menu_lateral-lista--item a{
-            background-color: #eee;
             display: block;
             color: #ff7040;
             padding: 20px 5px;
@@ -563,6 +562,7 @@ html{
             border-bottom: 1px solid #000;
             font-weight: bold;
             font-size: 1.1rem;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
         #item1{
             border-top: 1px solid #000;

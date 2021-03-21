@@ -179,28 +179,21 @@ body{
     /* MENU LATERAL */
     .cabecalho_menu-lateral{
         display: flex;
-        align-items: center;
         height: 100%;
+    }
+    .menu_lateral-label{
+        position: absolute;
+        margin: 25px 0px 0px 20px;
+        cursor: pointer;
+        z-index: 1;
+    }
+    .menu_lateral-label:checked{
+        background-color: #aaa;
+        padding: 5px;
+        border-radius: 50%;
     }
     .checkbtn{
         display: none;
-    }
-    .menu_lateral-imagem{
-        margin-left: 10px;
-        position: absolute;
-        display: flex;
-        align-items: center;
-    }
-    .menu_lateral-label{
-        display: flex;
-        position: absolute;
-        z-index: 1;
-        cursor: pointer;
-        align-items: center
-    }
-    .checkbtn:checked ~ nav{
-        transform: translateX(99%) translateY(44%);
-        height: 100%;
     }
     .menu_lateral-items{
         background-color: #fff;
@@ -209,30 +202,32 @@ body{
         position: absolute;
         left: -70%;
     }
+    .checkbtn:checked ~ nav{
+        transform: translateX(99%);
+    }
     .menu_lateral-lista{
         position: absolute;
-        top: 30%;
-        height: 100%;
+        top: 25%;
+        background-color: #eee;
         width: 100%;
+        height: 100%;
+        margin-top: 40px;
     }
     .menu_lateral-lista--item a{
-        background-color: #eee;
-        display: block;
         color: #ff7040;
+        display: block;
         padding: 20px 5px;
         text-align: center;
         border-bottom: 1px solid #000;
         font-weight: bold;
         font-size: 1.1rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
     #item1{
         border-top: 1px solid #000;
     }
     .menu_lateral-lista--item a:hover{
-        background-color: #aaa;
-    }
-    .cabecalho_menu-lista--item a:visited{
-        background-color: #aaa;
+        background-color: #999;
     }
     /* LOGO */
     .logo_imagem{
