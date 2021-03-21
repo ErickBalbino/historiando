@@ -279,8 +279,8 @@ html{
     font-size: 1.1rem;
 }
 
-/* MEDIAS QUERIES */
-    @media (max-width: 768.98px){
+  /* MEDIAS QUERIES */
+    @media (max-width: 700px){
         /* Cabecalho */
         .cabecalho{
             height: 60px;
@@ -295,6 +295,7 @@ html{
         /* Cabecalho logo */
         .cabecalho_menu-logo{
             display: block;
+            margin: auto;
         }
         .cabecalho_menu-logo--imagem{
             margin: auto;
@@ -334,18 +335,6 @@ html{
         /* LOGIN */
         .cabecalho_menu-login{
             display: none;
-        }
-        /* Menu lateral */
-        .cabecalho_menu-lateral{
-            display: inline-block;
-        }
-        .checkbtn{
-            display: none;
-        }
-        .menu_lateral-imagem{
-            width: 40px;
-            height: 30px;
-    
         }
         /* CONTEUDO APRESENTAÇÃO */
         body{
@@ -460,7 +449,7 @@ html{
         }
         .mobile{ 
             display: inline-block;
-            padding-left: 10px;
+            padding: 0px 5px 0px 10px;
             text-align: justify;
         }
         .rodape_redesSociais h2{
@@ -491,5 +480,185 @@ html{
             text-align: center;
             margin-top: 30px;
             font-size: 1.1rem;
-        }  
-}   
+        }         
+    }  
+    
+    @media (min-width:701px) and (max-width: 800px){
+        /* Cabecalho */
+        .cabecalho{
+            height: 60px;
+            background-color: #0085FF;
+            display: flex;
+            align-items: center;
+            width: 100%;
+        }
+        .cabecalho_menu{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        /* Cabecalho logo */
+        .cabecalho_menu-logo{
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+        }
+        .cabecalho_menu-logo--imagem{
+            margin-left: 20px;
+        }
+        /* Cabecalho navbar */
+        .cabecalho_menu-items{
+            display: none;
+        }
+        /* Cabecalho login */
+        .cabecalho_menu-login{
+            display: none;
+        }
+        /* MENU LATERAL */
+        .cabecalho_menu-lateral{
+            width: 10%;
+            display: flex;
+            align-items: center;
+            height: 100%;
+            justify-content: space-between;
+        }
+        .checkbtn{
+            display: none;
+        }
+        .menu_lateral-label{
+            display: flex;
+            position: absolute;
+            cursor: pointer;
+            z-index: 1;
+        }
+        .checkbtn:checked ~ nav{
+            transform: translateX(-99%);
+            height: 100%;
+        }
+        .menu_lateral-items{
+            background-color: #3d3d3d;
+            width: 80%;
+            height: 100%;
+            position: absolute;
+            right: -80%;
+            top: -19px;
+        }
+        .menu_lateral-lista{
+            position: absolute;
+            top: 20%;
+            height: 100%;
+            width: 100%;
+        }
+        .menu_lateral-lista--item a{
+            background-color: #3d3d3d;
+            display: block;
+            color: #fff;
+            padding: 20px 5px;
+            text-align: center;
+            border-bottom: 1px solid #000;
+            border-top: 1px solid #000;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+        .menu_lateral-lista--item a:hover{
+            background-color: #444;
+        }
+        .cabecalho_menu-lista--item a:visited{
+            background-color: #3d3d3d;
+        }
+        /* Conteudo do site */
+        /* Apresentação */
+        .conteudo_apresentacao{
+            width: 100%;
+            height: 400px;
+            background-image: url(imagens/imagens-de-fundo/apresentacao/imagem-apresentação-800.png);
+            background-size: auto;
+            position: relative;
+            z-index: -1;
+        }
+        .conteudo_apresentacao-mobile{
+            display: none;   
+        }
+        /* Conteudo */
+        .conteudo_conteudos{
+            padding-top: 50px;
+            height: 1000px;  /* Ao adicionar mais uma div na coluna, adicionar 300 px aqui para manter a ordem. */
+            background-color: #a52a2a;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        .imagem-item-desktop{
+            display: none;
+        }
+        .imagem-item-mobile{
+            display: grid;
+            margin: auto;
+            border-radius: 30px 30px 0px 0px;
+        }
+        .item1, .item2, .item3, .item4, .item5, .item6, .item7, .item8{
+            width: 250px;
+            height: 150px;
+            margin: auto;
+            border-radius: 30px  30px 0px 0px;
+            cursor: pointer;
+        }
+        .titulo-item{
+            transform: translateY(-35px);
+            text-align: center;
+            background-color: #3d3d3d;
+            color: #fff;
+            padding: 10px;
+            font-size: 1.1rem;
+            width: 230px;
+        }
+        /* Rodapé */
+        .rodape_secao{
+            display: block;
+        }
+        .rodape_introducao h2{
+            margin-bottom: 15px;
+            margin-left: 5px;
+        }
+        .desktop{
+            display: none;
+        }
+        .mobile{ 
+            display: inline-block;
+            padding: 0px 5px 0px 10px;
+            text-align: justify;
+        }
+        .rodape_redesSociais h2{
+            padding: 5px;
+            margin-top: 50px;
+        }
+        .rodape_redesSociais p{
+            padding: 10px;
+            text-align: justify;
+        }
+        .rodape_icone{
+            margin-left: 10px;
+        }
+        .rodape_icone:focus{
+            outline: none;
+        }
+        .rodape_endereco h2{
+            padding: 5px;
+            margin-bottom: 15px;
+            margin-top: 50px;
+        }
+        .rodape_endereco p{
+            padding-left: 10px;
+            text-align: justify;
+            margin-bottom: 50px;
+        }
+        .rodape_copy{
+            text-align: center;
+            margin-top: 30px;
+            font-size: 1.1rem;
+        }         
+    }
+
+    @media(min-width:801px) and (max-width:1000px){
+        
+    }

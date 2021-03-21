@@ -177,6 +177,8 @@ body{
     /* MENU LATERAL */
     .cabecalho_menu-lateral{
         display: flex;
+        align-items: center;
+        height: 100%;
     }
     .checkbtn{
         display: none;
@@ -184,15 +186,18 @@ body{
     .menu_lateral-imagem{
         margin-left: 10px;
         position: absolute;
-        top: -12px;
+        display: flex;
+        align-items: center;
     }
     .menu_lateral-label{
+        display: flex;
         position: absolute;
         z-index: 1;
         cursor: pointer;
     }
     .checkbtn:checked ~ nav{
-        transform: translateX(99%) translateY(3%);
+        transform: translateX(99%);
+        height: 100%;
     }
     .menu_lateral-items{
         background-color: #3d3d3d;
