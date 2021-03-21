@@ -181,7 +181,6 @@ body{
         display: flex;
         align-items: center;
         height: 100%;
-        background-attachment: fixed;
     }
     .checkbtn{
         display: none;
@@ -197,18 +196,18 @@ body{
         position: absolute;
         z-index: 1;
         cursor: pointer;
+        align-items: center
     }
     .checkbtn:checked ~ nav{
-        transform: translateX(99%) translateY(3%);
+        transform: translateX(99%) translateY(44%);
         height: 100%;
     }
     .menu_lateral-items{
-        background-color: #3d3d3d;
+        background-color: #fff;
         width: 70%;
         height: 100%;
         position: absolute;
         left: -70%;
-        top: -19px;
     }
     .menu_lateral-lista{
         position: absolute;
@@ -217,25 +216,27 @@ body{
         width: 100%;
     }
     .menu_lateral-lista--item a{
-        background-color: #3d3d3d;
+        background-color: #eee;
         display: block;
-        color: #fff;
+        color: #ff7040;
         padding: 20px 5px;
         text-align: center;
         border-bottom: 1px solid #000;
-        border-top: 1px solid #000;
         font-weight: bold;
         font-size: 1.1rem;
     }
+    #item1{
+        border-top: 1px solid #000;
+    }
     .menu_lateral-lista--item a:hover{
-        background-color: #444;
+        background-color: #aaa;
     }
     .cabecalho_menu-lista--item a:visited{
-        background-color: #3d3d3d;
+        background-color: #aaa;
     }
     /* LOGO */
     .logo_imagem{
-        width: 150px;
+        width: 180px;
         height: 80px;
         margin-left: 30px;
     }

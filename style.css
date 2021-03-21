@@ -295,12 +295,11 @@ html{
         /* Cabecalho logo */
         .cabecalho_menu-logo{
             display: block;
+            width: 200px;
             margin: auto;
         }
         .cabecalho_menu-logo--imagem{
-            margin: auto;
             width: 200px;
-            height: 70px;
         }
         /* Cabecalho navbar */
         .cabecalho_menu-items{
@@ -313,8 +312,9 @@ html{
             display: flex;
             justify-content: space-evenly;
             align-items: center;
-            height: 30px;
+            height: 32px;
             width: 100%;
+            margin-top: 8px;
         }
         .cabecalho_menu-items--lista{
             padding: 0;
@@ -538,16 +538,15 @@ html{
             margin-left: 10px;
         }
         .checkbtn:checked ~ nav{
-            transform: translateX(99%);
+            transform: translateX(99%) translateY(43%);
             height: 100%;
         }
         .menu_lateral-items{
-            background-color: #3d3d3d;
+            background-color: #fff;
             width: 50%;
             height: 100%;
             position: absolute;
             left: -50%;
-            top: -19px;
         }
         .menu_lateral-lista{
             position: absolute;
@@ -556,18 +555,20 @@ html{
             width: 100%;
         }
         .menu_lateral-lista--item a{
-            background-color: #3d3d3d;
+            background-color: #eee;
             display: block;
-            color: #fff;
+            color: #ff7040;
             padding: 20px 5px;
             text-align: center;
             border-bottom: 1px solid #000;
-            border-top: 1px solid #000;
             font-weight: bold;
             font-size: 1.1rem;
         }
+        #item1{
+            border-top: 1px solid #000;
+        }
         .menu_lateral-lista--item a:hover{
-            background-color: #666;
+            background-color: #aaa;
         }
         .cabecalho_menu-lista--item a:visited{
             background-color: #3d3d3d;
