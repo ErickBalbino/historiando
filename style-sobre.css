@@ -181,6 +181,7 @@ body{
         display: flex;
         align-items: center;
         height: 100%;
+        background-attachment: fixed;
     }
     .checkbtn{
         display: none;
@@ -198,20 +199,20 @@ body{
         cursor: pointer;
     }
     .checkbtn:checked ~ nav{
-        transform: translateX(99%);
+        transform: translateX(99%) translateY(3%);
         height: 100%;
     }
     .menu_lateral-items{
         background-color: #3d3d3d;
-        width: 60%;
+        width: 70%;
         height: 100%;
         position: absolute;
-        left: -60%;
+        left: -70%;
         top: -19px;
     }
     .menu_lateral-lista{
         position: absolute;
-        top: 20%;
+        top: 30%;
         height: 100%;
         width: 100%;
     }
