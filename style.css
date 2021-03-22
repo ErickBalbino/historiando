@@ -43,16 +43,17 @@ html{
 .cabecalho_menu-items--lista a{
     color: #fff;
     font-size: 1.3rem;
+    transition: ease-in-out 0.2s;
 }
 .cabecalho_menu-items--lista a:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 /* Cabecalho login */
 .cabecalho_menu-login{
     width: 20%;
 }
-.btnSingIN{
-    font-size: 1.2rem;
+#btnSingUP{
+    font-size: 1.05rem;
     padding: 10px;
     margin-left: 10px;
     border-radius: 15px;
@@ -60,17 +61,18 @@ html{
     color: #fff;
     border: none;
     cursor: pointer;
+    transition: ease-in-out background-color 0.5s, color 0.5s;
 }
-.btnSingIN:hover{
-    background-color: #eee;
-    color: #00f;
-    box-shadow: 0.5px 0.5px 5px #000;
+#btnSingUP:hover{
+    background-color: #3f8dd6;
+    color: #fff;
+    box-shadow: 0.5px 0.5px 5px rgba(0, 0, 0, 0.446);
 }
-.btnSingIN:focus{
+#btnSingUP:focus{
     outline: none;
 }
-.btnSignUP{
-    font-size: 1.2rem;
+#btnSingIN{
+    font-size: 1.05rem;
     padding: 10px;
     margin-left: 10px;
     border-radius: 15px;
@@ -78,15 +80,17 @@ html{
     color: #fff;
     border: none;
     cursor: pointer;
+    transition: ease-in-out background-color 0.5s, color 0.5s;
 }
-.btnSignUP:hover{
-    background-color: #eee;
-    color: #00f;
-    box-shadow: 0.5px 0.5px 5px #000;
+#btnSingIN:hover{
+    background-color: #3f8dd6;
+    color: #fff;
+    box-shadow: 0.5px 0.5px 5px rgba(0, 0, 0, 0.446);
 }
-.btnSignUP:focus{
+#btnSingIN:focus{
     outline: none;
 }
+
 /* Conteudo do site */
 /* Apresentação */
 .conteudo_apresentacao{
@@ -808,9 +812,6 @@ html{
         /* Cabecalho logo */
         .cabecalho_menu-logo{
             width: 30%;
-        }
-        .cabecalho_menu-logo--imagem{
-            
         }
         /* Cabecalho navbar */
         .cabecalho_menu-items{
