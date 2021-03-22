@@ -10,6 +10,10 @@
     <meta http-equiv="author" content="Historiando">
     <link rel="shortcut icon" href="../imagens/favicon/favicon.png" type="image/x-icon">
 
+    <!-- FONTES EXTERNAS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+
     <!-- CSS -->
     <link rel="stylesheet" href="style-grecia-conteudo.css">
     <link rel="stylesheet" href="../../reset.css">
@@ -28,9 +32,29 @@
             <!-- Cabeçalho NavBar -->
             <div class="cabecalho_menu-items">
                 <ul class="cabecalho_menu-lista">
+                    <li class="cabecalho_menu-items--lista"><a class="cabecalho_menu-items--lista a" href="../../index.html">Home</a></li>
                     <li class="cabecalho_menu-items--lista"><a class="cabecalho_menu-items--lista a" href="../../sobre.html">Sobre</a></li> 
                     <li class="cabecalho_menu-items--lista"><a class="cabecalho_menu-items--lista a" href="#">Contato</a></li>
+                    <li class="cabecalho_menu-items--lista"><a class="cabecalho_menu-items--lista a" href="../../index.html#conteudos">Mais conteúdos</a></li>
                 </ul>
+            </div>
+             <!-- MENU LATERAL -->
+            <div class="cabecalho_menu-lateral">
+                <div class="menu_lateral">
+                    <input class="checkbtn" type="checkbox" id="chec">
+                    <label class="menu_lateral-label" for="chec">
+                        <img class="menu_lateral-imagem" id="imgMenu"
+                        src="../../imagens/menu/imagem-menu.png" alt="imagem do menu" width="40px" height="30px">
+                    </label>
+                    <nav class="menu_lateral-items">
+                        <ul class="menu_lateral-lista">
+                            <li class="menu_lateral-lista--item"><a id="item1" class="menu_lateral-lista--item a" href="index.html" target="_self">HOME</a></li>
+                            <li class="menu_lateral-lista--item"><a id="item2" class="menu_lateral-lista--item a" href="#contato">CONTATO</a></li>
+                            <li class="menu_lateral-lista--item"><a id="item3" class="menu_lateral-lista--item a" href="#">LINKS</a></li>
+                            <li class="menu_lateral-lista--item"><a id="item4" class="menu_lateral-lista--item a" href="#">EVENTOS</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
             <!-- Cabeçalho login -->
             <div class="cabecalho_menu-login">
@@ -43,8 +67,19 @@
             </div>
         </div>
     </header>
-    <main></main>
-        <!--Rodapé-->
+
+    <!-- CORPO DO SITE -->
+    <main>
+        <header class="conteudo_cabecalho">
+            <img class="conteudo_banner" src="imagens/background-grecia.jpg" alt="banner do site" width="1349px" height="450px">
+        </header>
+        <article class="conteudo_artigo">
+            <h1 class="artigo_titulo">TUDO SOBRE A GRÉCIA ANTIGA</h1>
+            <p class="artigo_paragrafo">Quando você ouve falar sobre Grécia Antiga, o que vem na sua mente? Deixa eu adivinhar, guerreiros com escudos e espadas, grandes templos, guerras gregas... Realmente você tem razão, a Grécia é tudo isso e muito mais, povos cheios de cultura e peculiaridades que nos influenciam até hoje, os criadores de expressões que utilizamos em nosso dia a dia, já ouviu falar de democracia? Os gregos foram os criadores dela, então sente-se confortavelmente e venha desfrutar do conhecimento sobre esse povo.</p>
+        </article>
+    </main>
+
+    <!--Rodapé-->
     <footer class="rodape">
         <div class="rodape_secao">
             <div class="rodape_introducao">
@@ -54,7 +89,7 @@
             <div class="rodape_redesSociais">
                 <h2 id="contato">Contato</h2>
                 <p>Para mais conteúdo, siga-me nas redes sociais!</p>
-                <a id="icone" href="https://www.facebook.com/profile.php?id=100036650766393" target="_blank" rel="noopener"><img class="icone_facebook" src="../../imagens/icones/facebook.png" alt="Logo do facebook" width="38px" height="38px"></a>
+                <a class="icone1" id="icone" href="https://www.facebook.com/profile.php?id=100036650766393" target="_blank" rel="noopener"><img class="icone_facebook" src="../../imagens/icones/facebook.png" alt="Logo do facebook" width="38px" height="38px"></a>
                 <a id="icone" href="https://www.linkedin.com/in/erick-balbino-da-silva-7038351a1/" target="_blank" rel="noopener"><img class="icone_linkedin" src="../../imagens/icones/linkedin.png" alt="Logo do linkedIn" width="38px" height="38px"></a>
                 <a id="icone" href="https://www.instagram.com/dev.eriick/" target="_blank" rel="noopener"><img class="icone_instagram" src="../../imagens/icones/instagram.png" alt="Logo do instagram" width="38px" height="38px"></a>
                 <a id="icone" href="https://www.github.com/ErickBalbino" target="_blank" rel="noopener"><img class="icone_github" src="../../imagens/icones/github.png" alt="Logo do GitHub" width="38px" height="38px"></a>
