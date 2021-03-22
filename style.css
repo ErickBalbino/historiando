@@ -299,7 +299,9 @@ html{
             margin: auto;
         }
         .cabecalho_menu-logo--imagem{
+            display: block;
             width: 200px;
+            padding-right: 25px;
         }
         /* Cabecalho navbar */
         .cabecalho_menu-items{
@@ -310,11 +312,11 @@ html{
         }
         .cabecalho_menu-lista{
             display: flex;
-            justify-content: space-evenly;
+            justify-content: center;
             align-items: center;
-            height: 32px;
+            height: 30px;
             width: 100%;
-            margin-top: 8px;
+            margin-top: 12px;
         }
         .cabecalho_menu-items--lista{
             padding: 0;
@@ -322,6 +324,7 @@ html{
         .cabecalho_menu-items--lista a{
             color: #fff;
             font-size: 1.1rem;
+            padding: 15px;
         }
         .cabecalho_menu-items--lista a:hover{
             transform: scale(1.1);
@@ -538,7 +541,8 @@ html{
         }
         .checkbtn:checked ~ nav{
             transform: translateX(99%);
-            transition: 0.5s ease-in-out;
+            transition: 0.5s ease-in-out;       
+            border-radius: 20px;
         }
         .menu_lateral-items{
             background-color: #fff;
