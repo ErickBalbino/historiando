@@ -204,6 +204,7 @@ body{
     }
     .checkbtn:checked ~ nav{
         transform: translateX(99%);
+        transition: 0.5s ease-in-out;
     }
     .menu_lateral-lista{
         position: absolute;
