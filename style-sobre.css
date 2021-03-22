@@ -260,7 +260,7 @@ body{
         font-size: 1.6rem;
         padding-top: 50px;
         text-decoration: underline #ffa500;
-        padding-left: 10px;
+        text-align: center;
     }
     .apresentacao-paragrafo{
         font-family: 'Times New Roman', Times, serif;
@@ -269,7 +269,7 @@ body{
         padding: 20px 0px 20px 0px;
         width: 90%;
         line-height: 1.5;
-        padding-left: 10px;
+        margin: auto;
     }
     .emoji{
         display: none;

@@ -312,7 +312,7 @@ html{
         }
         .cabecalho_menu-lista{
             display: flex;
-            justify-content: center;
+            justify-content: space-around;
             align-items: center;
             height: 30px;
             width: 100%;
@@ -324,7 +324,6 @@ html{
         .cabecalho_menu-items--lista a{
             color: #fff;
             font-size: 1.1rem;
-            padding: 15px;
         }
         .cabecalho_menu-items--lista a:hover{
             transform: scale(1.1);
