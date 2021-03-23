@@ -19,12 +19,6 @@ html{
     padding: 1rem 0;
     background-attachment: fixed;
 }
-.cabecalho_menu{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 /* Cabecalho logo */
 .cabecalho_menu-logo{
     width: 30%;
@@ -34,6 +28,7 @@ html{
 }
 /* Cabecalho navbar */
 .cabecalho_menu-items{
+    display: flex;
     width: 50%;
     height: 100%;
 }
@@ -95,6 +90,9 @@ html{
 }
 #btnSingIN:focus{
     outline: none;
+}
+.cabecalho_sidebar{
+    display: none;
 }
 
 /* Conteudo do site */
@@ -289,38 +287,24 @@ html{
     font-size: 1.1rem;
 }
 
-  /* MEDIAS QUERIES */
-    @media (max-width: 700px){
-        /* Cabecalho */
+    /* MEDIAS QUERIES */
+    @media(max-width: 700px){
+        /* inicio do cabeçalho */
         .cabecalho{
-            height: 40px;
             display: flex;
-            justify-content: space-between;
-            width: 100%;
-        }
-        .cabecalho_menu{
-            height: 100%;
-            display: flex;
-            width: 100%;
             justify-content: space-between;
             flex-direction: row-reverse;
+            width: 100%;
         }
-        /* Cabecalho logo */
-        .cabecalho_menu-logo{
-            display: flex;
-            width: 20%;
-        }
-        .cabecalho_menu-logo--imagem{
-            display: flex;
-            width: 200px;
-            height: 60px;
-            justify-content: end;
+        .cabecalho_menu-items{
+            display: none;
         }
         /* MENU LATERAL */
         .cabecalho_sidebar{
+            width: 100%;
             display: flex;
-            width: 80%;
             height: 100%;
+            z-index: 1;
         }
         .sidebar{
             display: flex;
@@ -330,7 +314,6 @@ html{
             background-color: #042331;
             height: 100%;
             transition: ease-in-out 0.5s;
-            z-index: 1;
         }
         .sidebar header{
             text-align: center;
@@ -343,6 +326,7 @@ html{
             position: absolute;
             width: 100%;
             height: 100%;
+            bottom: 20px;
         }
         .sidebar ul a{
             display: block;
@@ -367,11 +351,13 @@ html{
             display: none;
         }
         label #btn, label #cancel{
+            display: flex;
+            align-items: center;
             position: absolute;
             cursor: pointer;
         }
         label #btn{
-            top: 20px;
+            top: 25px;
             left: 25px;
             color: #000;
             font-size: 30px;
@@ -382,7 +368,6 @@ html{
             top: 20px;
             font-size: 20px;
             border: 2px solid #000;
-            background-color: #eee;
             color: #f00;
             padding: 5px;
         }
@@ -397,8 +382,17 @@ html{
         }
         #check:checked ~ label #cancel{
             transition: ease-in-out 0.5s;
-            left: 250px;
+            left: 220px;
         }    
+        /* LOGO */
+        .cabecalho_menu-logo{
+            width: 60%;
+        }
+        .logo_imagem{
+            width: 160px;
+            height: 80px;
+            margin-left: 30px;
+        }
         /* Cabecalho navbar */
         .cabecalho_menu-items{
             display: none;
@@ -408,9 +402,6 @@ html{
             display: none;
         }
         /* CONTEUDO APRESENTAÇÃO */
-        body{
-            height: 100%;
-        }
         .conteudo{
             width: 100%;
         }
@@ -563,21 +554,14 @@ html{
             width: 100%;
             flex-direction: row-reverse;
         }
-        .cabecalho_menu{
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
         /* Cabecalho logo */
         .cabecalho_menu-logo{
             display: flex;
             justify-content: space-between;
-            width: 20%;
-            margin-left: 120px;
+            width: 40%;
         }
         .cabecalho_menu-logo--imagem{
-            margin-left: 20px;
+            width: 200px;
         }
         /* Cabecalho navbar */
         .cabecalho_menu-items{
@@ -590,7 +574,7 @@ html{
         /* MENU LATERAL */
         .cabecalho_sidebar{
             display: flex;
-            width: 80%;
+            width: 60%;
             height: 100%;
         }
         .sidebar{
@@ -614,6 +598,7 @@ html{
             position: absolute;
             width: 100%;
             height: 100%;
+            bottom: 20px;
         }
         .sidebar ul a{
             display: block;
@@ -654,7 +639,6 @@ html{
             top: 20px;
             font-size: 20px;
             border: 2px solid #000;
-            background-color: #eee;
             color: #f00;
             padding: 5px;
         }
@@ -792,7 +776,7 @@ html{
         }
         .cabecalho_menu-logo--imagem{
             margin-left: 0px;
-            width: 250px;
+            width: 200px;
         }
         /* Cabecalho navbar */
         .cabecalho_menu-items{
