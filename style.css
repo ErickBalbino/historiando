@@ -301,7 +301,7 @@ html{
         }
         /* MENU LATERAL */
         .cabecalho_sidebar{
-            width: 50%;
+            width: 45%;
             display: flex;
             height: 100%;
             z-index: 1;
@@ -357,7 +357,7 @@ html{
             cursor: pointer;
         }
         label #btn{
-            top: 25px;
+            top: 30px;
             left: 25px;
             color: #000;
             font-size: 30px;
@@ -384,17 +384,17 @@ html{
             transition: ease-in-out 0.5s;
             left: 220px;
         }    
-        .sidebar ul li:checked ~ .sidebar{
-            position: absolute;
+        .sidebar ul li a:checked ~ .sidebar{
             left: -250px;
         }
         /* LOGO */
         .cabecalho_menu-logo{
-            width: 50%;
+            width: 55%;
         }
         .cabecalho_menu-logo--imagem{
             width: 160px;
             height: 80px;
+            margin-left: 0px;
         }
         /* Cabecalho navbar */
         .cabecalho_menu-items{

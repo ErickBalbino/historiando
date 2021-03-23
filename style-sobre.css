@@ -40,10 +40,11 @@ a{
     border-radius: 15px;
     width: 70px;
     justify-content: center;
+    transition: ease-in-out background-color 0.5s, color 0.5s;
 }
 .cabecalho_menu-lista--item a:hover{
     color: #fff;
-    transform: scale(1.05);
+    background-color: #3f8dd6;
 }
 .cabecalho_menu-lateral{
     display: none;
