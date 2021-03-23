@@ -1,4 +1,10 @@
 @charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
 
 html{
     scroll-behavior: smooth;
@@ -287,55 +293,114 @@ html{
     @media (max-width: 700px){
         /* Cabecalho */
         .cabecalho{
-            height: 70px;
-            background-color: #0085FF;
-            display: block;
+            height: 40px;
+            display: flex;
+            justify-content: space-between;
             width: 100%;
         }
         .cabecalho_menu{
-            display: block;
+            height: 100%;
+            display: flex;
             width: 100%;
+            justify-content: space-between;
+            flex-direction: row-reverse;
         }
         /* Cabecalho logo */
         .cabecalho_menu-logo{
-            display: block;
-            width: 200px;
-            margin: auto;
+            display: flex;
+            width: 20%;
         }
         .cabecalho_menu-logo--imagem{
-            display: block;
-            width: 200px;
-            padding-right: 25px;
-        }
-        /* Cabecalho navbar */
-        .cabecalho_menu-items{
-            display: block;
-            background-color: #943b3b;
-            border-bottom: 1px solid #fff;
-            width: 100%;
-        }
-        .cabecalho_menu-lista{
             display: flex;
-            justify-content: space-around;
-            align-items: center;
-            height: 30px;
-            width: 100%;
-            margin-top: 12px;
+            width: 200px;
+            height: 60px;
+            justify-content: end;
         }
-        .cabecalho_menu-items--lista{
-            padding: 0;
+        /* MENU LATERAL */
+        .cabecalho_sidebar{
+            display: flex;
+            width: 80%;
+            height: 100%;
         }
-        .cabecalho_menu-items--lista a{
+        .sidebar{
+            display: flex;
+            position: fixed;
+            left: -250px;
+            width: 250px;
+            background-color: #042331;
+            height: 100%;
+            transition: ease-in-out 0.5s;
+            z-index: 1;
+        }
+        .sidebar header{
+            text-align: center;
+            font-size: 1.5rem;
             color: #fff;
-            font-size: 1.1rem;
+            padding: 30px;
+            background-color: #063146;
         }
-        .cabecalho_menu-items--lista a:hover{
-            transform: scale(1.1);
+        .sidebar ul{
+            position: absolute;
+            width: 100%;
+            height: 100%;
         }
-        .cabecalho_menu-lateral{
+        .sidebar ul a{
+            display: block;
+            color: #fff;
+            height: 100%;
+            width: 100%;
+            text-align: left;
+            padding-left: 40px;
+            line-height: 60px;
+            box-sizing: border-box;
+            border-top: 1px solid rgb(200, 200, 200, 0.5);
+            border-bottom: 1px solid #000;
+            transition: ease-in-out 0.3s;
+        }
+        .sidebar li:hover a{
+            padding-left: 50px;
+        }
+        .sidebar ul li i{
+            margin-right: 10px;
+        }
+        #check{
             display: none;
         }
-        .menu_lateral-imagem{
+        label #btn, label #cancel{
+            position: absolute;
+            cursor: pointer;
+        }
+        label #btn{
+            top: 20px;
+            left: 25px;
+            color: #000;
+            font-size: 30px;
+        }
+        label #cancel{
+            z-index: 1111;
+            left: -250px;
+            top: 20px;
+            font-size: 20px;
+            border: 2px solid #000;
+            background-color: #eee;
+            color: #f00;
+            padding: 5px;
+        }
+        #check:checked ~ .sidebar{
+            transition: ease-in-out 0.5s;
+            transform: translateX(250px);
+        }
+        #check:checked ~ label #btn{
+            left: 250px;
+            opacity: 0;
+            pointer-events: none;
+        }
+        #check:checked ~ label #cancel{
+            transition: ease-in-out 0.5s;
+            left: 250px;
+        }    
+        /* Cabecalho navbar */
+        .cabecalho_menu-items{
             display: none;
         }
         /* LOGIN */
@@ -344,7 +409,7 @@ html{
         }
         /* CONTEUDO APRESENTAÇÃO */
         body{
-            overflow: auto;
+            height: 100%;
         }
         .conteudo{
             width: 100%;
@@ -357,7 +422,6 @@ html{
             display: block;
             padding: 5px;
             background-color: #feefd0;
-            margin-top: 17px;
         }
         .apresentacao-titulo{
             font-size: 1.6rem;
@@ -524,64 +588,89 @@ html{
             display: none;
         }
         /* MENU LATERAL */
-        .cabecalho_menu-lateral{
-            width: 70%;
+        .cabecalho_sidebar{
             display: flex;
-            align-items: center;
+            width: 80%;
             height: 100%;
-            justify-content: space-between;
         }
-        .checkbtn{
-            display: none;
-        }
-        .menu_lateral-label{
-            position: absolute;
-            cursor: pointer;
+        .sidebar{
+            display: flex;
+            position: fixed;
+            left: -250px;
+            width: 250px;
+            background-color: #042331;
+            height: 100%;
+            transition: ease-in-out 0.5s;
             z-index: 1;
         }
-        .menu_lateral-imagem{
-            margin-left: 10px;
+        .sidebar header{
+            text-align: center;
+            font-size: 1.5rem;
+            color: #fff;
+            padding: 30px;
+            background-color: #063146;
         }
-        .checkbtn:checked ~ nav{
-            transform: translateX(99%);
-            transition: 0.5s ease-in-out;       
-            border-radius: 20px;
-        }
-        .menu_lateral-items{
-            background-color: #fff;
-            width: 50%;
+        .sidebar ul{
+            position: absolute;
+            width: 100%;
             height: 100%;
-            position: absolute;
-            left: -50%;
-            top: -20px;
-            transition: ease-in-out 0.5s;
         }
-        .menu_lateral-lista{
-            position: absolute;
-            top: 25%;
+        .sidebar ul a{
+            display: block;
+            color: #fff;
             height: 100%;
             width: 100%;
-            background-color: #eee;
-        }
-        .menu_lateral-lista--item a{
-            display: block;
-            color: #ff7040;
-            padding: 20px 5px;
             text-align: center;
+            line-height: 60px;
+            box-sizing: border-box;
+            border-top: 1px solid rgb(200, 200, 200, 0.5);
             border-bottom: 1px solid #000;
-            font-weight: bold;
-            font-size: 1.1rem;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            transition: ease-in-out 0.3s;
         }
-        #item1{
-            border-top: 1px solid #000;
+        .sidebar li:hover a{
+            padding-left: 10px;
         }
-        .menu_lateral-lista--item a:hover{
-            background-color: #aaa;
+        .sidebar ul li i{
+            margin-right: 10px;
         }
-        .cabecalho_menu-lista--item a:visited{
-            background-color: #3d3d3d;
+        #check{
+            display: none;
         }
+        label #btn, label #cancel{
+            display: flex;
+            align-items: center;
+            position: absolute;
+            cursor: pointer;
+        }
+        label #btn{
+            top: 25px;
+            left: 25px;
+            color: #000;
+            font-size: 30px;
+        }
+        label #cancel{
+            z-index: 1111;
+            left: -220px;
+            top: 20px;
+            font-size: 20px;
+            border: 2px solid #000;
+            background-color: #eee;
+            color: #f00;
+            padding: 5px;
+        }
+        #check:checked ~ .sidebar{
+            transition: ease-in-out 0.5s;
+            transform: translateX(250px);
+        }
+        #check:checked ~ label #btn{
+            left: 250px;
+            opacity: 0;
+            pointer-events: none;
+        }
+        #check:checked ~ label #cancel{
+            transition: ease-in-out 0.5s;
+            left: 220px;
+        }    
         /* Conteudo do site */
         /* Apresentação */
         .conteudo_apresentacao{

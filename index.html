@@ -12,6 +12,7 @@
     <!-- Fontes externas -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
     <link rel="shortcut icon" href="imagens/favicon/favicon.png" type="image/x-icon">
 
@@ -50,21 +51,23 @@
             </div>
         </div>
         <!-- MENU LATERAL -->
-        <div class="cabecalho_menu-lateral">
-            <input class="checkbtn" type="checkbox" id="chec">
-            <label class="menu_lateral-label" for="chec">
-                <img class="menu_lateral-imagem" src="imagens/menu/imagem-menu.png" alt="imagem do menu" width="40px" height="30px">
+        <div class="cabecalho_sidebar">
+            <input type="checkbox" name="check" id="check">
+            <label for="check">
+                <i class="fa fa-bars" id="btn"></i>
+                <i class="fa fa-close" id="cancel"></i>
             </label>
-            <nav class="menu_lateral-items">
-                <ul class="menu_lateral-lista">
-                    <li class="menu_lateral-lista--item"><a id="item1" class="menu_lateral-lista--item a" href="sobre.html" target="_self">SOBRE</a></li>
-                    <li class="menu_lateral-lista--item"><a id="item2" class="menu_lateral-lista--item a" href="#conteudo">CONTEÚDO</a></li>
-                    <li class="menu_lateral-lista--item"><a id="item3" class="menu_lateral-lista--item a" href="#questoes">QUESTÕES</a></li>
-                    <li class="menu_lateral-lista--item"><a id="item4" class="menu_lateral-lista--item a" href="#contato">CONTATO</a></li>
-                    <li class="menu_lateral-lista--item"><a id="item5" class="menu_lateral-lista--item a" href="#">ENTRAR</a></li>
-                    <li class="menu_lateral-lista--item"><a id="item6" class="menu_lateral-lista--item a" href="#contato">REGISTRAR</a></li>
+            <div class="sidebar">
+                <ul>
+                    <header>MENU</header>
+                    <li><a href="index.html"><i class="fa fa-qrcode"></i>HOME</a></li>
+                    <li><a href="index.html#conteudos"><i class="fa fa-file-word-o"></i>CONTEUDOS</a></li>
+                    <li><a href="index.html#questoes"><i class="fa fa-book"></i>QUESTÕES</a></li>
+                    <li><a href="sobre.html"><i class="fa fa-question-circle"></i>SOBRE</a></li>
+                    <li><a href="#"><i class="fa fa-address-card-o"></i>REGISTRO</a></li>
+                    <li><a href="#"><i class="fa fa-external-link"></i>ENTRAR</a></li>
                 </ul>
-            </nav>
+            </div>
         </div>
     </header>
     <!-- Inicio do conteudo -->
