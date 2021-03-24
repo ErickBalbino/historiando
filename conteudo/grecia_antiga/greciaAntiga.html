@@ -12,7 +12,11 @@
 
     <!-- FONTES EXTERNAS -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" 
+    rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- CSS -->
     <link rel="stylesheet" href="style-grecia-conteudo.css">
@@ -23,60 +27,61 @@
 <body>
     <!-- Cabeçalho -->
     <header class="cabecalho">
-        <!-- Seção Cabeçalho -->
-        <div class="cabecalho_menu">
-            <!-- Cabeçalho logo -->
-            <div class="cabecalho_menu-logo">
-                <img class="cabecalho_menu-logo--imagem" src="../../imagens/logo/logo-historiando-principal.png" alt="logo do site historizando" width="260px" height="60px">
-            </div>
-            <!-- Cabeçalho NavBar -->
-            <div class="cabecalho_menu-items">
-                <ul class="cabecalho_menu-lista">
-                    <li class="cabecalho_menu-items--lista"><a class="cabecalho_menu-items--lista a" href="../../index.html">Home</a></li>
-                    <li class="cabecalho_menu-items--lista"><a class="cabecalho_menu-items--lista a" href="../../sobre.html">Sobre</a></li> 
-                    <li class="cabecalho_menu-items--lista"><a class="cabecalho_menu-items--lista a" href="#">Contato</a></li>
-                    <li class="cabecalho_menu-items--lista"><a class="cabecalho_menu-items--lista a" href="../../index.html#conteudos">Mais conteúdos</a></li>
+        <!-- Cabeçalho logo -->
+        <div class="cabecalho_menu-logo">
+            <img class="cabecalho_menu-logo--imagem" src="../../imagens/logo/logo-historiando-principal.png" alt="logo do site historizando" width="260px" height="60px">
+        </div>
+        <!-- Cabeçalho NavBar -->
+        <div class="cabecalho_menu-items">
+            <ul class="cabecalho_menu-lista">
+                <li class="cabecalho_menu-items--lista"><a class="cabecalho_menu-items--lista a" href="../../index.html">Home</a></li>
+                <li class="cabecalho_menu-items--lista"><a class="cabecalho_menu-items--lista a" href="../../sobre.html">Sobre</a></li> 
+                <li class="cabecalho_menu-items--lista"><a class="cabecalho_menu-items--lista a" href="#">Contato</a></li>
+                <li class="cabecalho_menu-items--lista"><a class="cabecalho_menu-items--lista a" href="../../index.html#conteudos">Mais conteúdos</a></li>
+            </ul>
+        </div>
+            <!-- MENU LATERAL -->
+        <div class="cabecalho_sidebar">
+            <input type="checkbox" name="check" id="check">
+            <label for="check">
+                <i class="fa fa-bars" id="btn"></i>
+                <i class="fa fa-close" id="cancel"></i>
+            </label>
+            <div class="sidebar">
+                <ul>
+                    <header>MENU</header>
+                    <li><a href="../../index.html"><i class="fa fa-qrcode"></i>HOME</a></li>
+                    <li><a href="../../index.html#conteudos"><i class="fa fa-file-word-o"></i>+ CONTEUDOS</a></li>
+                    <li><a href="index.html#questoes"><i class="fa fa-book"></i>+ QUESTÕES</a></li>
+                    <li><a href="sobre.html"><i class="fa fa-question-circle"></i>SOBRE</a></li>
+                    <li><a href="#"><i class="fa fa-address-card-o"></i>REGISTRO</a></li>
+                    <li><a href="#"><i class="fa fa-external-link"></i>ENTRAR</a></li>
                 </ul>
             </div>
-             <!-- MENU LATERAL -->
-            <div class="cabecalho_menu-lateral">
-                <div class="menu_lateral">
-                    <input class="checkbtn" type="checkbox" id="chec">
-                    <label class="menu_lateral-label" for="chec">
-                        <img class="menu_lateral-imagem" id="imgMenu"
-                        src="../../imagens/menu/imagem-menu.png" alt="imagem do menu" width="40px" height="30px">
-                    </label>
-                    <nav class="menu_lateral-items">
-                        <ul class="menu_lateral-lista">
-                            <li class="menu_lateral-lista--item"><a id="item1" class="menu_lateral-lista--item a" href="index.html" target="_self">HOME</a></li>
-                            <li class="menu_lateral-lista--item"><a id="item2" class="menu_lateral-lista--item a" href="#contato">CONTATO</a></li>
-                            <li class="menu_lateral-lista--item"><a id="item3" class="menu_lateral-lista--item a" href="#">LINKS</a></li>
-                            <li class="menu_lateral-lista--item"><a id="item4" class="menu_lateral-lista--item a" href="#">EVENTOS</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-            <!-- Cabeçalho login -->
-            <div class="cabecalho_menu-login">
-                <label for="btnSingIN">
-                    <input class="btnSingIN" type="submit" value="Sing In" id="btnSingIN">
-                </label>
-                <label for="btnSingUP">
-                    <input class="btnSignUP" type="submit" value="Sing Up" id="btnSingUP">
-                </label>
-            </div>
+        </div>
+        <!-- Cabeçalho login -->
+        <div class="cabecalho_menu-login">
+            <label for="btnSingIN">
+                <input class="btnSingIN" type="submit" value="ENTRAR" id="btnSingIN">
+            </label>
+            <label for="btnSingUP">
+                <input class="btnSignUP" type="submit" value="SIGN UP" id="btnSingUP">
+            </label>
         </div>
     </header>
 
     <!-- CORPO DO SITE -->
     <main>
         <header class="conteudo_cabecalho">
-            <img class="conteudo_banner" src="imagens/background-grecia.jpg" alt="banner do site" width="1349px" height="450px">
+            <img class="conteudo_banner" src="imagens/background-grecia.jpg" alt="banner do site">
         </header>
-        <article class="conteudo_artigo">
-            <h1 class="artigo_titulo">TUDO SOBRE A GRÉCIA ANTIGA</h1>
-            <p class="artigo_paragrafo">Quando você ouve falar sobre Grécia Antiga, o que vem na sua mente? Deixa eu adivinhar, guerreiros com escudos e espadas, grandes templos, guerras gregas... Realmente você tem razão, a Grécia é tudo isso e muito mais, povos cheios de cultura e peculiaridades que nos influenciam até hoje, os criadores de expressões que utilizamos em nosso dia a dia, já ouviu falar de democracia? Os gregos foram os criadores dela, então sente-se confortavelmente e venha desfrutar do conhecimento sobre esse povo.</p>
-        </article>
+        <section class="conteudo_artigo">
+            <h1>TUDO SOBRE A GRÉCIA ANTIGA</h1>
+            <p>Quando você ouve falar sobre Grécia Antiga, o que vem na sua mente? Deixa eu adivinhar, guerreiros com escudos e espadas, grandes templos, guerras gregas... Realmente você tem razão, a Grécia é tudo isso e muito mais, povos cheios de cultura e peculiaridades que nos influenciam até hoje, os criadores de expressões que utilizamos em nosso dia a dia, já ouviu falar de democracia? Os gregos foram os criadores dela, então sente-se confortavelmente e venha desfrutar do conhecimento sobre esse povo.</p>
+            <h2>Localização <i class="fa fa-globe"></i></h2>
+            <p>Antes de conhecermos os gregos, vamos nos situar, onde eles moravam? Eles moravam numa região chamada península balcânica, mas precisamente no sul dela, e também extenderam seus territórios para partes da Ásia Menor e regiões próximas ao Mar Negro.</p>
+            <img src="imagens/mapa-grecia.png" alt="">
+        </section>
     </main>
 
     <!--Rodapé-->

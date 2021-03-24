@@ -20,7 +20,7 @@
     align-items: center;
     justify-content: space-around;
 }
-.cabecalho_menu-lateral{
+.cabecalho_sidebar{
     display: none;
 }
 /* Cabecalho logo */
@@ -59,7 +59,7 @@
     width: 20%;
 }
 .btnSingIN{
-    font-size: 1.2rem;
+    font-size: 1.05rem;
     padding: 10px;
     margin-left: 10px;
     border-radius: 15px;
@@ -70,7 +70,7 @@
     transition: ease-in-out background-color 0.5s, color 0.5s;
 }
 .btnSingIN:hover{
-    background-color: #266197;
+    background-color: #3f8dd6;
     color: #fff;
     box-shadow: 0.5px 0.5px 5px rgba(0, 0, 0, 0.385);
 }
@@ -78,7 +78,7 @@
     outline: none;
 }
 .btnSignUP{
-    font-size: 1.2rem;
+    font-size: 1.05rem;
     padding: 10px;
     margin-left: 10px;
     border-radius: 15px;
@@ -89,7 +89,7 @@
     transition: ease-in-out background-color 0.5s, color 0.5s;
 }
 .btnSignUP:hover{
-    background-color: #266197;
+    background-color: #3f8dd6;
     color: #fff;
     box-shadow: 0.5px 0.5px 5px rgba(0, 0, 0, 0.433);
 }
@@ -98,29 +98,42 @@
 }
 /* CONTEUDO */
 .conteudo_banner{
-    background-size: cover;
+    background-image: url(imagens/background-grecia.jpg);
+    width: 1349px;
+    height: 450px;
     margin-bottom: 2px;
 }
 .conteudo_artigo{
     width: 95%;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.302);
-    margin: auto;
-    border-radius: 10px;
 }
-.artigo_titulo{
+.conteudo_artigo h1{
     font-family: 'Roboto Mono', monospace;
     font-size: 1.9rem;
     text-decoration: underline #0ff;
-    padding: 40px;
+    color: #a52a5a;
+    padding: 60px 0px 20px 40px;
 }
-.artigo_paragrafo{
-    font-size: 1.05rem;
-    font-family: Arial, Helvetica, sans-serif;
+.conteudo_artigo p{
+    font-size: 1.1rem;
+    font-family: 'M PLUS 1p', sans-serif;
+    line-height: 1.5;
     padding-left: 50px;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
     width: 80%;
     font-weight: bold;
     text-align: justify;
+}
+.conteudo_artigo h2{
+    font-size: 1.5rem;
+    padding: 0px 0px 15px 40px;
+    color: #a52a5a;
+}
+.conteudo_artigo i{
+    color: #008000;
+}
+img{
+    width: 600px;
+    height: 400px;
 }
 /* RODAPE */
 .rodape{
@@ -191,11 +204,8 @@
     .cabecalho{
         width: 100%;
         display: flex;
-    }
-    .cabecalho_menu{
-        display: flex;
-        width: 100%;
         flex-direction: row-reverse;
+        justify-content: space-around;
     }
     .cabecalho_menu-items{
         display: none;
@@ -204,63 +214,106 @@
         display: none;
     }
     /* MENU LATERAL */
-    .cabecalho_menu-lateral{
+    .cabecalho_sidebar{
         display: flex;
-        width: 60%;
         height: 100%;
+        z-index: 1;
+        width: 50%;
     }
-    .menu_lateral{
+    .sidebar{
         display: flex;
+        position: fixed;
+        left: -250px;
+        width: 250px;
+        background-color: #042331;
+        height: 100%;
+        transition: ease-in-out 0.5s;
+    }
+    .sidebar header{
+        text-align: center;
+        font-size: 1.5rem;
+        color: #fff;
+        padding: 30px;
+        background-color: #063146;
+    }
+    .sidebar ul{
+        position: absolute;
         width: 100%;
         height: 100%;
-        align-items: center;
     }
-    .checkbtn{
+    .sidebar ul a{
+        display: block;
+        color: #fff;
+        height: 100%;
+        width: 100%;
+        text-align: left;
+        padding-left: 40px;
+        line-height: 60px;
+        box-sizing: border-box;
+        border-top: 1px solid rgb(200, 200, 200, 0.5);
+        border-bottom: 1px solid #000;
+        transition: ease-in-out 0.3s;
+    }
+    .sidebar li:hover a{
+        padding-left: 50px;
+    }
+    .sidebar ul li i{
+        margin-right: 10px;
+    }
+    #check{
         display: none;
     }
-    .checkbtn:checked ~ nav{
-        transition: ease-in-out 0.5s;
-        transform: translateX(99%);
-    }
-    .menu_lateral-label{
-        display: flex;
-        position: absolute;
-        z-index: 1;
-        cursor: pointer;
-    }
-    .menu_lateral-imagem{
+    label #btn, label #cancel{
         display: flex;
         align-items: center;
-    }
-    .menu_lateral-items{
         position: absolute;
-        height: 100%;
-        width: 70%;
-        background-color: #fff;
+        cursor: pointer;
+    }
+    label #btn{
+        top: 25px;
+        left: 25px;
+        color: #000;
+        font-size: 26px;
+    }
+    label #cancel{
+        z-index: 1111;
+        left: -32px;
+        top: 25px;
+        font-size: 20px;
+        border: 2px solid #000;
+        color: #f00;
+        padding: 5px;
+    }
+    #check:checked ~ .sidebar{
         transition: ease-in-out 0.5s;
-        left: -70%;
+        transform: translateX(250px);
     }
-    .menu_lateral-lista{
-        position: absolute;
-        height: 100%;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        top: 25%;
+    #check:checked ~ label #btn{
+        left: 250px;
+        opacity: 0;
+        pointer-events: none;
     }
-    .menu_lateral-lista--item a{
-        display: block;
-        background-color: #eee;
-        color: #ff7040;
-        width: 100%;
+    #check:checked ~ label #cancel{
+        position: fixed;
+        transition: ease-in-out 0.5s;
+        left: 30px;
+    }    
+    .sidebar ul li a:checked ~ .sidebar{
+        left: -250px;
     }
     /* LOGO */
     .cabecalho_menu-logo{
         display: flex;
-        width: 40%;
+        width: 50%;
     }
     .cabecalho_menu-logo--imagem{
-        width: 160px;
+        width: 180px;
     }
     /* CONTEUDO */
+    body{
+        margin: 0;
+        padding: 0;
+    }
     .conteudo_banner{
         width: 100%;
         height: auto;
@@ -268,9 +321,22 @@
     .conteudo_artigo{
         margin-bottom: 2px;
     }
-    .artigo_titulo{
-        font-size: 1.6rem;
-        padding: 20px;
+    .conteudo_artigo h1{
+        font-size: 1.5rem;
+        padding: 50px 0px 20px 10px;
+    }
+    .conteudo_artigo p{
+        font-size: 1.05rem;
+        width: auto;
+        padding: 20px 5px 0px 10px;
+    }
+    .conteudo_artigo h2{
+        padding: 40px 0px 0px 10px;
+        font-size: 1.3rem;
+        color: #a52a5a;
+    }
+    .conteudo_artigo i{
+        color: #008000;
     }
     /* RODAPE */
     .rodape{
