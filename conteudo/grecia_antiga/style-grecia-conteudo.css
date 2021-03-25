@@ -109,8 +109,8 @@
 .conteudo_artigo h1{
     font-family: 'Roboto Mono', monospace;
     font-size: 1.9rem;
-    text-decoration: underline #0ff;
-    color: #a52a5a;
+    text-decoration: underline #ff7040;
+    color: #591730;
     padding: 60px 0px 20px 40px;
 }
 .conteudo_artigo p{
@@ -126,7 +126,7 @@
 .conteudo_artigo h2{
     font-size: 1.5rem;
     padding: 0px 0px 15px 40px;
-    color: #a52a5a;
+    color: #591730;
 }
 .conteudo_artigo i{
     color: #008000;
@@ -159,6 +159,7 @@
     font-size: 1.07rem;
     font-family: Arial, Helvetica, sans-serif;
     padding-top: 5px;
+    margin-bottom: 40px;
 }
 /* RODAPE */
 .rodape{
@@ -243,7 +244,7 @@
         display: flex;
         height: 100%;
         z-index: 1;
-        width: 50%;
+        width: 45%;
     }
     .sidebar{
         display: flex;
@@ -329,10 +330,10 @@
     /* LOGO */
     .cabecalho_menu-logo{
         display: flex;
-        width: 50%;
+        width: 55%;
     }
     .cabecalho_menu-logo--imagem{
-        width: 180px;
+        width: 170px;
         margin-left: 0px;
     }
     /* CONTEUDO */
@@ -355,7 +356,7 @@
     .conteudo_artigo p{
         font-size: 1.05rem;
         width: auto;
-        padding: 20px 5px 0px 10px;
+        padding: 20px 10px 0px 10px;
     }
     .conteudo_artigo h2{
         padding: 40px 0px 0px 10px;
@@ -370,7 +371,7 @@
     }
     .conteudo_artigo figure{
         width: 90%;
-        height: 300px;
+        height: 260px;
         background-color: #f5f5f5;
         border: 1px solid #ccc;
         display: flex;
