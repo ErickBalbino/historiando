@@ -296,7 +296,7 @@ html{
             justify-content: space-between;
             flex-direction: row-reverse;
             width: 100%;
-            height: 50px;
+            height: 40px;
         }
         .cabecalho_menu-items{
             display: none;
@@ -359,7 +359,7 @@ html{
             cursor: pointer;
         }
         label #btn{
-            top: 30px;
+            top: 25px;
             left: 25px;
             color: #000;
             font-size: 26px;
@@ -396,7 +396,7 @@ html{
         }
         .cabecalho_menu-logo--imagem{
             width: 160px;
-            height: 80px;
+            height: 60px;
             margin-left: 0px;
         }
         /* Cabecalho navbar */
@@ -554,7 +554,6 @@ html{
         /* Cabecalho */
         .cabecalho{
             height: 60px;
-            background-color: #0085FF;
             display: flex;
             align-items: center;
             width: 100%;
@@ -759,11 +758,10 @@ html{
         }         
     }
 
-    @media(min-width:801px) and (max-width:950px){
+    @media(min-width:780px) and (max-width:950px){
         /* Cabecalho */
         .cabecalho{
             height: 60px;
-            background-color: #0085FF;
             display: flex;
             align-items: center;
             width: 100%;
@@ -877,12 +875,9 @@ html{
         /* CABECALHO */
         .cabecalho{
             height: 60px;
-            background-color: #0085FF;
             display: flex;
             align-items: center;
             width: 100%;
-            padding: 1rem 0;
-            background-attachment: fixed;
         }
         .cabecalho_menu{
             width: 100%;
@@ -912,9 +907,6 @@ html{
             color: #fff;
             font-size: 1.1rem;
         }
-        .cabecalho_menu-items--lista a:hover{
-            transform: scale(1.1);
-        }
         /* Cabecalho login */
         .cabecalho_menu-login{
             width: 20%;
@@ -923,35 +915,11 @@ html{
             font-size: 1.05rem;
             padding: 8px;
             border-radius: 15px;
-            background-color: #00f;
-            color: #fff;
-            border: none;
-            cursor: pointer;
-        }
-        .btnSingIN:hover{
-            background-color: #eee;
-            color: #00f;
-            box-shadow: 0.5px 0.5px 5px #000;
-        }
-        .btnSingIN:focus{
-            outline: none;
         }
         .btnSignUP{
             font-size: 1.05rem;
             padding: 8px;
             border-radius: 15px;
-            background-color: #00f;
-            color: #fff;
-            border: none;
-            cursor: pointer;
-        }
-        .btnSignUP:hover{
-            background-color: #eee;
-            color: #00f;
-            box-shadow: 0.5px 0.5px 5px #000;
-        }
-        .btnSignUP:focus{
-            outline: none;
         }
         /* Conteudo do site */
         /* Apresentação */

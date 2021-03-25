@@ -350,7 +350,7 @@
         margin-bottom: 2px;
     }
     .conteudo_artigo h1{
-        font-size: 1.5rem;
+        font-size: 1.6rem;
         padding: 50px 0px 20px 10px;
     }
     .conteudo_artigo p{
@@ -360,8 +360,8 @@
     }
     .conteudo_artigo h2{
         padding: 40px 0px 0px 10px;
-        font-size: 1.3rem;
-        color: #a52a5a;
+        font-size: 1.4rem;
+        color: #591730;
     }
     .conteudo_artigo i{
         color: #008000;
@@ -402,6 +402,7 @@
     .rodape{
         background-color: #ff7040;
         color: #fff;
+        margin-top: 60px;
     }
     .rodape_secao{
         display: block;
@@ -437,15 +438,310 @@
         padding: 5px;
         margin-bottom: 15px;
         margin-top: 50px;
+        font-size: 1.6rem;
     }
     .rodape_endereco p{
         padding-left: 10px;
         text-align: justify;
         margin-bottom: 50px;
+        font-size: 1.1rem;
+        font-style: italic;
     }
     .rodape_copy{
         text-align: center;
         margin-top: 30px;
         font-size: 1.1rem;
     }        
+}
+@media(min-width: 769px) and (max-width: 880px){
+    /* CABECALHO */
+    .cabecalho_menu-logo{
+        width: 38%;
+    }
+    .cabecalho_menu-logo--imagem{
+        width: 160px;
+        margin-left: 8px;
+        padding: 0;
+    }
+    .cabecalho_menu-items{
+        width: 38%;
+        justify-content: center;
+    }
+    .cabecalho_menu-lista{
+        font-size: 0.9rem;
+        width: 70%;
+        justify-content: center;
+        padding: 10px;
+    }
+    .cabecalho_menu-items--lista a{
+        font-size: 1.05rem;
+        font-weight: bold;
+    }
+    .cabecalho_menu-login{
+        width: 27%;
+        margin-left: 20px;
+        justify-content: flex-end;
+    }
+    .btnSingIN{
+        font-size: 0.6rem;
+        font-weight: bold;
+    }
+    .btnSignUP{
+        font-size: 0.6rem;
+        margin-right: 10px;
+        font-weight: bold;
+    }
+    /* CONTEUDO */
+    .conteudo_banner{
+        width: 100%;
+        height: 350px;
+    }
+    /* RODAPE */
+    .rodape{
+        background-color: #3d3d3d;
+        color: #0ff;
+        padding: 50px 0px 30px 0px;
+    }
+    .rodape_secao{
+        display: flex;
+        justify-content: space-around;
+    }
+    .rodape_introducao{
+        width: 35%;
+        margin-right: 25px;
+        margin-left: 10px;
+    }
+    .rodape_introducao h2{
+        font-size: 1.7rem;
+        margin-bottom: 10px;
+    }
+    .rodape_introducao p{ 
+        font-size: 1.1rem;
+        line-height: 1.15;
+    }
+    .rodape_redesSociais{
+        width: 35%;
+        margin-right: 25px;
+    }
+    .rodape_redesSociais h2{
+        font-size: 1.7rem;
+        margin-bottom: 10px;
+    }
+    .rodape_redesSociais p{
+        font-size: 1.1rem;
+        line-height: 1.15;
+    }
+    .rodape_endereco{
+        width: 30%;
+    }
+    .rodape_endereco h2{
+        font-size: 1.7rem;
+        margin-bottom: 10px;
+    }
+    .rodape_endereco p{
+        font-size: 1.1rem;
+        line-height: 1.15;
+    }
+    .rodape_copy{
+        text-align: center;
+        margin-top: 50px;
+        font-size: 1.1rem;
+    }
+}
+
+@media(min-width: 881px) and (max-width: 1200px){
+    /* CABECALHO */
+    .cabecalho_sidebar{
+        display: none;
+    }
+    /* Cabecalho logo */
+    .cabecalho_menu-logo{
+        width: 30%;
+    }
+    .cabecalho_menu-logo--imagem{
+        width: 180px;
+    }
+    /* Cabecalho navbar */
+    .cabecalho_menu-items{
+        display: flex;
+        width: 45%;
+        justify-content: center;
+    }
+    .cabecalho_menu-items--lista a{
+        font-size: 1.1rem;
+    }
+    /* Cabecalho login */
+    .cabecalho_menu-login{
+        display: flex;
+        width: 25%;
+        justify-content: flex-end;
+    }
+    .btnSingIN{
+        font-size: 0.8rem;
+    }
+    .btnSignUP{
+        font-size: 0.8rem;
+        margin-right: 10px;
+    }
+    /* CONTEUDO */
+    .conteudo_banner{
+        width: 100%;
+    }
+    /* RODAPE */
+    .rodape{
+        background-color: #3d3d3d;
+        color: #0ff;
+        padding: 50px 0px 30px 0px;
+    }
+    .rodape_secao{
+        display: flex;
+        justify-content: space-around;
+    }
+    .rodape_introducao{
+        width: 35%;
+        margin-right: 25px;
+        margin-left: 10px;
+    }
+    .rodape_introducao h2{
+        font-size: 1.7rem;
+        margin-bottom: 10px;
+    }
+    .rodape_introducao p{ 
+        font-size: 1.1rem;
+        line-height: 1.15;
+    }
+    .rodape_redesSociais{
+        width: 35%;
+        margin-right: 25px;
+    }
+    .rodape_redesSociais h2{
+        font-size: 1.7rem;
+        margin-bottom: 10px;
+    }
+    .rodape_redesSociais p{
+        font-size: 1.1rem;
+        line-height: 1.15;
+    }
+    .rodape_endereco{
+        width: 30%;
+    }
+    .rodape_endereco h2{
+        font-size: 1.7rem;
+        margin-bottom: 10px;
+    }
+    .rodape_endereco p{
+        font-size: 1.1rem;
+        line-height: 1.15;
+    }
+    .rodape_copy{
+        text-align: center;
+        margin-top: 50px;
+        font-size: 1.1rem;
+    }
+}
+
+@media(min-width: 1201px) and (max-width:1365px){
+    /* Cabecalho */
+    .cabecalho{
+        height: 70px;
+        background-color: #0085FF;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.365);
+    }
+    .cabecalho_sidebar{
+        display: none;
+    }
+    /* Cabecalho logo */
+    .cabecalho_menu-logo{
+        width: 30%;
+    }
+    .cabecalho_menu-logo--imagem{
+        margin-left: 20px;
+        width: 260px;
+    }
+    /* Cabecalho navbar */
+    .cabecalho_menu-items{
+        display: flex;
+        width: 50%;
+    }
+    .cabecalho_menu-lista{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+    }
+    .cabecalho_menu-items--lista{
+        display: flex;
+        padding-right: 30px;
+    }
+    .cabecalho_menu-items--lista a{
+        color: #fff;
+        font-size: 1.3rem;
+        transition: ease-in-out 0.2s;
+    }
+    /* Cabecalho login */
+    .cabecalho_menu-login{
+        display: flex;
+        width: 20%;
+    }
+    .conteudo_banner{
+        width: 100%;
+    }
+    /* CONTEUDO */
+    .conteudo_banner{
+        width: 100%;
+    }
+    /* RODAPE */
+    .rodape{
+        background-color: #3d3d3d;
+        color: #0ff;
+        padding: 50px 0px 30px 0px;
+    }
+    .rodape_secao{
+        display: flex;
+        justify-content: space-around;
+    }
+    .rodape_introducao{
+        width: 40%;
+        margin-right: 25px;
+        margin-left: 10px;
+    }
+    .rodape_introducao h2{
+        font-size: 1.7rem;
+        margin-bottom: 10px;
+    }
+    .rodape_introducao p{ 
+        font-size: 1.1rem;
+        line-height: 1.15;
+    }
+    .rodape_redesSociais{
+        width: 35%;
+        margin-right: 25px;
+    }
+    .rodape_redesSociais h2{
+        font-size: 1.7rem;
+        margin-bottom: 10px;
+    }
+    .rodape_redesSociais p{
+        font-size: 1.1rem;
+        line-height: 1.15;
+    }
+    .rodape_endereco{
+        width: 25%;
+    }
+    .rodape_endereco h2{
+        font-size: 1.7rem;
+        margin-bottom: 10px;
+    }
+    .rodape_endereco p{
+        font-size: 1.1rem;
+        line-height: 1.15;
+    }
+    .rodape_copy{
+        text-align: center;
+        margin-top: 50px;
+        font-size: 1.1rem;
+    }
 }
