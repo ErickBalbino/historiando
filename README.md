@@ -5,6 +5,7 @@
 * HTML
 * CSS
 * JAVASCRIPT
+* JQUERY
 
  Contém:
 * Conteúdos mais importantes de história.
