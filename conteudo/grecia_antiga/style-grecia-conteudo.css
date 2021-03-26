@@ -216,7 +216,7 @@ span{
 }
 .div_deus .dionisio-img{
     display: flex;
-    width: 80px;
+    width: 90px;
     height: 170px;
 }
 .div_deus .apolo-img{
@@ -256,7 +256,7 @@ span{
 }
 .rodape_introducao{
     width: 40%;
-    margin-left: 15px;
+    margin-left: 30px;
 }
 .rodape_introducao h2{
     font-size: 1.7rem;
@@ -268,7 +268,7 @@ span{
 }
 .rodape_redesSociais{
     width: 40%;
-    margin-left: 20px;
+    margin-left: 40px;
 }
 .rodape_redesSociais h2{
     font-size: 1.7rem;
@@ -1024,8 +1024,6 @@ span{
     }
     /* RODAPE */
     .rodape{
-        background-color: #3d3d3d;
-        color: #0ff;
         padding: 50px 0px 30px 0px;
     }
     .rodape_secao{
