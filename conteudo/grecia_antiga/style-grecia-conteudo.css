@@ -515,7 +515,7 @@ span{
         display: flex;
         justify-content: space-around;
         align-items: center;
-        width: 390px;
+        width: 330px;
         height: 200px;
         background-color: #f5f5f5;
         border-radius: 15px;
@@ -549,22 +549,27 @@ span{
     .div_deus .atena-img{
         display: flex;
         width: 40px;
-        height: 120px;
+        height: 110px;
     }
     .div_deus .poseidon-img{
         display: flex;
-        width: 40px;
+        width: 20px;
         height: 120px;
+        margin-right: 40px;
     }
     .div_deus .dionisio-img{
         display: flex;
         width: 40px;
         height: 120px;
+        margin-right: 30px;
     }
     .div_deus .apolo-img{
         display: flex;
         width: 40px;
         height: 120px;
+    }
+    .perfil_txt{
+        font-size: 1.05rem;
     }
     /* RODAPE */
     .rodape{
