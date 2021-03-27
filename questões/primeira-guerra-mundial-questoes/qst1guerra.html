@@ -10,6 +10,9 @@
     <meta http-equiv="author" content="Historizando">
     <link rel="shortcut icon" href="imagens/favicon/favicon.png" type="image/x-icon">
 
+    <!-- FONTES EXTERNAS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <!--CSS-->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="reset.css">
@@ -18,25 +21,49 @@
 
 </head>
 <body>
-    <!--Cabecalho mobile-->
-    <div class="cabecalho_mobile">
-        <picture class="cabecalho_logo-site--mobile">
-            <img src="imagens/logo/logo-historiando-principal.png" alt="cabecalho do site mobile" width="200px" height="60px"> 
-        </picture>
-    </div>
-    <!--Cabecalho desktop-->
+    <!-- Cabeçalho -->
     <header class="cabecalho">
-        <!--Cabecalho Menu-->
-        <nav class="cabecalho_menu">
+        <!-- Cabeçalho logo -->
+        <div class="cabecalho_menu-logo">
+            <img class="cabecalho_menu-logo--imagem" src="../../imagens/logo/logo-historiando-principal.png" alt="logo do site historizando" width="260px" height="60px">
+        </div>
+        <!-- Cabeçalho NavBar -->
+        <div class="cabecalho_menu-items">
             <ul class="cabecalho_menu-lista">
-                <li id="item1" class="cabecalho_menu-lista--item"><a class="cabecalho_menu-lista--item a" href="../../index.html">Home</a></li>
-                <li id="item2" class="cabecalho_menu-lista--item"><a class="cabecalho_menu-lista--item a" href="#contato">Contato</a></li>
+                <li class="cabecalho_menu-items--lista"><a class="cabecalho_menu-items--lista a" href="../../index.html">Home</a></li>
+                <li class="cabecalho_menu-items--lista"><a class="cabecalho_menu-items--lista a" href="../../sobre.html">Sobre</a></li> 
+                <li class="cabecalho_menu-items--lista"><a class="cabecalho_menu-items--lista a" href="#">Contato</a></li>
+                <li class="cabecalho_menu-items--lista"><a class="cabecalho_menu-items--lista a" href="../../index.html#conteudos">Mais conteúdos</a></li>
             </ul>
-        </nav>
-        
-        <picture class="cabecalho_logo-site">
-            <img src="../primeira-guerra-mundial-questoes/imagens/logo/logo-historiando-principal.png" alt="logo do site" width="250px" height="80px">
-        </picture>
+        </div>
+            <!-- MENU LATERAL -->
+        <div class="cabecalho_sidebar">
+            <input type="checkbox" name="check" id="check">
+            <label for="check">
+                <i class="fa fa-bars" id="btn"></i>
+                <i class="fa fa-close" id="cancel"></i>
+            </label>
+            <div class="sidebar">
+                <ul>
+                    <header>MENU</header>
+                    <li><a href="../../index.html"><i class="fa fa-qrcode"></i>HOME</a></li>
+                    <li><a href="../../index.html#conteudos"><i class="fa fa-file-word-o"></i>+ CONTEUDOS</a></li>
+                    <li><a href="../../index.html#questoes"><i class="fa fa-book"></i>+ QUESTÕES</a></li>
+                    <li><a href="../../sobre.html"><i class="fa fa-question-circle"></i>SOBRE</a></li>
+                    <li><a href="#"><i class="fa fa-address-card-o"></i>REGISTRO</a></li>
+                    <li><a href="#"><i class="fa fa-external-link"></i>ENTRAR</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- Cabeçalho login -->
+        <div class="cabecalho_menu-login">
+            <label for="btnSingIN">
+                <input class="btnSingIN" type="submit" value="ENTRAR" id="btnSingIN">
+            </label>
+            <label for="btnSingUP">
+                <input class="btnSignUP" type="submit" value="SIGN UP" id="btnSingUP">
+            </label>
+        </div>
     </header>
     <main>
         <!--Inicio do conteudo-->
@@ -47,7 +74,7 @@
                 <p class="introducao">A Primeira Guerra Mundial, foi um conflito armado que ocorreu durantes quatro anos, entre 1914 e 1918, envolvendo vários paises, mas principalmente dois blocos: A <mark>Triplice Aliança</mark>, formada por Alemanha, Italia e o Império Austro-Hungáro, e do outro lado a <mark>Triplice Entente</mark>, formada pela França, Rússia e Inglaterra(Grã-Bretanha).</p>
                 <!--Questões-->
                 <!--Questao 01-->
-                <p class="txtquest1">01) O episódio que desencadeou o começo da primeira guerra mundial foi a morte do principe herdeiro do império Austro-Hungáro, Franciso Ferdinando, que morreu em um atentado a bala, quando visitava a cidade de Sarajevo, capital da Bósnia. Neste episódio citado, quem foi o(a) responsável pela morte de Francisco Ferdinando?</p>
+                <p class="txtquest">01) O episódio que desencadeou o começo da primeira guerra mundial foi a morte do principe herdeiro do império Austro-Hungáro, Franciso Ferdinando, que morreu em um atentado a bala, quando visitava a cidade de Sarajevo, capital da Bósnia. Neste episódio citado, quem foi o(a) responsável pela morte de Francisco Ferdinando?</p>
                 <div class="alternativas">
                     <input type="radio" name="qst1" id="alt1q1">
                     <label for="alt1q1">Gravilo Princip</label> <br>
@@ -59,7 +86,7 @@
                     <label for="alt4q1">Jhon Kennedy</label>
                 </div>
                 <input class="btnverificar" type="submit" value="Verificar" onclick="verificarQuestao01()">
-                <div class="resposta1" id="resposta1"></div>
+                <div class="resposta" id="resposta1"></div>
                 <details>
                     <summary>Questão Comentada</summary>
                     <p>A alternativa correta é a Letra (A). <br> 
@@ -67,7 +94,7 @@
                 </details>
 
                 <!--Questao 02-->
-                <p class="txtquest2">02) Após o inicio da primeira guerra mundial, travou se um intenso combate entre os paises. Esses combates foram divididos em três importantes fases, quais são elas, respectivamente?</p>
+                <p class="txtquest">02) Após o inicio da primeira guerra mundial, travou se um intenso combate entre os paises. Esses combates foram divididos em três importantes fases, quais são elas, respectivamente?</p>
                 <div class="alternativas">
                     <input type="radio" name="qst2" id="alt1q2">
                     <label for="alt1q2">Guerra de Posições, Ofensivas de 1918 e Dia D.</label> <br>
@@ -79,7 +106,7 @@
                     <label for="alt4q4">Guerra de Movimento, Ofensivas de 1918 e Guerra de Posições.</label>
                 </div>
                 <input class="btnverificar" type="submit" value="Verificar" onclick="verificarQuestao02()">
-                <div class="resposta2" id="resposta2"></div>
+                <div class="resposta" id="resposta2"></div>
                 <details>
                     <summary>Questão Comentada</summary>
                     <p>A alternativa correta é a letra (C). <br>
@@ -87,7 +114,7 @@
                 </details>
 
                 <!--Questao 03-->
-                <p class="txtquest3">03) A terrível Grande Guerra, chamada assim pois não sabiam que ia ter uma segunda guerra, deixou milhões de mortos direta e indiretamente, foi uma das maiores atrocidades da humanidade até então vistas. Tais fatos, realçaram a importância da criação de uma entidade neutra, com a função de mediar a paz entre os paises, sendo assim, após o fim da primeira guerra mundial foi criado um orgão com essa função, qual era o seu nome?</p>
+                <p class="txtquest">03) A terrível Grande Guerra, chamada assim pois não sabiam que ia ter uma segunda guerra, deixou milhões de mortos direta e indiretamente, foi uma das maiores atrocidades da humanidade até então vistas. Tais fatos, realçaram a importância da criação de uma entidade neutra, com a função de mediar a paz entre os paises, sendo assim, após o fim da primeira guerra mundial foi criado um orgão com essa função, qual era o seu nome?</p>
                 <div class="alternativas">
                     <input type="radio" name="qst3" id="alt1q3">
                     <label for="alt1q3">ONU - Organização das Nações Unidas</label> <br>
@@ -99,7 +126,7 @@
                     <label for="alt4q3">Tribunal de Nuremberg</label>
                 </div>
                 <input class="btnverificar" type="submit" value="Verificar" onclick="verificarQuestao03()">
-                <div class="resposta3" id="resposta3"></div>
+                <div class="resposta" id="resposta3"></div>
                 <details>
                     <summary>Questão Comentada</summary>
                     <p>A alternativa correta é a letra (C). <br>
@@ -107,7 +134,7 @@
                 </details>
 
                 <!--Questao 04-->
-                <p class="txtquest4">04) Dentre os desdobramentos político-econômicos imediatos na ordem internacional produzidos pela Primeira Guerra Mundial (1914-1918), é correto apontar:</p>
+                <p class="txtquest">04) Dentre os desdobramentos político-econômicos imediatos na ordem internacional produzidos pela Primeira Guerra Mundial (1914-1918), é correto apontar:</p>
                 <div class="alternativas">
                     <input type="radio" name="qst4" id="alt1q4">
                     <label for="alt1q4">O fim dos privilégios aduaneiros da França no comércio com a Alemanha.</label> <br>
@@ -116,17 +143,17 @@
                     <input type="radio" name="qst4" id="alt3q4">
                     <label for="alt3q4">A criação da Iugoslávia, como decorrência das questões políticas dos Bálcãs.</label> <br>
                     <input type="radio" name="qst4" id="alt4q4">
-                    <label for="alt4q4"> a incorporação da Hungria e da Tchecoslováquia aos domínios austríacos.</label>
+                    <label for="alt4q4"> A incorporação da Hungria e da Tchecoslováquia aos domínios austríacos.</label>
                 </div>
                 <input class="btnverificar" type="submit" value="Verificar" onclick="verificarQuestao04()">
-                <div class="resposta4" id="resposta4"></div>
+                <div class="resposta" id="resposta4"></div>
                 <details>
                     <summary>Questao Comentada</summary>
                     <p>Reino da Iugoslávia foi uma tentativa, ainda que artificial, de manter as nações balcânicas unidas.</p>
                 </details>
                 
                 <!--Questao 05-->
-                <p class="txtquest5">05) A Primeira Guerra se caracterizou pelo uso de várias tecnologias mortíferas no campo de batalha. Dentre as quais podemos destacar:</p>
+                <p class="txtquest">05) A Primeira Guerra se caracterizou pelo uso de várias tecnologias mortíferas no campo de batalha. Dentre as quais podemos destacar:</p>
                 <div class="alternativas">
                     <input type="radio" name="qst5" id="alt1q5">
                     <label for="alt1q5">Armas químicas</label> <br>
@@ -138,7 +165,7 @@
                     <label for="alt4q5">Navios de guerra</label>
                 </div>
                 <input class="btnverificar" type="submit" value="Verificar" onclick="verificarQuestao05()">
-                <div class="resposta5" id="resposta5"></div>
+                <div class="resposta" id="resposta5"></div>
                 <details class="detailsFinal">
                     <summary>Questão Comentada</summary>
                     <p>As armas químicas - especialmente os gases - foram empregados em solo europeu pela primeira vez neste conflito. As outras armas citadas nas demais alternativas já existiam antes desta guerraAs armas químicas - especialmente os gases - foram empregados em solo europeu pela primeira vez neste conflito. As outras armas citadas nas demais alternativas já existiam antes desta guerra</p>

@@ -1,45 +1,99 @@
 @charset "utf-8";
 
-/*Cabeçalho*/
+/* Cabecalho */
 .cabecalho{
+    height: 70px;
+    background-color: #0085FF;
     display: flex;
-    height: 100px;
-    background: #0085ff;
     align-items: center;
-    border-bottom: 1px solid #000;
+    justify-content: space-around;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.365);
 }
-.cabecalho_menu-lista--item{
-    display: inline;
-    margin-left: 5px;
+.cabecalho_menu{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
-#item1{
-    margin-left: 20px;
-}
-.cabecalho_menu-lista--item a{
-    font-size: 17px;
-    background-color: #22bb36;
-    padding: 13px;
-    border-radius: 30px;
-    font-size: 18px;
-    color: #fff;
-    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.521);
-}
-.cabecalho_menu-lista--item a:hover{
-    position: relative;
-    background-color: #59da6a;
-    transition: ease-in-out 0.6s ;
-}
-.cabecalho_logo-site{
-    margin-left: 870px;
-    border-radius: 5px;
-}
-.cabecalho_mobile{
+.cabecalho_sidebar{
     display: none;
 }
-
+/* Cabecalho logo */
+.cabecalho_menu-logo{
+    width: 35%;
+}
+.cabecalho_menu-logo--imagem{
+    margin-left: 20px;
+}
+/* Cabecalho navbar */
+.cabecalho_menu-items{
+    display: flex;
+    width: 45%;
+}
+.cabecalho_menu-lista{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+.cabecalho_menu-items--lista{
+    display: flex;
+    padding-right: 30px;
+}
+.cabecalho_menu-items--lista a{
+    color: #fff;
+    font-size: 1.3rem;
+    transition: ease-in-out 0.2s;
+}
+.cabecalho_menu-items--lista a:hover{
+    transform: scale(1.05);
+}
+/* Cabecalho login */
+.cabecalho_menu-login{
+    display: flex;
+    width: 20%;
+}
+.btnSingIN{
+    font-size: 1.05rem;
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 15px;
+    background-color: #00f;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: ease-in-out background-color 0.5s, color 0.5s;
+}
+.btnSingIN:hover{
+    background-color: #3f8dd6;
+    color: #fff;
+    box-shadow: 0.5px 0.5px 5px rgba(0, 0, 0, 0.385);
+}
+.btnSingIN:focus{
+    outline: none;
+}
+.btnSignUP{
+    font-size: 1.05rem;
+    padding: 10px;
+    margin-left: 10px;
+    border-radius: 15px;
+    background-color: #00f;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: ease-in-out background-color 0.5s, color 0.5s;
+}
+.btnSignUP:hover{
+    background-color: #3f8dd6;
+    color: #fff;
+    box-shadow: 0.5px 0.5px 5px rgba(0, 0, 0, 0.433);
+}
+.btnSignUP:focus{
+    outline: none;
+}
 /*Conteudo*/
 .corpo_site{
-    background-color: #ccc;
+    background-color: #fff;
 }
 .conteudo_site{
     background-color: rgb(245, 240, 240);
@@ -78,40 +132,12 @@ section h1{
     text-align: justify;
 }
 /*Questões*/
-.txtquest1{
+.txtquest{
     margin-top: 40px;
     font-size: 18px;
     line-height: 1.5;
     text-align: justify;
     width: 900px;
-}
-.txtquest2{
-    font-size: 18px;
-    line-height: 1.5;
-    text-align: justify;
-    width: 900px;
-    margin-top: 100px;
-}
-.txtquest3{
-    font-size: 18px;
-    line-height: 1.5;
-    text-align: justify;
-    width: 900px;
-    margin-top: 100px;
-}
-.txtquest4{
-    font-size: 18px;
-    line-height: 1.5;
-    text-align: justify;
-    width: 900px;
-    margin-top: 100px;
-}
-.txtquest5{
-    font-size: 18px;
-    line-height: 1.5;
-    text-align: justify;
-    width: 900px;
-    margin-top: 100px;
 }
 input{
     cursor: pointer;
@@ -130,42 +156,19 @@ input{
     margin-bottom: 20px;
     background-color: #22bb36;
     color: #fff;
-    border-radius: 10px;
-    padding: 3px;
+    border-radius: 8px;
+    padding: 5px;
     cursor: pointer;
     margin-left: 10px;
+    border: none;
 }
 .btnverificar:focus{
     outline: none;
 }
-.resposta1{
+.resposta{
     padding: 0px 0px 10px 30px;
     margin-bottom: 10px;
-    font-size: 1.05rem;
-    font-weight: bold;
-}
-.resposta2{
-    padding: 0px 0px 10px 30px;
-    margin-bottom: 10px;
-    font-size: 1.05rem;
-    font-weight: bold;
-}
-.resposta3{
-    padding: 0px 0px 10px 30px;
-    margin-bottom: 10px;
-    font-size: 1.05rem;
-    font-weight: bold;
-}
-.resposta4{
-    padding: 0px 0px 10px 30px;
-    margin-bottom: 10px;
-    font-size: 1.05rem;
-    font-weight: bold;
-}
-.resposta5{
-    padding: 0px 0px 10px 30px;
-    margin-bottom: 10px;
-    font-size: 1.05rem;
+    font-size: 1.1rem;
     font-weight: bold;
 }
 details{
@@ -205,6 +208,9 @@ details p{
 }
 .detailsFinal{
     margin-bottom: 40px;
+}
+.perfil{
+    background-color: #ccc;
 }
 
 /* Rodapé */
@@ -256,48 +262,123 @@ details p{
     /* Medias queries*/
 
     /* CELULARES */
-    @media (max-width: 768.92px){
-    .cabecalho_mobile{
-        display: block;
-        background-color: #0085ff;
-        height: 80px;
-        border-bottom: 2px, solid #000;
-    }
-    .cabecalho_logo-site--mobile{
-        display: flex;
-        justify-content: center;
-    }
+    @media (max-width: 768px){
+    /* CABEÇALHO */
     .cabecalho{
         width: 100%;
-        height: 70px;
-        background: linear-gradient(45deg, #0085ff, #ffa500);
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
     }
-    .cabecalho_menu-lista--item{
-        display: inline;
-        margin-left: 4px;
-    }
-    .cabecalho_menu-lista--item a{
-        font-size: 16px;
-        background-color: #22bb36;
-        padding: 10px;
-        border-radius: 15px;
-        color: #fff;
-        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.521);
-
-    }
-    .cabecalho_menu-lista--item a:hover{
-        background-color: #59da6a;
-    }
-    .cabecalho_logo-site{
+    .cabecalho_menu-items{
         display: none;
     }
-
+    .cabecalho_menu-login{
+        display: none;
+    }
+    /* MENU LATERAL */
+    .cabecalho_sidebar{
+        display: flex;
+        height: 100%;
+        z-index: 1;
+        width: 50%;
+    }
+    .sidebar{
+        display: flex;
+        position: fixed;
+        left: -250px;
+        width: 250px;
+        background-color: #042331;
+        height: 100%;
+        transition: ease-in-out 0.5s;
+    }
+    .sidebar header{
+        text-align: center;
+        font-size: 1.5rem;
+        color: #fff;
+        padding: 30px;
+        background-color: #063146;
+    }
+    .sidebar ul{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    .sidebar ul a{
+        display: block;
+        color: #fff;
+        height: 100%;
+        width: 100%;
+        text-align: left;
+        padding-left: 40px;
+        line-height: 60px;
+        box-sizing: border-box;
+        border-top: 1px solid rgb(200, 200, 200, 0.5);
+        border-bottom: 1px solid #000;
+        transition: ease-in-out 0.3s;
+    }
+    .sidebar li:hover a{
+        padding-left: 50px;
+    }
+    .sidebar ul li i{
+        margin-right: 10px;
+    }
+    #check{
+        display: none;
+    }
+    label #btn, label #cancel{
+        display: flex;
+        align-items: center;
+        position: absolute;
+        cursor: pointer;
+    }
+    label #btn{
+        top: 25px;
+        left: 25px;
+        color: #000;
+        font-size: 26px;
+    }
+    label #cancel{
+        z-index: 1111;
+        left: -32px;
+        top: 25px;
+        font-size: 20px;
+        border: 2px solid #000;
+        color: #f00;
+        padding: 5px;
+    }
+    #check:checked ~ .sidebar{
+        transition: ease-in-out 0.5s;
+        transform: translateX(250px);
+    }
+    #check:checked ~ label #btn{
+        left: 250px;
+        opacity: 0;
+        pointer-events: none;
+    }
+    #check:checked ~ label #cancel{
+        position: fixed;
+        transition: ease-in-out 0.5s;
+        left: 30px;
+    }    
+    .sidebar ul li a:checked ~ .sidebar{
+        left: -250px;
+    }
+    /* LOGO */
+    .cabecalho_menu-logo{
+        display: flex;
+        width: 50%;
+    }
+    .cabecalho_menu-logo--imagem{
+        width: 170px;
+        margin-left: 0px;
+    }
     /* corpo do site */
     .conteudo_site{
         margin: none;
-        padding-left: 5px;
+        padding-left: 10px;
         padding-bottom: 5px;
-        padding-right: 5px;
+        padding-right: 10px;
     }
     section h1{
         text-align: left;
@@ -307,48 +388,17 @@ details p{
     }
     .introducao{
         font-size: 1.05rem;
-        font-family: 'Times New Roman', Times, serif
+        font-family: Arial, Helvetica, sans-serif;
     }
-    .txtquest1{
-        font-family: 'Times New Roman', Times, serif;
+    .txtquest{
+        font-family: Arial, Helvetica, sans-serif;
         margin-top: 40px;
         font-size: 1.05rem;
         line-height: 1.5;
         width: auto;
-    }
-    .txtquest2{
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 1.05rem;
-        line-height: 1.5;
-        width: auto;
-        margin-top: 40px;
-    }
-    .txtquest3{
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 1.05rem;
-        line-height: 1.5;
-        text-align: justify;
-        width: auto;
-        margin-top: 40px;
-    }
-    .txtquest4{
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 1.05rem;
-        line-height: 1.5;
-        text-align: justify;
-        margin-top: 40px;
-        width: auto;
-    }
-    .txtquest5{
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 1.05rem;
-        line-height: 1.5;
-        text-align: justify;
-        width: auto;
-        margin-top: 40px;
     }
     .alternativas{
-        font-family: 'Times New Roman', Times, serif;
+        font-family: Arial, Helvetica, sans-serif;
         font-size: 1.05rem;
         line-height: 1.5;
         margin-top: 15px;
@@ -358,29 +408,7 @@ details p{
         font-size: 1.05rem;
         padding: 5px;
     }
-    .resposta1{
-        padding: 0px 0px 10px 30px;
-        margin-bottom: 10px;
-        font-size: 1.05rem;
-    }
-    .resposta2{
-        padding: 0px 0px 10px 30px;
-        margin-bottom: 10px;
-        font-size: 1.05rem;
-    }
-    .resposta3{
-        padding: 0px 0px 10px 30px;
-        margin-bottom: 10px;
-        font-size: 1.05rem;
-    }
-    .resposta4{
-        padding: 0px 0px 10px 30px;
-        margin-bottom: 10px;
-        font-size: 1.05rem;
-    }
-    .resposta5{
-        padding: 0px 0px 10px 30px;
-        margin-bottom: 10px;
+    .resposta{
         font-size: 1.05rem;
     }
     details{
@@ -398,7 +426,7 @@ details p{
         display: none;
 }
     details p{
-        font-family: 'Times New Roman', Times, serif;
+        font-family: Arial, Helvetica, sans-serif;
         font-size: 1.05rem;
         line-height: 1.2;
         text-align: justify;
