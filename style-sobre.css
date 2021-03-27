@@ -243,11 +243,11 @@ body{
         top: 25px;
         left: 25px;
         color: #000;
-        font-size: 30px;
+        font-size: 26px;
     }
     label #cancel{
         z-index: 1111;
-        left: -250px;
+        left: -50px;
         top: 20px;
         font-size: 20px;
         border: 2px solid #000;
@@ -265,7 +265,7 @@ body{
     }
     #check:checked ~ label #cancel{
         transition: ease-in-out 0.5s;
-        left: 220px;
+        left: 30px;
     }    
     /* LOGO */
     .logo_imagem{

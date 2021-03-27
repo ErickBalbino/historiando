@@ -494,24 +494,28 @@ html{
         }
         /* introdução */
         .conteudo_introducao{
-            height: 600px;
+            height: 850px;
         }
         .conteudo_introducao h2{
             padding-top: 100px;
-            font-size: 1.3rem;
+            font-size: 1.2rem;
         }
         .conteudo_introducao span{
-            font-size: 1.6rem;
+            font-size: 1.7rem;
+            font-family: fantasy;
         }
         .introducao_sessao{
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr;
             margin-top: 20px;
+        }
+        .introducao_sessao i{
+            padding-top: 10px;
         }
         .introducao_sessao p{
             background-color: #f5f5f5;
             height: 100px;
-            width: 150px;
+            width: 250px;
             padding: 10px;
             margin: auto;
             border-radius: 20px;
