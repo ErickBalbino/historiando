@@ -53,7 +53,7 @@
     display: flex;
     width: 20%;
 }
-.btnSingIN{
+.btnSignIN{
     font-size: 1.05rem;
     padding: 10px;
     margin-left: 10px;
@@ -64,12 +64,12 @@
     cursor: pointer;
     transition: ease-in-out background-color 0.5s, color 0.5s;
 }
-.btnSingIN:hover{
+.btnSignIN:hover{
     background-color: #3f8dd6;
     color: #fff;
     box-shadow: 0.5px 0.5px 5px rgba(0, 0, 0, 0.385);
 }
-.btnSingIN:focus{
+.btnSignIN:focus{
     outline: none;
 }
 .btnSignUP{
@@ -96,7 +96,7 @@
     background-color: #fff;
 }
 .conteudo_site{
-    background-color: rgb(245, 240, 240);
+    background-color: #fff;
     margin: auto;
     text-align: justify;
     padding-top: 50px;
@@ -215,8 +215,8 @@ details p{
 
 /* Rodapé */
 .rodape{
-    background-color: #3d3d3d;
-    color: #0ff;
+    background-color: #ff7040;
+    color: #fff;
     padding: 50px 0px 30px 0px;
 }
 .rodape_secao{
@@ -227,6 +227,9 @@ details p{
     font-size: 1.7rem;
     margin-bottom: 10px;
 }
+.mobile{
+    display: none;
+}
 .rodape_introducao p{ 
     font-size: 1.1rem;
     line-height: 1.15;
@@ -236,22 +239,53 @@ details p{
     margin-bottom: 10px;
 }
 .rodape_redesSociais p{
-    font-size: 1.1rem;
+    font-size: 1.1rem; 
     line-height: 1.15;
 }
 .icone_facebook{
     margin-top: 5px;
     margin-bottom: 2px;
-    margin-right: 5px;
+    margin-right: 6px;
 }
 .icone_linkedin{
     margin-top: 5px;
     margin-bottom: 2px;
-    margin-right: 5px;
+    margin-right: 6px;
+}
+.icone_instagram{
+    margin-top: 5px;
+    margin-right: 6px;
 }
 .icone_github{
     margin-top: 5px;
-    margin-left: 5px;
+    margin-left: 6px;
+}
+.rodape_icone{
+    width: 20px;
+    height: 30px;
+    background-color: #eee;
+    border-radius: 70%;
+}
+.icone_facebook:hover{
+    transform: scale(1.1);
+}
+.icone_linkedin:hover{
+    transform: scale(1.1);
+}
+.icone_instagram:hover{
+    transform: scale(1.1);
+}
+.icone_github:hover{
+    transform: scale(1.1);
+}
+.rodape_endereco h2{
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+}
+.rodape_endereco p{
+    font-size: 1.1rem;
+    line-height: 1.15;
+    font-style: italic;
 }
 .rodape_copy{
     text-align: center;
@@ -259,10 +293,10 @@ details p{
     font-size: 1.1rem;
 }
 
-    /* Medias queries*/
+/* Medias queries*/
 
-    /* CELULARES */
-    @media (max-width: 768px){
+/* CELULARES */
+@media (max-width: 768px){
     /* CABEÇALHO */
     .cabecalho{
         width: 100%;
@@ -424,7 +458,7 @@ details p{
     }
     summary::-webkit-details-marker{
         display: none;
-}
+    }
     details p{
         font-family: Arial, Helvetica, sans-serif;
         font-size: 1.05rem;
@@ -449,27 +483,123 @@ details p{
         display: block;
     }
     .rodape_introducao h2{
-        margin-bottom: 15px;
+        margin-bottom: 0px;
         margin-left: 5px;
     }
     .rodape_introducao p{ 
         padding: 10px;
         text-align: justify;
+        font-size: 1.05rem;
+        font-weight: bold;
     }
     .rodape_redesSociais h2{
         padding: 5px;
         margin-top: 20px;
+        margin-bottom: 0px;
     }
     .rodape_redesSociais p{
         padding: 10px;
         text-align: justify;
+        font-size: 1.05rem;
+        font-weight: bold;
     }
-    .icone_facebook{
+    .rodape_icone{
         margin-left: 10px;
+    }
+    .rodape_endereco h2{
+        font-size: 1.7rem;
+        margin: 40px 0px 10px 5px;
+    }
+    .rodape_endereco p{
+        font-size: 1.05rem;
+        line-height: 1.15;
+        font-style: italic;
+        margin-left: 10px;
+        font-weight: bold;
     }
     .rodape_copy{
         text-align: center;
         margin-top: 30px;
         font-size: 1.05rem;
+        font-weight: bold;
+    }
+}
+
+@media(min-width: 769px) and (max-width: 880px){
+    /* Cabecalho */
+    .cabecalho{
+        width: 100%;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.365);
+    }
+    /* Cabecalho logo */
+    .cabecalho_menu-logo{
+        width: 30%;
+    }
+    .cabecalho_menu-logo--imagem{
+        margin-left: 10px;
+        width: 200px;
+    }
+    /* Cabecalho navbar */
+    .cabecalho_menu-items{
+        display: flex;
+        width: 40%;
+    }
+    .cabecalho_menu-lista{
+        width: 100%;
+    }
+    .cabecalho_menu-items--lista{
+        display: flex;
+        padding-right: 30px;
+    }
+    .cabecalho_menu-items--lista a{
+        font-size: 1.05rem;
+        font-weight: bold;
+    }
+    /* Cabecalho login */
+    .cabecalho_menu-login{
+        display: flex;
+        width: 20%;
+    }
+    .btnSingIN{
+        font-size: 0.8rem;
+        padding: 10px;
+        margin-left: 10px;
+        border-radius: 15px;
+        background-color: #00f;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        transition: ease-in-out background-color 0.5s, color 0.5s;
+    }
+    .btnSingIN:hover{
+        background-color: #3f8dd6;
+        color: #fff;
+        box-shadow: 0.5px 0.5px 5px rgba(0, 0, 0, 0.385);
+    }
+    .btnSingIN:focus{
+        outline: none;
+    }
+    .btnSignUP{
+        font-size: 0.8rem;
+        padding: 10px;
+        margin-left: 10px;
+        border-radius: 15px;
+        background-color: #00f;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        transition: ease-in-out background-color 0.5s, color 0.5s;
+    }
+    .btnSignUP:hover{
+        background-color: #3f8dd6;
+        color: #fff;
+        box-shadow: 0.5px 0.5px 5px rgba(0, 0, 0, 0.433);
+    }
+    .btnSignUP:focus{
+        outline: none;
+    }
+    .conteudo_banner img{
+        width: 100%;
+        height: 350px;
     }
 }
