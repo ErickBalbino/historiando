@@ -334,6 +334,34 @@
         width: 170px;
         margin-left: 0px;
     }
+    /* CONTEUDO */
+    .conteudo img{
+        width: 100%;
+        height: auto;
+    }
+    .conteudo h1{
+        padding: 50px 5px 0px 5px;
+        font-size: 1.8rem;
+    }
+    .conteudo h2{
+        padding: 50px 10px 15px 5px;
+        font-size: 1.4rem;
+    }
+    .conteudo p{
+        padding: 0px 10px;
+        font-size: 1.05rem;
+        text-align: left;
+    }
+    .conteudo figure{
+        width: 90%;
+        height: auto;
+        padding: 20px 20px;
+        box-sizing: border-box;
+    }
+    .conteudo figure .mapa-roma{
+        width: 100%;
+        height: auto;
+    }
     /* RODAPE */
     .rodape{
         background-color: #ff7040;
