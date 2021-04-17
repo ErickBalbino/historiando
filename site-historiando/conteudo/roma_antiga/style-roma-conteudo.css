@@ -139,6 +139,28 @@
     height: 300px;
     margin: auto;
 }
+.perfil{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #ff7040;
+    width: 100%;
+    border-bottom: 1.5px dashed #544;
+    margin-top: 100px;
+}
+.perfil_foto-imagem{
+    border-radius: 50%;
+    margin: 20px 10px 20px 20px;
+    object-fit: cover;
+}
+.perfil_txt{
+    display: flex;
+    margin-left: 5px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    font-family: 'Times New Roman', Times, serif;
+    align-items: center;
+}
 /* RODAPE */
 .rodape{
     background-color: #ff7040;
@@ -351,6 +373,7 @@
         padding: 0px 10px;
         font-size: 1.05rem;
         text-align: left;
+        font-weight: 600;
     }
     .conteudo figure{
         width: 90%;
@@ -361,6 +384,9 @@
     .conteudo figure .mapa-roma{
         width: 100%;
         height: auto;
+    }
+    .perfil_txt{
+        font-size: 1.05rem;
     }
     /* RODAPE */
     .rodape{
@@ -380,7 +406,7 @@
     }
     .rodape_introducao p{ 
         display: inline-block;
-        text-align: justify;
+        text-align: left;
         margin-left: 10px;
         margin-right: 5px;
     }
@@ -394,7 +420,7 @@
     }
     .rodape_redesSociais p{
         padding: 10px;
-        text-align: justify;
+        text-align: left;
     }
     .rodape_icone{
         margin-left: 10px;
