@@ -404,7 +404,7 @@ details p{
         width: 50%;
     }
     .cabecalho_menu-logo--imagem{
-        width: 170px;
+        width: 160px;
         margin-left: 0px;
     }
     /* corpo do site */
@@ -536,7 +536,7 @@ details p{
         width: 30%;
     }
     .cabecalho_menu-logo--imagem{
-        margin-left: 10px;
+        margin-left: 0px;
         width: 200px;
     }
     /* Cabecalho navbar */
