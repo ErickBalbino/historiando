@@ -187,6 +187,7 @@ html{
     border: 2px solid #0ff;
 }
 .imagem-item-desktop{
+    display: inline-block;
     border-radius: 30px;
 }
 .imagem-item-mobile{
