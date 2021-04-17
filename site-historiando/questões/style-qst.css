@@ -53,7 +53,7 @@
     display: flex;
     width: 20%;
 }
-.btnSignIN{
+.btnSingIN{
     font-size: 1.05rem;
     padding: 10px;
     margin-left: 10px;
@@ -64,12 +64,12 @@
     cursor: pointer;
     transition: ease-in-out background-color 0.5s, color 0.5s;
 }
-.btnSignIN:hover{
+.btnSingIN:hover{
     background-color: #3f8dd6;
     color: #fff;
     box-shadow: 0.5px 0.5px 5px rgba(0, 0, 0, 0.385);
 }
-.btnSignIN:focus{
+.btnSingIN:focus{
     outline: none;
 }
 .btnSignUP{
