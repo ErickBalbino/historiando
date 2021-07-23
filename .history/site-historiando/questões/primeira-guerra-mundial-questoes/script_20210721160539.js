@@ -1,4 +1,4 @@
-  //Verificar questão 1
+ //Verificar questão 1
 function verificarQuestao01() {
     //Variaveis
     var resposta = window.document.getElementsByName('qst1')  // Pegar resposta do usuário
