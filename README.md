@@ -1,5 +1,5 @@
 # Historiando
- Página principal do historiando, um site educacional focado em compartilhar conhecimento sobre história, pode ser acessado através do link    https://erickbalbino.github.io/site-historiando/ 🤝
+Repositório principal do historiando, um site educacional focado em compartilhar conhecimento sobre história, pode ser acessado através do link    https://erickbalbino.github.io/site-historiando/ 🤝
  
  Feito com:
 * HTML
@@ -14,8 +14,10 @@
 
 ## DESKTOP
 ### CABEÇALHO
-![site-historiando](https://user-images.githubusercontent.com/78397162/112396021-35501080-8cde-11eb-9ef4-11f7ad401bdc.png)
-### CONTEUDOS
-![site-historiando2](https://user-images.githubusercontent.com/78397162/112396026-38e39780-8cde-11eb-82ee-41dd1ad2369d.png)
+![historiando-cabecalho](https://user-images.githubusercontent.com/78397162/147882280-22ea088e-2043-4b06-82f5-f20f2e4a43df.png)
+
+### CONTEÚDOS
+![historiando-conteudo](https://user-images.githubusercontent.com/78397162/147882286-db17783b-67a7-4a27-8167-61e552625ef9.png)
+
 ### QUESTÕES
-![site-historiando3](https://user-images.githubusercontent.com/78397162/112396050-44cf5980-8cde-11eb-9aa5-017ca32b823a.png)
+![historiando-questoes](https://user-images.githubusercontent.com/78397162/147882292-b2a87944-d68c-4cba-990f-4446a6c906cb.png)
