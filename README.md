@@ -1,5 +1,5 @@
 # Historiando
-Repositório principal do historiando, um site educacional focado em compartilhar conhecimento sobre história, pode ser acessado através do link    https://erickbalbino.github.io/site-historiando/ 🤝
+Repositório principal do historiando, um site educacional focado em compartilhar conhecimento sobre história, pode ser acessado através do link    https://erickbalbino.github.io/historiando/ 🤝
  
  Feito com:
 * HTML
