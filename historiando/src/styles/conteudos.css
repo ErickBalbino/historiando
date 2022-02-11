@@ -1,0 +1,471 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.cabecalho{
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0px;
+}
+
+.logo{
+    width: 20%;
+}
+
+.logo_image{
+    padding-left: 40px;
+    width: 100px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    width: 55%;
+}
+
+.navbar_list{
+    display: flex;
+    justify-content: center;
+}
+
+.navbar_list a{
+    color: #000;
+    transition: 0.2s ease-in-out color;
+}
+
+.navbar_list a:hover{
+    color: #a52a2a;
+}
+
+.navbar_list_item{
+    margin: 0px 15px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #000;
+    transition: 0.2s ease-in-out color;
+}
+
+.navbar_list_item:hover{
+    color: #a52a2a;
+}
+
+.account{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+}
+
+.btn_account{
+    width: 120px;
+    background-color: #00f ;
+    box-shadow: 3px 3px 6px rgba(141, 141, 141, 0.281);
+    color: #fff;
+    border: transparent;
+    border-radius: 5px;
+    outline: transparent;
+    padding: 8px 10px;
+    font-size: 0.9rem;
+    margin: 0px 5px;
+    transition: ease-in-out 0.2s background-color;
+}
+
+.btn_account:hover{
+    background-color: rgb(3, 3, 190);
+    cursor: pointer;
+}
+
+.sidebar{
+    display: none;
+}
+
+main{
+    padding-top: 50px;
+}
+
+main h1{
+    font-size: 2.4rem;
+    font-weight: 500;
+    border-bottom: 3px solid #a52a2a;
+    width: 280px;
+    margin: auto;
+    text-align: center;
+}
+
+.presentation{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80vw;
+    margin: auto;
+    padding: 50px 0px 100px 0px;
+}
+
+.presentation p{
+    font-size: 1.1rem;
+}
+
+.presentation img{
+    width: 450px;
+    border-radius: 40%;
+    margin-left: 40px;
+    box-shadow: 5px 5px 8px rgba(128, 128, 128, 0.24);
+}
+
+.conteudos{
+    background-color: #a52a2a;
+}
+
+.conteudos_section{
+    padding: 60px 20px;
+}
+
+.conteudos_section h2{
+    text-align: center;
+    color: #fff;
+    font-size: 2.2rem;
+    font-weight : 400;
+}
+
+.conteudos_container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+}
+
+.conteudos_container_conteudo{
+    width: 28vw;
+    height: 300px;
+    margin: 40px 0px;
+    box-shadow: 5px 5px 8px #791f1f44;
+}
+
+.conteudos_container_conteudo img{
+    height: 90%;
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+    transition: 0.2s ease-in-out filter;
+}
+
+.conteudos_container_conteudo p{
+    font-size: 1.05rem;
+    height: 10%;
+    background-color: rgba(0, 0, 0, 0.61);
+    color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0px 0px 10px 10px;
+    transform: translateY(-7px);
+}
+
+#div_roma:hover #img_roma,
+#div_grecia:hover #img_grecia,
+#div_grande_navegacoes:hover #img_grande_navegacoes,
+#div_primeira_guerra_mundial:hover #img_primeira_guerra_mundial,
+#div_segunda_guerra_mundial:hover #img_segunda_guerra_mundial,
+#div_guerra_fria:hover #img_guerra_mundial,
+#div_revolucoes_industriais:hover #img_revolucoes_industriais,
+#div_iluminismo:hover #img_iluminismo{
+    filter: blur(2px); 
+}
+
+.rodape{
+    background-color: #f9f9f9;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.rodape .text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rodape .text img{
+    width: 170px;
+}
+
+.rodape .text p{
+    width: 80%;
+    margin-top: 0;
+}
+
+.rodape .text a{
+    color: #a52a2a
+}
+
+.rodape .list{
+    width: 25%;
+}
+
+.rodape .list ul{
+    width: 80px;
+}
+
+.rodape .list li{
+    font-size: 1rem;
+    line-height: 2;
+    width: 80px;
+    color: #000;
+    transition: 0.2s ease-in-out color;
+}    
+
+.rodape .list li:hover{
+    cursor: pointer;
+    color: #a52a2a;
+}
+
+.rodape .list h3{
+    font-size: 1.6rem;
+    font-weight: 500;
+    border-bottom: 3px solid #a52a2a;
+    width: 200px;
+    margin: 5px 0px;
+}
+
+.rodape .redes_sociais{
+    width: 25%;
+    height: 165px;
+}
+
+.rodape .redes_sociais h3{
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 30px;
+    width: 80%;
+    border-bottom: 3px solid #a52a2a;
+}
+
+.rodape .redes_sociais ul{
+    display: flex;
+    margin-left: 20px;
+}
+
+.rodape .redes_sociais i{
+    width: 20px;
+    height: 20px;
+    margin: 0px 5px;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background-color: #a52a2a;
+    border: 2px solid #a52a2a;
+    color: #f9f9f9;
+    padding: 7px;
+}
+
+.rodape .redes_sociais i:hover{
+    background-color: #f9f9f9;
+    color: #a52a2a;
+}
+
+@media(max-width: 768px){
+    body{
+        overflow-x: hidden;
+    }
+    
+    .cabecalho{
+        display: flex;
+        flex-direction: row-reverse;
+        height: auto;
+    }
+
+    .navbar{
+        display: none;
+    }
+
+    .logo{
+        width: 60%;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .logo_image{
+        padding: 0;
+        width: 90px;
+    }
+
+    .sidebar{
+        width: 40%;
+        display: flex;
+        height: 100%;
+        z-index: 1;
+    }
+
+    .sidebar_container{
+        display: flex;
+        position: fixed;
+        top: 0px;
+        left: -250px;
+        width: 250px;
+        background-color: #042331;
+        height: 100%;
+        transition: ease-in-out 0.5s;
+    }
+
+    .sidebar_container ul{
+        position: absolute;
+        top: 8%;
+        width: 100%;
+    }
+
+    .sidebar_container ul a{
+        display: block;
+        color: #fff;
+        height: 100%;
+        width: 100%;
+        text-align: left;
+        padding-left: 40px;
+        line-height: 60px;
+        box-sizing: border-box;
+        border-top: 1px solid rgb(200, 200, 200, 0.5);
+        border-bottom: 1px solid #000;
+        transition: ease-in-out 0.3s;
+    }
+
+    .sidebar_container li:hover a{
+        padding-left: 50px;
+    }
+
+    .sidebar_container ul li i{
+        margin-right: 10px;
+    }
+
+    #check{
+        display: none;
+    }
+
+    label #btn, label #cancel{
+        display: flex;
+        align-items: center;
+        position: absolute;
+        cursor: pointer;
+    }
+
+    label #btn{
+        top: 25px;
+        left: 20px;
+        color: #000;
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+
+    label #cancel{
+        z-index: 2;
+        top: 10px;
+        left: -35px;
+        font-size: 1rem;
+        text-align: center;
+        color: #d83a3a;
+        border: 2px solid #ddd;
+        padding: 1px 5px;
+    }
+
+    #check:checked ~ .sidebar_container{
+        transition: ease-in-out 0.5s;
+        transform: translateX(250px);
+    }
+
+    #check:checked ~ label #btn{
+        left: 250px;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    #check:checked ~ label #cancel{
+        position: fixed;
+        transition: ease-in-out 0.5s;
+        left: 210px;
+    }    
+
+    .sidebar_container ul li a:checked ~ .sidebar_container{
+        left: -250px;
+    }
+
+    .account{
+        display: none;
+    }
+
+    .presentation{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .presentation p{
+        font-size: 1rem;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .presentation img{
+        display: flex;
+        width: 80%;
+        margin: auto;
+    }
+
+    .conteudos_section{
+        padding: 60px 0px;
+    }
+
+    .conteudos_container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .conteudos_container_conteudo {
+        width: 46vw;
+        height: 200px;
+    }
+
+    .rodape{
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100vw;
+        height: auto;
+        box-sizing: border-box;
+        padding: 40px 15px;
+    }
+
+    .rodape .text,
+    .rodape .list,
+    .rodape .redes_sociais{
+        width: 100vw;
+        margin-bottom: 30px;
+    }
+
+    .rodape .text{
+        align-items: flex-start;
+    }
+
+    .rodape .text img{
+        display: flex;
+        justify-content: center;
+    }
+
+    .rodape .list h3{
+        width: 180px;
+    }
+
+    .rodape .redes_sociais h3{
+        width: 250px;
+    }
+}
