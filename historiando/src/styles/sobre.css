@@ -90,6 +90,10 @@ html{
     display: none;
 }
 
+.account_mobile{
+    display: none;
+}
+
 .apresentacao{
     width: 80vw;
     margin: auto;
@@ -293,9 +297,9 @@ html{
     }
 
     .logo{
-        width: 60%;
+        width: 55%;
         display: flex;
-        justify-content: flex-start;
+        justify-content: center ;
     }
 
     .logo_image{
@@ -304,7 +308,7 @@ html{
     }
 
     .sidebar{
-        width: 40%;
+        width: 25%;
         display: flex;
         height: 100%;
         z-index: 1;
@@ -404,6 +408,20 @@ html{
         display: none;
     }
 
+    .account_mobile{
+        width: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding-right: 20px;
+    }
+
+    .account_mobile a i{
+        color: #000;
+        font-size: 1.25rem;
+    }
+
+
     .apresentacao{
         width: 90vw;
     }
@@ -414,10 +432,11 @@ html{
     }
 
     .rodape{
+        box-sizing: border-box;
+        padding: 40px 10px;
         flex-direction: column;
         align-items: flex-start;
         height: auto;
-        padding: 50px 15px;
     }
 
     .rodape .text,
@@ -431,11 +450,25 @@ html{
         align-items: flex-start;
     }
 
+    .rodape .text img{
+        margin: auto;
+    }
+
+    .rodape .text p{
+        width: 100%;
+    }
+
     .rodape .list h3{
         width: 180px;
     }
 
     .rodape .redes_sociais h3{
         width: 250px;
+    }
+
+    .rodape .redes_sociais ul{
+        width: 100%;
+        justify-content: center;
+        margin-left: 0px;
     }
 }

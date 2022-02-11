@@ -90,6 +90,10 @@ html{
     display: none;
 }
 
+.account_mobile{
+    display: none;
+}
+
 main{
     padding-top: 50px;
 }
@@ -292,9 +296,9 @@ main h1{
     }
 
     .logo{
-        width: 60%;
+        width: 55%;
         display: flex;
-        justify-content: flex-start;
+        justify-content: center ;
     }
 
     .logo_image{
@@ -303,7 +307,7 @@ main h1{
     }
 
     .sidebar{
-        width: 40%;
+        width: 25%;
         display: flex;
         height: 100%;
         z-index: 1;
@@ -403,6 +407,19 @@ main h1{
         display: none;
     }
 
+    .account_mobile{
+        width: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding-right: 20px;
+    }
+
+    .account_mobile a i{
+        color: #000;
+        font-size: 1.25rem;
+    }
+
     .presentation{
         flex-direction: column;
         justify-content: flex-start;
@@ -437,18 +454,17 @@ main h1{
     }
 
     .rodape{
+        box-sizing: border-box;
+        padding: 40px 10px;
         flex-direction: column;
         align-items: flex-start;
-        width: 100vw;
         height: auto;
-        box-sizing: border-box;
-        padding: 40px 15px;
     }
 
     .rodape .text,
     .rodape .list,
     .rodape .redes_sociais{
-        width: 100vw;
+        width: 100%;
         margin-bottom: 30px;
     }
 
@@ -457,8 +473,11 @@ main h1{
     }
 
     .rodape .text img{
-        display: flex;
-        justify-content: center;
+        margin: auto;
+    }
+
+    .rodape .text p{
+        width: 100%;
     }
 
     .rodape .list h3{
@@ -467,5 +486,11 @@ main h1{
 
     .rodape .redes_sociais h3{
         width: 250px;
+    }
+
+    .rodape .redes_sociais ul{
+        width: 100%;
+        justify-content: center;
+        margin-left: 0px;
     }
 }
