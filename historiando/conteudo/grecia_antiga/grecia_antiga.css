@@ -90,6 +90,10 @@ html{
     display: none;
 }
 
+.account_mobile{
+    display: none;
+}
+
 .conteudo_banner{
     background-image: url(imagens/background-grecia.jpg);
     width: 1349px;
@@ -395,9 +399,9 @@ span{
     }
 
     .logo{
-        width: 60%;
+        width: 55%;
         display: flex;
-        justify-content: flex-start;
+        justify-content: center ;
     }
 
     .logo_image{
@@ -406,7 +410,7 @@ span{
     }
 
     .sidebar{
-        width: 40%;
+        width: 25%;
         display: flex;
         height: 100%;
         z-index: 1;
@@ -506,41 +510,57 @@ span{
         display: none;
     }
 
-    body{
-        margin: 0;
-        padding: 0;
+    .account_mobile{
+        width: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding-right: 20px;
     }
+
+    .account_mobile a i{
+        color: #000;
+        font-size: 1.25rem;
+    }
+
     .secao-conteudo{
         flex-direction: column;
     }
+
     .conteudo_banner{
         width: 100%;
         height: auto;
     }
+
     .conteudo_artigo{
         width: auto;
         margin-bottom: 2px;
         background-color: #fff;
         margin: 0px;
     }
+
     .conteudo_artigo h1{
         font-size: 1.6rem;
         padding: 50px 0px 20px 10px;
     }
+
     .conteudo_artigo p{
         font-size: 1.05rem;
         width: auto;
         padding: 20px 10px 0px 10px;
         text-align: left;
     }
+
     .conteudo_artigo h2{
         padding: 40px 0px 0px 10px;
         font-size: 1.4rem;
         color: #591730;
     }
+
     .conteudo_artigo i{
         color: #008000;
     }
+
     #paragrafo2{
         margin-bottom: 30px; /* APENAS PARA DISTANCIAR A IMAGEM */
     }
@@ -556,11 +576,13 @@ span{
         margin: auto;
         border-radius: 20px;
     }
+
     .conteudo_artigo .mapa-grecia{
         display: flex;
         width: 90%;
         height: 200px;
     }
+
     .conteudo_artigo figcaption{
         margin: auto;
         text-align: center;
@@ -574,6 +596,7 @@ span{
         font-family: Arial, Helvetica, sans-serif;
         padding-top: 5px;
     }
+
     .recomendado{
         height: 400px;
     }
@@ -586,6 +609,7 @@ span{
         height: 1400px; /* A CADA PERSONAGEM, ADICIONA 200px */
         margin-top: 30px;
     }
+
     .div_deus{
         display: flex;
         justify-content: space-around;
@@ -598,6 +622,7 @@ span{
         padding: 5px;
         margin-bottom: 30px;
     }
+
     .txt p{
         font-size: 1rem;
         font-family: 'Times New Roman', Times, serif;
@@ -606,10 +631,12 @@ span{
         line-height: 1.15;
         text-align: left;
     }
+
     .div_deus span{
         display: block;
         margin-bottom: 10px;
     }
+
     .div_deus .zeus-img{
         display: flex;
         width: 60px;
@@ -644,6 +671,7 @@ span{
     }
 
     .rodape{
+        box-sizing: border-box;
         flex-direction: column;
         align-items: flex-start;
         height: auto;
