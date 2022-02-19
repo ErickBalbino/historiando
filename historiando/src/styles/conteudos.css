@@ -174,15 +174,16 @@ main h1{
     transform: translateY(-7px);
 }
 
-#div_roma:hover #img_roma,
-#div_grecia:hover #img_grecia,
-#div_grande_navegacoes:hover #img_grande_navegacoes,
-#div_primeira_guerra_mundial:hover #img_primeira_guerra_mundial,
-#div_segunda_guerra_mundial:hover #img_segunda_guerra_mundial,
-#div_guerra_fria:hover #img_guerra_mundial,
-#div_revolucoes_industriais:hover #img_revolucoes_industriais,
-#div_iluminismo:hover #img_iluminismo{
-    filter: blur(2px); 
+#div_roma:hover,
+#div_grecia:hover ,
+#div_grande_navegacoes:hover ,
+#div_primeira_guerra_mundial:hover,
+#div_segunda_guerra_mundial:hover,
+#div_guerra_fria:hover,
+#div_revolucoes_industriais:hover,
+#div_iluminismo:hover{
+    transition: 0.1s ease-in-out;
+    transform: scale(1.01); 
 }
 
 .rodape{

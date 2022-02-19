@@ -10,71 +10,67 @@
     <meta http-equiv="author" content="Historiando">
     <link rel="shortcut icon" href="../../imagens/favicon/favicon.png" type="image/x-icon">
 
-    <!-- FONTES EXTERNAS -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" 
-    rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="style-roma-conteudo.css">
-    <link rel="stylesheet" href="../../reset.css">
+    <link rel="stylesheet" href="roma_antiga.css">
 
     <title>Historiando | Roma Antiga</title>
 </head>
 <body>
-    <!-- Cabeçalho -->
     <header class="cabecalho">
-        <!-- Cabeçalho logo -->
-        <div class="cabecalho_menu-logo">
-            <img class="cabecalho_menu-logo--imagem" src="../../imagens/logo/logo-historiando-principal.png" alt="logo do site historizando" width="260px" height="60px">
+        <div class="account_mobile">
+            <a href="#"><i class="fa fa-user-o"></i></a>
         </div>
-        <!-- Cabeçalho NavBar -->
-        <div class="cabecalho_menu-items">
-            <ul class="cabecalho_menu-lista">
-                <li class="cabecalho_menu-items--lista"><a class="cabecalho_menu-items--lista a" href="../../../index.html">Home</a></li>
-                <li class="cabecalho_menu-items--lista"><a class="cabecalho_menu-items--lista a" href="../../sobre.html">Sobre</a></li> 
-                <li class="cabecalho_menu-items--lista"><a class="cabecalho_menu-items--lista a" href="#">Contato</a></li>
-                <li class="cabecalho_menu-items--lista"><a class="cabecalho_menu-items--lista a" href="../../../index.html#conteudos">Mais conteúdos</a></li>
+        
+        <div class="logo">
+            <a href="../../../index.html"><img class="logo_image" src="../../imagens/logo.png" alt="logo historiando"></a>
+        </div>
+
+        <div class="navbar">
+            <ul class="navbar_list">
+                <a href="../../src/pages/sobre.html">
+                    <li class="navbar_list_item">Sobre<li> 
+                </a>
+                <a href="../../src/pages/conteudos.html">
+                    <li class="navbar_list_item">Conteúdos</li> 
+                </a> 
+                <a href="#">
+                    <li class="navbar_list_item">Questões</li> 
+                </a>
+                <a href="#">
+                    <li class="navbar_list_item">Contato</li>
+                </a>
             </ul>
         </div>
-            <!-- MENU LATERAL -->
-        <div class="cabecalho_sidebar">
+
+        <div class="account">
+            <label for="btn_sing_in">
+                <input class="btn_account" type="submit" value="ENTRAR" id="btn_sing_in">
+            </label>
+
+            <label for="btn_sing_up">
+                <input class="btn_account" type="submit" value="CADASTRAR" id="btn_sing_up">
+            </label>
+        </div>
+
+        <div class="sidebar">
             <input type="checkbox" name="check" id="check">
+
             <label for="check">
                 <i class="fa fa-bars" id="btn"></i>
                 <i class="fa fa-close" id="cancel"></i>
             </label>
-            <div class="sidebar">
+
+            <div class="sidebar_container">
                 <ul>
-                    <header>MENU</header>
-                    <li><a href="../../../index.html"><i class="fa fa-qrcode"></i>HOME</a></li>
-                    <li><a href="../../../index.html#conteudos"><i class="fa fa-file-word-o"></i>+ CONTEUDOS</a></li>
-                    <li><a href="../../../index.html#questoes"><i class="fa fa-book"></i>+ QUESTÕES</a></li>
-                    <li><a href="../../sobre.html"><i class="fa fa-question-circle"></i>SOBRE</a></li>
-                    <li><a href="#"><i class="fa fa-address-card-o"></i>REGISTRO</a></li>
-                    <li><a href="#"><i class="fa fa-external-link"></i>ENTRAR</a></li>
+                    <li><a href="../../../index.html"><i class="fa fa-columns"></i>HOME</a></li>
+                    <li><a href="../../src/pages/conteudos.html"><i class="fa fa-file"></i>CONTEUDOS</a></li>
+                    <li><a href="#"><i class="fa fa-book"></i>QUESTÕES</a></li>
+                    <li><a href="../../src/pages/sobre.html"><i class="fa fa-question-circle"></i>SOBRE</a></li>
                 </ul>
             </div>
         </div>
-        <!-- Cabeçalho login -->
-        <div class="cabecalho_menu-login">
-            <label for="btnSingIN">
-                <input class="btnSingIN" type="submit" value="ENTRAR" id="btnSingIN">
-            </label>
-            <label for="btnSingUP">
-                <input class="btnSignUP" type="submit" value="SIGN UP" id="btnSingUP">
-            </label>
-        </div>
     </header>
 
-    <!-- CORPO DO SITE -->
     <main>
        <img class="banner" src="imagens/background-roma.jpg" alt="">
        <section class="secao_pagina">
@@ -102,54 +98,44 @@
                 <div>
                     <h2>Conteúdo Recomendado</h2>
                     <ul>
-                        <a href="../grecia_antiga/greciaAntiga.html"><li>Grécia Antiga</li></a>
-                        <a href="../primeira_guerra_mundial/primeiraGuerra.html"><li>Primeira Guerra Mundial</li></a>
-                        <a href="../segunda_guerra_mundial/segundaGuerra.html"><li>Segundo Guerra Mundial</li></a>
-                        <a href="../guerra_fria/guerraFria.html"><li>Guerra Fria</li></a>
-                        <a href="../revolucoes_industriais/revolucoesIndustriais.html"><li>Revoluções Industriais</li></a>
-                        <a href="../grandes_navegacoes/grandesNavegacoes.html"><li>As Grandes Navegações</li></a>
+                        <a href="../grecia_antiga/grecia_antiga.html"><li>Grécia Antiga</li></a>
+                        <a href="../primeira_guerra_mundial/primeira_guerra_mundial.html"><li>Primeira Guerra Mundial</li></a>
+                        <a href="../segunda_guerra_mundial/segunda_guerra_mundial.html"><li>Segundo Guerra Mundial</li></a>
+                        <a href="../guerra_fria/guerra_fria.html"><li>Guerra Fria</li></a>
+                        <a href="../revolucoes_industriais/revolucoes_industriais.html"><li>Revoluções Industriais</li></a>
+                        <a href="../grandes_navegacoes/grandes_navegacoes.html"><li>As Grandes Navegações</li></a>
                         <a href="../iluminismo/iluminismo.html"><li>Iluminismo</li></a>
                     </ul>
                 </div>
            </section>
        </section>
-       <div class="perfil">
-        <div class="perfil_foto">
-            <img class="perfil_foto-imagem" src="../../imagens/profile/profile-picture-full.jpg" alt="imagem do criador do site" width="90px" height="90px">
-        </div>
-        <div class="perfil_txt">
-            <p> Olá, sou Erick Balbino, desenvolvedor web <br> e entusiasta de história.</p>
-        </div>
-    </div>
     </main>
 
-    <!--Rodapé-->
     <footer class="rodape">
-        <div class="rodape_secao">
-            <div class="rodape_introducao">
-                <h2>Historizando</h2>
-                <p>Site criado por um estudante que tem o sonho de mudar o mundo através da educação!</p>
-            </div>
-            <div class="rodape_redesSociais">
-                <h2 id="contato">Contato</h2>
-                <p>Para mais conteúdo, siga-me nas redes sociais!</p>
-                <a class="icone1" id="icone" href="https://www.facebook.com/profile.php?id=100036650766393" target="_blank" rel="noopener"><img class="icone_facebook" src="../../imagens/icones/facebook.png" alt="Logo do facebook" width="38px" height="38px"></a>
-                <a id="icone" href="https://www.linkedin.com/in/erick-balbino-da-silva-7038351a1/" target="_blank" rel="noopener"><img class="icone_linkedin" src="../../imagens/icones/linkedin.png" alt="Logo do linkedIn" width="38px" height="38px"></a>
-                <a id="icone" href="https://www.instagram.com/dev.eriick/" target="_blank" rel="noopener"><img class="icone_instagram" src="../../imagens/icones/instagram.png" alt="Logo do instagram" width="38px" height="38px"></a>
-                <a id="icone" href="https://www.github.com/ErickBalbino" target="_blank" rel="noopener"><img class="icone_github" src="../../imagens/icones/github.png" alt="Logo do GitHub" width="38px" height="38px"></a>
-            </div>
-            <div class="rodape_endereco">
-                <h2>Endereço</h2>
-                <p>
-                    Rua Cesarina Barreto Lima, 253 <br>
-                    Campo dos velhos, Sobral-CE <br>
-                    (88) 99803-4382
-                </p>
-            </div>
+        <div class="text">
+            <img src="../../imagens/logo-footer.png" alt="logo footer">
+            <p>O historiando é um projeto desenvolvido para propagar o ensino de história de maneira divertida por um <a href="https://erickbalbino.github.io/portfolio" target="_blank">estudante</a> amante de tecnologia e história</p>
         </div>
-        <div class="rodape_copy">
-            <p>Todos os direitos reservados a &copy; Erick Systems 2021</p>
+
+        <div class="list">
+            <ul>
+                <h3>Historiando</h3>
+                <a href="sobre.html"><li>Sobre</li></a>
+                <a href="conteudos.html"><li>Conteúdos</li></a>
+                <a href="#"><li>Questões</li></a>
+                <a href="#"><li>Contato<li></a>
+            </ul>
         </div>
-    </footer> 
+
+        <div class="redes_sociais">
+            <h3>Redes do criador</h3>
+            <ul>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-whatsapp"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>

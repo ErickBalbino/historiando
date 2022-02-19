@@ -1,97 +1,100 @@
-@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
-/* Cabecalho */
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
 .cabecalho{
-    height: 70px;
-    background-color: #0085FF;
+    background-color: #f4f4f4;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.365);
+    justify-content: space-between;
+    padding: 15px 0px;
 }
-.cabecalho_menu{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-.cabecalho_sidebar{
-    display: none;
-}
-/* Cabecalho logo */
-.cabecalho_menu-logo{
-    width: 35%;
-}
-.cabecalho_menu-logo--imagem{
-    margin-left: 20px;
-}
-/* Cabecalho navbar */
-.cabecalho_menu-items{
-    display: flex;
-    width: 45%;
-}
-.cabecalho_menu-lista{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-}
-.cabecalho_menu-items--lista{
-    display: flex;
-    padding-right: 30px;
-}
-.cabecalho_menu-items--lista a{
-    color: #fff;
-    font-size: 1.3rem;
-    transition: ease-in-out 0.2s;
-}
-.cabecalho_menu-items--lista a:hover{
-    transform: scale(1.05);
-}
-/* Cabecalho login */
-.cabecalho_menu-login{
-    display: flex;
+
+.logo{
     width: 20%;
 }
-.btnSingIN{
-    font-size: 1.05rem;
-    padding: 10px;
-    margin-left: 10px;
-    border-radius: 15px;
-    background-color: #00f;
+
+.logo_image{
+    padding-left: 40px;
+    width: 100px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    width: 55%;
+}
+
+.navbar_list{
+    display: flex;
+    justify-content: center;
+}
+
+.navbar_list a{
+    color: #000;
+    transition: 0.2s ease-in-out color;
+}
+
+.navbar_list a:hover{
+    color: #a52a2a;
+}
+
+.navbar_list_item{
+    margin: 0px 15px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #000;
+    transition: 0.2s ease-in-out color;
+}
+
+.navbar_list_item:hover{
+    color: #a52a2a;
+}
+
+.account{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+}
+
+.btn_account{
+    width: 120px;
+    background-color: #00f ;
+    box-shadow: 3px 3px 6px rgba(141, 141, 141, 0.281);
     color: #fff;
-    border: none;
+    border: transparent;
+    border-radius: 5px;
+    outline: transparent;
+    padding: 8px 10px;
+    font-size: 0.9rem;
+    margin: 0px 5px;
+    transition: ease-in-out 0.2s background-color;
+}
+
+.btn_account:hover{
+    background-color: rgb(3, 3, 190);
     cursor: pointer;
-    transition: ease-in-out background-color 0.5s, color 0.5s;
 }
-.btnSingIN:hover{
-    background-color: #3f8dd6;
-    color: #fff;
-    box-shadow: 0.5px 0.5px 5px rgba(0, 0, 0, 0.385);
+
+.sidebar{
+    display: none;
 }
-.btnSingIN:focus{
-    outline: none;
+
+.account_mobile{
+    display: none;
 }
-.btnSignUP{
-    font-size: 1.05rem;
-    padding: 10px;
-    margin-left: 10px;
-    border-radius: 15px;
-    background-color: #00f;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    transition: ease-in-out background-color 0.5s, color 0.5s;
-}
-.btnSignUP:hover{
-    background-color: #3f8dd6;
-    color: #fff;
-    box-shadow: 0.5px 0.5px 5px rgba(0, 0, 0, 0.433);
-}
-.btnSignUP:focus{
-    outline: none;
-}
-/*Conteudo*/
+
+
 .corpo_site{
     background-color: #fff;
 }

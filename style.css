@@ -94,6 +94,7 @@ html{
     display: none;
 }
 
+
 .apresentacao{
     display: flex;
     justify-content: center;
@@ -196,12 +197,11 @@ html{
     height: 250px;
     background-color: #ee3b3b1f;
     border-radius: 50%;
-    animation: 20s ease-in-out infinite circAnimation;
+    animation: 12s ease-in-out infinite circAnimation alternate;
 }
 
 @keyframes circAnimation {
-    0%{left: 5%;} 50%{left: 75%;}
-    100%{left: 5%;}
+    0%{left: 5%;} 100%{left: 75%;}
 }
 
 .conteudos_image{
@@ -258,13 +258,13 @@ html{
 
 .btn_visitar button{
     width: 100%;
-    border: transparent;
     outline: transparent;
     background-color: #fff;
     color: #a52a2a;
     padding: 6px 10px;
     margin-top: 10px;
     border-radius: 5px;
+    border: 2px solid transparent;
     font-weight: 500;
     font-size: 1rem;
     box-shadow: 4px 4px 8px #691d1d59;
@@ -295,12 +295,12 @@ html{
     height: 250px;
     background-color: #ee3b3b1f;
     border-radius: 50%;
-    animation: 20s ease-in-out infinite circAnimation2;
+    animation: 12s ease-in-out infinite circAnimation2 alternate-reverse;
     z-index: 2;
 }
 
 @keyframes circAnimation2 {
-    0%{left: 75%;} 50%{left: 5%;}
+    0%{left: 5%;}    
     100%{left: 75%;}
 }
 
