@@ -418,37 +418,24 @@ details p{
     }
     
 
-    .conteudo_site{
-        margin: none;
-        padding: 5px 10px;
+    .container{
+        padding: 50px 10px;
     }
 
-    section h1{
-        text-align: left;
-        font-size: 1.8rem;
-        margin-bottom: 40px;
-        text-decoration: underline #0ff 2px;
+    .container h1{
+        font-size: 2.2rem;
+        text-align: center;
+        padding-bottom: 15px;
     }
 
-    .introducao{
-        font-size: 1.05rem;
-        font-family: Arial, Helvetica, sans-serif;
+    .container p{
+        font-size: 1rem;
+        width: 100%;
     }
 
-    .txtquest{
-        font-family: Arial, Helvetica, sans-serif;
-        margin-top: 40px;
-        font-size: 1.05rem;
-        line-height: 1.5;
-        width: auto;
-    }
-
-    .alternativas{
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 1.05rem;
-        line-height: 1.5;
-        margin-top: 15px;
-        margin-bottom: 10px;
+    .container .txtquest{
+        font-size: 1rem;
+        width: 100%;
     }
 
     .btn_verificar{
@@ -459,33 +446,9 @@ details p{
     .resposta{
         font-size: 1.05rem;
     }
-
+    
     details{
-        padding-top: 10px;
-        background-color: #aaa;
-        width: auto;
-    }
-
-    summary{
-        width: auto;
-        height: 30px;
-        padding: 5px;
-        font-size: 1.1rem;
-    }
-
-    summary::-webkit-details-marker{
-        display: none;
-    }
-
-    details p{
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 1.05rem;
-        line-height: 1.2;
-        text-align: justify;
-        width: auto;
-        padding-top: 10px;
-        padding-bottom: 20px;
-        padding-right: 60px;
+        width: 100%;
     }
 
     
