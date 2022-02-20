@@ -7,211 +7,226 @@
     <meta http-equiv="X-UA-Compatible" content="IE=7">
     <meta name="keywords" content="Primeira guerra mundial, exercícios primeira guerra mundial, exercícios de história, a grande guerra, 1914, triplice aliança, triplice entente">
     <meta name="description" content="Site com questões de história, com o intuito de reforçar o aprendizado e servir de apoio a milhares de alunos.">
-    <meta http-equiv="author" content="Historizando">
-    <link rel="shortcut icon" href="imagens/favicon/favicon.png" type="image/x-icon">
-
-    <!-- FONTES EXTERNAS -->
+    <meta http-equiv="author" content="historiando">
+    <link rel="shortcut icon" href="../../imagens/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <!--CSS-->
-    <link rel="stylesheet" href="../style-qst.css">
-    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="../questoes.css">
 
     <title>Historiando | Questões sobre a Primeira Guerra Mundial</title>
 
 </head>
 <body>
-    <!-- Cabeçalho -->
     <header class="cabecalho">
-        <!-- Cabeçalho logo -->
-        <div class="cabecalho_menu-logo">
-            <img class="cabecalho_menu-logo--imagem" src="../../imagens/logo/logo-historiando-principal.png" alt="logo do site historizando" width="260px" height="60px">
+        <div class="account_mobile">
+            <a href="#"><i class="fa fa-user-o"></i></a>
         </div>
-        <!-- Cabeçalho NavBar -->
-        <div class="cabecalho_menu-items">
-            <ul class="cabecalho_menu-lista">
-                <li class="cabecalho_menu-items--lista"><a class="cabecalho_menu-items--lista a" href="index.html">Home</a></li>
-                <li class="cabecalho_menu-items--lista"><a class="cabecalho_menu-items--lista a" href="../../sobre.html">Sobre</a></li> 
-                <li class="cabecalho_menu-items--lista"><a class="cabecalho_menu-items--lista a" href="#">Contato</a></li>
-                <li class="cabecalho_menu-items--lista"><a class="cabecalho_menu-items--lista a" href="index.html#questoes">Mais questões</a></li>
+
+        <div class="logo">
+            <a href="../../../index.html"><img class="logo_image" src="../../imagens/logo.png" alt="logo historiando"></a>
+        </div>
+
+        <div class="navbar">
+            <ul class="navbar_list">
+                <a href="historiando/src/pages/sobre.html">
+                    <li class="navbar_list_item">Sobre<li> 
+                </a>
+                <a href="historiando/src/pages/conteudos.html">
+                    <li class="navbar_list_item">Conteúdos</li> 
+                </a> 
+                <a href="historiando/src/pages/questoes.html">
+                    <li class="navbar_list_item">Questões</li> 
+                </a>
+                <a href="historiando/src/pages/contato.html">
+                    <li class="navbar_list_item">Contato</li>
+                </a>
             </ul>
         </div>
-            <!-- MENU LATERAL -->
-        <div class="cabecalho_sidebar">
+
+        <div class="account">
+            <label for="btn_sing_in">
+                <input class="btn_account" type="submit" value="ENTRAR" id="btn_sing_in">
+            </label>
+
+            <label for="btn_sing_up">
+                <input class="btn_account" type="submit" value="CADASTRAR" id="btn_sing_up">
+            </label>
+        </div>
+
+        <div class="sidebar">
             <input type="checkbox" name="check" id="check">
+
             <label for="check">
                 <i class="fa fa-bars" id="btn"></i>
                 <i class="fa fa-close" id="cancel"></i>
             </label>
-            <div class="sidebar">
+
+            <div class="sidebar_container">
                 <ul>
-                    <header>MENU</header>
-                    <li><a href="index.html"><i class="fa fa-qrcode"></i>HOME</a></li>
-                    <li><a href="index.html#conteudos"><i class="fa fa-file-word-o"></i>+ CONTEUDOS</a></li>
-                    <li><a href="index.html#questoes"><i class="fa fa-book"></i>+ QUESTÕES</a></li>
-                    <li><a href="../../sobre.html"><i class="fa fa-question-circle"></i>SOBRE</a></li>
-                    <li><a href="#"><i class="fa fa-address-card-o"></i>REGISTRO</a></li>
-                    <li><a href="#"><i class="fa fa-external-link"></i>ENTRAR</a></li>
+                    <li><a href="index.html"><i class="fa fa-columns"></i>HOME</a></li>
+                    <li><a href="historiando/src/pages/conteudos.html"><i class="fa fa-file"></i>CONTEUDOS</a></li>
+                    <li><a href="historiando/src/pages/questoes.html"><i class="fa fa-book"></i>QUESTÕES</a></li>
+                    <li><a href="historiando/src/pages/sobre.html"><i class="fa fa-question-circle"></i>SOBRE</a></li>
+                    <li><a href="historiando/src/pages/contato.html"><i class="fa fa-phone"></i>CONTATO</a></li>
                 </ul>
             </div>
         </div>
-        <!-- Cabeçalho login -->
-        <div class="cabecalho_menu-login">
-            <label for="btnSingIN">
-                <input class="btnSingIN" type="submit" value="ENTRAR" id="btnSingIN">
-            </label>
-            <label for="btnSingUP">
-                <input class="btnSignUP" type="submit" value="SIGN UP" id="btnSingUP">
-            </label>
-        </div>
     </header>
+
     <main>
-        <!--Inicio do conteudo-->
-        <section class="corpo_site">
-            <div class="conteudo_site">
-                <h1>Questões sobre a primeira guerra mundial</h1>
-                <p class="introducao">Agora, você vai poder testar através de cinco questões o seu conhecimento a respeito da Primeira Guerra Mundial.</p>
-                <p class="introducao">A Primeira Guerra Mundial, foi um conflito armado que ocorreu durantes quatro anos, entre 1914 e 1918, envolvendo vários paises, mas principalmente dois blocos: A <mark>Triplice Aliança</mark>, formada por Alemanha, Italia e o Império Austro-Hungáro, e do outro lado a <mark>Triplice Entente</mark>, formada pela França, Rússia e Inglaterra(Grã-Bretanha).</p>
-                <!--Questões-->
-                <!--Questao 01-->
-                <p class="txtquest">01) O episódio que desencadeou o começo da primeira guerra mundial foi a morte do principe herdeiro do império Austro-Hungáro, Franciso Ferdinando, que morreu em um atentado a bala, quando visitava a cidade de Sarajevo, capital da Bósnia. Neste episódio citado, quem foi o(a) responsável pela morte de Francisco Ferdinando?</p>
-                <div class="alternativas">
-                    <input type="radio" name="qst1" id="alt1q1">
-                    <label for="alt1q1">Gravilo Princip</label> <br>
-                    <input type="radio" name="qst1" id="alt2q1">
-                    <label for="alt2q1">Barão Vermelho</label> <br>
-                    <input type="radio" name="qst1" id="alt3q1">
-                    <label for="alt3q1">Bismarck</label> <br>
-                    <input type="radio" name="qst1" id="alt4q1">
-                    <label for="alt4q1">Jhon Kennedy</label>
-                </div>
-                <input class="btnverificar" type="submit" value="Verificar" onclick="verificarQuestao01()">
-                <div class="resposta" id="resposta1"></div>
-                <details>
-                    <summary>Questão Comentada</summary>
-                    <p>A alternativa correta é a Letra (A). <br> 
-                    Na visita do principe Francisco Ferdinando e sua esposa a capital da Bósnia Sarajevo, um estudante de 18 anos, de nacionalidade Sérvia, atirou com sua pistola contra o principe e sua esposa, matando ambos.</p>
-                </details>
-
-                <!--Questao 02-->
-                <p class="txtquest">02) Após o inicio da primeira guerra mundial, travou se um intenso combate entre os paises. Esses combates foram divididos em três importantes fases, quais são elas, respectivamente?</p>
-                <div class="alternativas">
-                    <input type="radio" name="qst2" id="alt1q2">
-                    <label for="alt1q2">Guerra de Posições, Ofensivas de 1918 e Dia D.</label> <br>
-                    <input type="radio" name="qst2" id="alt2q2">
-                    <label for="alt2q2">Guerra de Posições, Dia D e Guerra de Movimento.</label> <br>
-                    <input type="radio" name="qst2" id="alt3q3">
-                    <label for="altq3">Guerrade de Movimento, Guerra de Posições e Ofensivas de 1918.</label> <br>
-                    <input type="radio" name="qst2" id="alt4q4">
-                    <label for="alt4q4">Guerra de Movimento, Ofensivas de 1918 e Guerra de Posições.</label>
-                </div>
-                <input class="btnverificar" type="submit" value="Verificar" onclick="verificarQuestao02()">
-                <div class="resposta" id="resposta2"></div>
-                <details>
-                    <summary>Questão Comentada</summary>
-                    <p>A alternativa correta é a letra (C). <br>
-                    Quando no finalzinho de julho, os paises declaram guerra entre si, deu inicio uma longa Guerra de Movimento entre agosto e setembro de 1914, com os paises avançando em direção ao inimigo. Porém, com o início das batalhas e o surgimento das trincheiras, deu inicio a segunda fase da guerra, guerra de Posições. A última fase da guerra foi as Ofensivas de 1918, na qual os paises esgotaram seus ultimos esforços, dando fim a primeira guerra mundial.</p>
-                </details>
-
-                <!--Questao 03-->
-                <p class="txtquest">03) A terrível Grande Guerra, chamada assim pois não sabiam que ia ter uma segunda guerra, deixou milhões de mortos direta e indiretamente, foi uma das maiores atrocidades da humanidade até então vistas. Tais fatos, realçaram a importância da criação de uma entidade neutra, com a função de mediar a paz entre os paises, sendo assim, após o fim da primeira guerra mundial foi criado um orgão com essa função, qual era o seu nome?</p>
-                <div class="alternativas">
-                    <input type="radio" name="qst3" id="alt1q3">
-                    <label for="alt1q3">ONU - Organização das Nações Unidas</label> <br>
-                    <input type="radio" name="qst3" id="alt2q3">
-                    <label for="alt1q3">OMS - Organização Mundial da Saúde</label> <br>
-                    <input type="radio" name="qst3" id="alt3q3">
-                    <label for="alt3q3">Liga das Nações Unidas</label> <br>
-                    <input type="radio" name="qst3" id="alt4q3">
-                    <label for="alt4q3">Tribunal de Nuremberg</label>
-                </div>
-                <input class="btnverificar" type="submit" value="Verificar" onclick="verificarQuestao03()">
-                <div class="resposta" id="resposta3"></div>
-                <details>
-                    <summary>Questão Comentada</summary>
-                    <p>A alternativa correta é a letra (C). <br>
-                    Com o fim da primeira guerra mundial, surgiu a necessidade de criar uma entidade neutra para mediar a paz entre os países, foi criada então A Liga das Nações, mas por falta de investimento e partipação dos paises, ela não cumpriu com seu papel, pois, alguns anos depois, deu inicio a Segunda Guerra Mundial.</p>
-                </details>
-
-                <!--Questao 04-->
-                <p class="txtquest">04) Dentre os desdobramentos político-econômicos imediatos na ordem internacional produzidos pela Primeira Guerra Mundial (1914-1918), é correto apontar:</p>
-                <div class="alternativas">
-                    <input type="radio" name="qst4" id="alt1q4">
-                    <label for="alt1q4">O fim dos privilégios aduaneiros da França no comércio com a Alemanha.</label> <br>
-                    <input type="radio" name="qst4" id="alt2q4">
-                    <label for="alt2q4">O surgimento da Organização das Nações Unidas, por meio do Tratado de Sevres.</label> <br>
-                    <input type="radio" name="qst4" id="alt3q4">
-                    <label for="alt3q4">A criação da Iugoslávia, como decorrência das questões políticas dos Bálcãs.</label> <br>
-                    <input type="radio" name="qst4" id="alt4q4">
-                    <label for="alt4q4"> A incorporação da Hungria e da Tchecoslováquia aos domínios austríacos.</label>
-                </div>
-                <input class="btnverificar" type="submit" value="Verificar" onclick="verificarQuestao04()">
-                <div class="resposta" id="resposta4"></div>
-                <details>
-                    <summary>Questao Comentada</summary>
-                    <p>Reino da Iugoslávia foi uma tentativa, ainda que artificial, de manter as nações balcânicas unidas.</p>
-                </details>
-                
-                <!--Questao 05-->
-                <p class="txtquest">05) A Primeira Guerra se caracterizou pelo uso de várias tecnologias mortíferas no campo de batalha. Dentre as quais podemos destacar:</p>
-                <div class="alternativas">
-                    <input type="radio" name="qst5" id="alt1q5">
-                    <label for="alt1q5">Armas químicas</label> <br>
-                    <input type="radio" name="qst5" id="alt2q5">
-                    <label for="alt2q5">Rifles de repetição</label> <br>
-                    <input type="radio" name="qst5" id="alt3q5">
-                    <label for="alt3q5">Granadas de mão</label> <br>
-                    <input type="radio" name="qst5" id="alt4q5">
-                    <label for="alt4q5">Navios de guerra</label>
-                </div>
-                <input class="btnverificar" type="submit" value="Verificar" onclick="verificarQuestao05()">
-                <div class="resposta" id="resposta5"></div>
-                <details class="detailsFinal">
-                    <summary>Questão Comentada</summary>
-                    <p>As armas químicas - especialmente os gases - foram empregados em solo europeu pela primeira vez neste conflito. As outras armas citadas nas demais alternativas já existiam antes desta guerraAs armas químicas - especialmente os gases - foram empregados em solo europeu pela primeira vez neste conflito. As outras armas citadas nas demais alternativas já existiam antes desta guerra</p>
-                </details>            </div>
-            <div class="perfil">
-                <div class="perfil_foto">
-                    <img class="perfil_foto-imagem" src="imagens/profile/profile-picture.jpg" alt="imagem do criador do site" width="90px" height="90px">
-                </div>
-                <div class="perfil_txt">
-                    <p class="perfil_txt"> Olá, sou Erick Balbino, desenvolvedor web <br> e entusiasta de história.</p>
-                </div>
+        <div class="container">
+            <h1>Questões sobre a primeira guerra mundial</h1>
+            <p>Agora, você vai poder testar através de cinco questões o seu conhecimento a respeito da Primeira Guerra Mundial.</p>
+            <p>A Primeira Guerra Mundial, foi um conflito armado que ocorreu durantes quatro anos, entre 1914 e 1918, envolvendo vários paises, mas principalmente dois blocos: A <mark>Triplice Aliança</mark>, formada por Alemanha, Italia e o Império Austro-Hungáro, e do outro lado a <mark>Triplice Entente</mark>, formada pela França, Rússia e Inglaterra(Grã-Bretanha).</p>
+            
+            <!--Questao 01-->
+            <p class="txtquest">01) O episódio que desencadeou o começo da primeira guerra mundial foi a morte do principe herdeiro do império Austro-Hungáro, Franciso Ferdinando, que morreu em um atentado a bala, quando visitava a cidade de Sarajevo, capital da Bósnia. Neste episódio citado, quem foi o(a) responsável pela morte de Francisco Ferdinando?</p>
+            <div class="alternativas">
+                <label for="alt1q1">
+                    <input type="radio" name="qst1" id="alt1q1"> Gravilo Princip
+                </label>
+                <label for="alt2q1"> 
+                    <input type="radio" name="qst1" id="alt2q1"> Barão Vermelho
+                </label>
+                <label for="alt3q1">
+                    <input type="radio" name="qst1" id="alt3q1"> Bismarck
+                </label>
+                <label for="alt4q1">
+                    <input type="radio" name="qst1" id="alt4q1"> Jhon Kennedy
+                </label>
             </div>
-        </section>
+            <input class="btn_verificar" type="submit" value="Verificar" onclick="verificarQuestao01()">
+            <div class="resposta" id="resposta1"></div>
+            <details>
+                <summary>Questão Comentada</summary>
+                <p>A alternativa correta é a Letra (A). 
+                Na visita do principe Francisco Ferdinando e sua esposa a capital da Bósnia Sarajevo, um estudante de 18 anos, de nacionalidade Sérvia, atirou com sua pistola contra o principe e sua esposa, matando ambos.</p>
+            </details>
+
+            <!--Questao 02-->
+            <p class="txtquest">02) Após o inicio da primeira guerra mundial, travou se um intenso combate entre os paises. Esses combates foram divididos em três importantes fases, quais são elas, respectivamente?</p>
+            <div class="alternativas">
+                <label for="alt1q2">
+                    <input type="radio" name="qst2" id="alt1q2"> Guerra de Posições, Ofensivas de 1918 e Dia D.
+                </label>
+                <label for="alt2q2">
+                    <input type="radio" name="qst2" id="alt2q2"> Guerra de Posições, Dia D e Guerra de Movimento.
+                </label>
+                <label for="alt3q2">
+                    <input type="radio" name="qst2" id="alt3q2"> Guerrade de Movimento, Guerra de Posições e Ofensivas de 1918.
+                </label>
+                <label for="alt4q2">
+                    <input type="radio" name="qst2" id="alt4q2"> Guerra de Movimento, Ofensivas de 1918 e Guerra de Posições.
+                </label>
+            </div>
+            <input class="btn_verificar" type="submit" value="Verificar" onclick="verificarQuestao02()">
+            <div class="resposta" id="resposta2"></div>
+            <details>
+                <summary>Questão Comentada</summary>
+                <p>A alternativa correta é a letra (C).
+                Quando no finalzinho de julho, os paises declaram guerra entre si, deu inicio uma longa Guerra de Movimento entre agosto e setembro de 1914, com os paises avançando em direção ao inimigo. Porém, com o início das batalhas e o surgimento das trincheiras, deu inicio a segunda fase da guerra, guerra de Posições. A última fase da guerra foi as Ofensivas de 1918, na qual os paises esgotaram seus ultimos esforços, dando fim a primeira guerra mundial.</p>
+            </details>
+
+            <!--Questao 03-->
+            <p class="txtquest">03) A terrível Grande Guerra, chamada assim pois não sabiam que ia ter uma segunda guerra, deixou milhões de mortos direta e indiretamente, foi uma das maiores atrocidades da humanidade até então vistas. Tais fatos, realçaram a importância da criação de uma entidade neutra, com a função de mediar a paz entre os paises, sendo assim, após o fim da primeira guerra mundial foi criado um orgão com essa função, qual era o seu nome?</p>
+            <div class="alternativas">
+                <label for="alt1q3">
+                    <input type="radio" name="qst3" id="alt1q3"> ONU - Organização das Nações Unidas
+                </label>
+                <label for="alt2q3">
+                    <input type="radio" name="qst3" id="alt2q3"> OMS - Organização Mundial da Saúde
+                </label>
+                <label for="alt3q3">
+                    <input type="radio" name="qst3" id="alt3q3"> Liga das Nações Unidas
+                </label>
+                <label for="alt4q3">
+                    <input type="radio" name="qst3" id="alt4q3"> Tribunal de Nuremberg
+                </label>
+            </div>
+            <input class="btn_verificar" type="submit" value="Verificar" onclick="verificarQuestao03()">
+            <div class="resposta" id="resposta3"></div>
+            <details>
+                <summary>Questão Comentada</summary>
+                <p>A alternativa correta é a letra (C).
+                Com o fim da primeira guerra mundial, surgiu a necessidade de criar uma entidade neutra para mediar a paz entre os países, foi criada então A Liga das Nações, mas por falta de investimento e partipação dos paises, ela não cumpriu com seu papel, pois, alguns anos depois, deu inicio a Segunda Guerra Mundial.</p>
+            </details>
+
+            <!--Questao 04-->
+            <p class="txtquest">04) Dentre os desdobramentos político-econômicos imediatos na ordem internacional produzidos pela Primeira Guerra Mundial (1914-1918), é correto apontar:</p>
+            <div class="alternativas">
+                <label for="alt1q4">
+                    <input type="radio" name="qst4" id="alt1q4"> O fim dos privilégios aduaneiros da França no comércio com a Alemanha.
+                </label>
+                <label for="alt2q4">
+                    <input type="radio" name="qst4" id="alt2q4"> O surgimento da Organização das Nações Unidas, por meio do Tratado de Sevres.
+                </label>
+                <label for="alt3q4">
+                    <input type="radio" name="qst4" id="alt3q4"> A criação da Iugoslávia, como decorrência das questões políticas dos Bálcãs.
+                </label>
+                <label for="alt4q4">
+                    <input type="radio" name="qst4" id="alt4q4"> A incorporação da Hungria e da Tchecoslováquia aos domínios austríacos.
+                </label>
+            </div>
+            <input class="btn_verificar" type="submit" value="Verificar" onclick="verificarQuestao04()">
+            <div class="resposta" id="resposta4"></div>
+            <details>
+                <summary>Questao Comentada</summary>
+                <p>Reino da Iugoslávia foi uma tentativa, ainda que artificial, de manter as nações balcânicas unidas.</p>
+            </details>
+            
+            <!--Questao 05-->
+            <p class="txtquest">05) A Primeira Guerra se caracterizou pelo uso de várias tecnologias mortíferas no campo de batalha. Dentre as quais podemos destacar:</p>
+            <div class="alternativas">
+                
+                <label for="alt1q5">
+                    <input type="radio" name="qst5" id="alt1q5"> Armas químicas
+                </label>
+                
+                <label for="alt2q5">
+                    <input type="radio" name="qst5" id="alt2q5"> Rifles de repetição
+                </label>
+                <label for="alt3q5">
+                    <input type="radio" name="qst5" id="alt3q5"> Granadas de mão
+                </label>
+                <label for="alt4q5">
+                    <input type="radio" name="qst5" id="alt4q5"> Navios de guerra
+                </label>
+            </div>
+            <input class="btn_verificar" type="submit" value="Verificar" onclick="verificarQuestao05()">
+            <div class="resposta" id="resposta5"></div>
+            <details class="detailsFinal">
+                <summary>Questão Comentada</summary>
+                <p>As armas químicas - especialmente os gases - foram empregados em solo europeu pela primeira vez neste conflito. As outras armas citadas nas demais alternativas já existiam antes desta guerra.</p>
+            </details>           
+        </div>
     </main>
     
-    <!--Rodapé-->
     <footer class="rodape">
-        <div class="rodape_secao">
-            <div class="rodape_introducao">
-                <h2>Historizando</h2>
-                <p class="desktop">Site criado por um estudante que tem o sonho de mudar <br> o mundo através da educação!</p>
-                <p class="mobile">Site criado por um estudante que tem o sonho de mudar o mundo através da educação!</p>
-            </div>
-            <div class="rodape_redesSociais">
-                <h2 id="contato">Contato</h2>
-                <p>Para mais conteúdo, siga-me nas redes sociais!</p>
-                <a class="rodape_icone" href="https://www.facebook.com/profile.php?id=100036650766393" target="_blank" rel="noopener"><img class="icone_facebook" src="../../imagens/icones/facebook.png" alt="Logo do facebook" width="35px" height="35px"></a>
-                <a class="rodape_icone" href="https://www.linkedin.com/in/erick-balbino-da-silva-7038351a1/" target="_blank" rel="noopener"><img class="icone_linkedin" src="../../imagens/icones/linkedin.png" alt="Logo do linkedIn" width="35px" height="35px"></a>
-                <a class="rodape_icone" href="https://www.instagram.com/dev.eriick/" target="_blank" rel="noopener"><img class="icone_instagram" src="../../imagens/icones/instagram.png" alt="Logo do instagram" width="35px" height="35px"></a>
-                <a class="rodape_icone" href="https://www.github.com/ErickBalbino" target="_blank" rel="noopener"><img class="icone_github" src="../../imagens/icones/github.png" alt="Logo do GitHub" width="35px" height="35px"></a>
-            </div>
-            <div class="rodape_endereco">
-                <h2>Endereço</h2>
-                <p>
-                    Rua Cesarina Barreto Lima, 253 <br>
-                    Campo dos velhos, Sobral-CE <br>
-                    (88) 99803-4382
-                </p>
-            </div>
+        <div class="text">
+            <img src="../../imagens/logo-footer.png" alt="logo footer">
+            <p>O historiando é um projeto desenvolvido para propagar o ensino de história de maneira divertida por um <a href="https://erickbalbino.github.io/portfolio" target="_blank">estudante</a> amante de tecnologia e história</p>
         </div>
-        <div class="rodape_copy">
-            <p>Todos os direitos reservados a &copy; Erick Systems</p>
+
+        <div class="list">
+            <ul>
+                <h3>Historiando</h3>
+                <a href="historiando/src/pages/sobre.html"><li>Sobre</li></a>
+                <a href="historiando/src/pages/conteudos.html"><li>Conteúdos</li></a>
+                <a href="historiando/src/pages/questoes.html"><li>Questões</li></a>
+                <a href="historiando/src/pages/contato.html"><li>Contato<li></a>
+            </ul>
+        </div>
+
+        <div class="redes_sociais">
+            <h3>Redes do criador</h3>
+            <ul>
+                <a href="https://www.instagram.com/dev.eriick/" target="_blank"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100036650766393" target="_blank"><i class="fa fa-facebook"></i></a>
+                <a href="https://wa.me/+5588998023871?text=Olá,%20 vim%20do%20historiando!" target="_blank"><i class="fa fa-whatsapp"></i></a>
+                <a href="https://www.linkedin.com/in/erick-balbino-da-silva-7038351a1/" target="_blank"><i class="fa fa-linkedin"></i></a>
+            </ul>
         </div>
     </footer> 
 
-    <!--JavaScript-->
     <script src="script.js"></script>
 </body>
 </html>

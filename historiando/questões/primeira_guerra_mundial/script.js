@@ -1,13 +1,10 @@
-  //Verificar questão 1
 function verificarQuestao01() {
-    //Variaveis
-    var resposta = window.document.getElementsByName('qst1')  // Pegar resposta do usuário
-    var resultado = window.document.getElementById('resposta1') // Substituir pelo resultado
+    let resposta = window.document.getElementsByName('qst1');
+    let resultado = window.document.getElementById('resposta1');
 
-    //Verificar as respostas
     if(resposta[0].checked){
         resultado.innerHTML = `A sua resposta está correta!`
-        resultado.style.color = '#0f0'
+        resultado.style.color = '#008000'
     }else{
         if(resposta[1].checked){
             resultado.innerHTML = `A sua resposta está incorreta! Mas não desanime.`
@@ -24,10 +21,9 @@ function verificarQuestao01() {
     }
 }
 
-//Verificar questão 2
 function verificarQuestao02() {
-    var resposta = window.document.getElementsByName('qst2')  //verificar resposta do usuario
-    var resultado = window.document.getElementById('resposta2')  //substituir pelo resultado
+    let resposta = window.document.getElementsByName('qst2') 
+    let resultado = window.document.getElementById('resposta2')
 
     if(resposta[0].checked){
         resultado.innerHTML = `A sua resposta está incorreta! Mas não desanime.`
@@ -39,7 +35,7 @@ function verificarQuestao02() {
         }
         if(resposta[2].checked){
             resultado.innerHTML = `A sua resposta está correta!`
-            resultado.style.color = '#0f0'
+            resultado.style.color = '#008000'
         }
         if(resposta[3].checked){
             resultado.innerHTML = `A sua resposta está incorreta! Mas não desanime.`
@@ -48,10 +44,9 @@ function verificarQuestao02() {
     }
 } 
 
-//Verificar questão 3
 function verificarQuestao03(){
-    var resposta = window.document.getElementsByName('qst3') //verificar resposta do usuario
-    var resultado = window.document.getElementById('resposta3') //substituir pelo resultado
+    let resposta = window.document.getElementsByName('qst3')
+    let resultado = window.document.getElementById('resposta3')
 
     if(resposta[0].checked){
         resultado.innerHTML = `A sua resposta está incorreta! Mas não desanime.`
@@ -63,7 +58,7 @@ function verificarQuestao03(){
         }
         if(resposta[2].checked){
             resultado.innerHTML = `A sua resposta está correta!`
-            resultado.style.color = '#0f0'
+            resultado.style.color = '#008000'
         }
         if(resposta[3].checked){
             resultado.innerHTML = `A sua resposta está incorreta! Mas não desanime.`
@@ -74,8 +69,8 @@ function verificarQuestao03(){
 
 //Verificar questão 4
 function verificarQuestao04(){
-    var resposta = window.document.getElementsByName('qst4') //verificar resposta do usuario   
-    var resultado = window.document.getElementById('resposta4') //substituir pelo resultado
+    let resposta = window.document.getElementsByName('qst4');
+    let resultado = window.document.getElementById('resposta4');
 
     if(resposta[0].checked){
         resultado.innerHTML = `A sua resposta está incorreta! Mas não desanime.`
@@ -87,7 +82,7 @@ function verificarQuestao04(){
         }
         if(resposta[2].checked){
             resultado.innerHTML = `A sua resposta está correta!`
-            resultado.style.color = '#0f0 '
+            resultado.style.color = '#008000'
         }
         if(resposta[3].checked){
             resultado.innerHTML = `A sua resposta está incorreta! Mas não desanime.`
@@ -95,14 +90,14 @@ function verificarQuestao04(){
         }
     }
 }
-//Verificar questão 5
+
 function verificarQuestao05(){ 
-    var resposta = window.document.getElementsByName('qst5') //verificar resposta do usuario
-    var resultado = window.document.getElementById('resposta5') //substituir pelo resultado
+    let resposta = window.document.getElementsByName('qst5');
+    let resultado = window.document.getElementById('resposta5');
 
     if(resposta[0].checked){
         resultado.innerHTML = `A sua resposta está correta!`
-        resultado.style.color = '#0f0'
+        resultado.style.color = '#008000'
     }else{
         if(resposta[1].checked){
             resultado.innerHTML = `A sua resposta está incorreta! Mas não desanime.`

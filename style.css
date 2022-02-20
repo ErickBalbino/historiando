@@ -356,6 +356,7 @@ html{
     transform: rotateZ(180deg);
 }
 
+
 .rodape{
   background-color: #f9f9f9;
   height: 300px;
@@ -590,6 +591,7 @@ html{
         font-size: 1.25rem;
     }
 
+    
     .apresentacao_text{
         box-sizing: border-box;
         height: 70%;

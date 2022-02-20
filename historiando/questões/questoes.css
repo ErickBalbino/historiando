@@ -95,253 +95,239 @@ html{
 }
 
 
-.corpo_site{
-    background-color: #fff;
+.container{
+    padding: 50px 20px;
 }
-.conteudo_site{
-    background-color: #fff;
-    margin: auto;
-    text-align: justify;
-    padding-top: 50px;
-    padding-left: 15px;
-    padding-bottom: 15px;
-    padding-right: 15px;
+
+.container h1{
+    font-size: 2.4rem;
+    font-weight: 500;
+    text-decoration: 3px #a52a2a underline;
+    padding-bottom: 5px;
 }
-section h1{
-    font-size: 30pt;
-    margin-bottom: 30px;
-    text-decoration: underline #0ff 4px;
-}
-.perfil{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-.perfil_foto-imagem{
-    border-radius: 50%;
-    margin-left: 20px;
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
-.perfil_txt{
-    margin-left: 5px;
-    font-weight: bold;
-    font-size: 18px;
-    font-family: 'Times New Roman', Times, serif;
-}
-.introducao{
-    font-size: 18px;
+
+.container p{
+    font-size: 1.05rem;
     line-height: 1.5;
-    text-align: justify;
+    width: 90%;
 }
-/*Questões*/
-.txtquest{
-    margin-top: 40px;
-    font-size: 18px;
-    line-height: 1.5;
-    text-align: justify;
-    width: 900px;
+
+.container .txtquest{
+    width: 60%;
+    padding-top: 60px;
 }
-input{
-    cursor: pointer;
-}
+
 .alternativas{
-    font-size: 18px;
-    line-height: 1.5;
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
-/* Resposta das questões */
-.btnverificar{
-    display: inline-block;
-    font-size: 13pt;
-    font-weight: bold;
-    margin-bottom: 20px;
-    background-color: #22bb36;
-    color: #fff;
-    border-radius: 8px;
-    padding: 5px;
-    cursor: pointer;
-    margin-left: 10px;
-    border: none;
-}
-.btnverificar:focus{
-    outline: none;
-}
-.resposta{
-    padding: 0px 0px 10px 30px;
-    margin-bottom: 10px;
-    font-size: 1.1rem;
-    font-weight: bold;
-}
-details{
-    padding-top: 10px;
-    background-color: #aaa;
-    width: 900px;
-    border-radius: 10px;
-}
-summary{
     display: flex;
-    background: #00f;
-    width: 900px;
-    height: 30px;
-    color: #fff;
-    align-items: center;
-    justify-content: center;
-    text-transform: uppercase;
-    font-weight: bold;
-    border-radius: 10px;
-    cursor: pointer;
-    
-}
-summary:focus{
-    outline: none;
-}
-summary::-webkit-details-marker{
-            display: none;
-}
-details p{
-    font-size: 18px;
+    flex-direction: column;
+    font-size: 1.05rem;
     line-height: 1.5;
-    text-align: justify;
-    width: 700px;
-    margin-left: 80px;
-    padding-top: 10px;
-    padding-bottom: 20px;
-}
-.detailsFinal{
-    margin-bottom: 40px;
-}
-.perfil{
-    background-color: #ccc;
+    margin: 10px 0px;
 }
 
-/* Rodapé */
-.rodape{
-    background-color: #ff7040;
+.btn_verificar{
+    width: 100px;
+    background-color: #008000;
     color: #fff;
-    padding: 50px 0px 30px 0px;
-}
-.rodape_secao{
-    display: flex;
-    justify-content: space-around;
-}
-.rodape_introducao h2{
-    font-size: 1.7rem;
-    margin-bottom: 10px;
-}
-.mobile{
-    display: none;
-}
-.rodape_introducao p{ 
-    font-size: 1.1rem;
-    line-height: 1.15;
-}
-.rodape_redesSociais h2{
-    font-size: 1.7rem;
-    margin-bottom: 10px;
-}
-.rodape_redesSociais p{
-    font-size: 1.1rem; 
-    line-height: 1.15;
-}
-.icone_facebook{
-    margin-top: 5px;
-    margin-bottom: 2px;
-    margin-right: 6px;
-}
-.icone_linkedin{
-    margin-top: 5px;
-    margin-bottom: 2px;
-    margin-right: 6px;
-}
-.icone_instagram{
-    margin-top: 5px;
-    margin-right: 6px;
-}
-.icone_github{
-    margin-top: 5px;
-    margin-left: 6px;
-}
-.rodape_icone{
-    width: 20px;
-    height: 30px;
-    background-color: #eee;
-    border-radius: 70%;
-}
-.icone_facebook:hover{
-    transform: scale(1.1);
-}
-.icone_linkedin:hover{
-    transform: scale(1.1);
-}
-.icone_instagram:hover{
-    transform: scale(1.1);
-}
-.icone_github:hover{
-    transform: scale(1.1);
-}
-.rodape_endereco h2{
-    font-size: 1.7rem;
-    margin-bottom: 10px;
-}
-.rodape_endereco p{
-    font-size: 1.1rem;
-    line-height: 1.15;
-    font-style: italic;
-}
-.rodape_copy{
+    font-size: 1rem;
+    padding: 5px 10px;
+    margin: 15px 0px;
     text-align: center;
-    margin-top: 50px;
-    font-size: 1.1rem;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    box-shadow: 3px 3px 6px #01500128;
+    transition: 0.2s ease-in-out background-color;
 }
 
-/* Medias queries*/
+.btn_verificar:hover{
+    background-color: #016801;
+    cursor: pointer;
+}
 
-/* CELULARES */
+.resposta{
+    padding: 0px 0px 20px 50px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+details{
+    width: 60%;
+    background-color: #f4f4f4;
+    border-radius: 0px 0px 5px 5px;
+}
+
+details summary{
+    background-color: #00f;
+    color: #fff;
+    width: 100%;
+    padding: 5px 0px;
+    border-radius: 5px;
+    border: transparent;
+    outline: transparent;
+    box-shadow: 2px 2px 5px rgba(3, 3, 180, 0.13);
+    text-align: center;
+    font-size: 1.05rem;
+    cursor: pointer;
+    transition: 0.2s ease-in-out background-color;
+}
+
+details summary:hover{
+    background-color: rgb(3, 3, 226);
+}
+
+details p{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+
+.rodape{
+    background-color: #f9f9f9;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.rodape .text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rodape .text img{
+    width: 170px;
+}
+
+.rodape .text p{
+    width: 80%;
+}
+
+.rodape .text a{
+    color: #a52a2a
+}
+
+.rodape .list{
+    width: 25%;
+}
+
+.rodape .list ul{
+    width: 80px;
+}
+
+.rodape .list li{
+    font-size: 1rem;
+    line-height: 2;
+    width: 80px;
+    color: #000;
+    transition: 0.2s ease-in-out color;
+}    
+
+.rodape .list li:hover{
+    cursor: pointer;
+    color: #a52a2a;
+}
+
+.rodape .list h3{
+    font-size: 1.6rem;
+    font-weight: 500;
+    border-bottom: 3px solid #a52a2a;
+    width: 200px;
+    margin: 5px 0px;
+}
+
+.rodape .redes_sociais{
+    width: 25%;
+    height: 165px;
+}
+
+.rodape .redes_sociais h3{
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 30px;
+    width: 80%;
+    border-bottom: 3px solid #a52a2a;
+}
+
+.rodape .redes_sociais ul{
+    display: flex;
+    margin-left: 20px;
+}
+
+.rodape .redes_sociais i{
+    width: 20px;
+    height: 20px;
+    margin: 0px 5px;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background-color: #a52a2a;
+    border: 2px solid #a52a2a;
+    color: #f9f9f9;
+    padding: 7px;
+}
+
+.rodape .redes_sociais i:hover{
+    background-color: #f9f9f9;
+    color: #a52a2a;
+}
+
+
 @media (max-width: 768px){
-    /* CABEÇALHO */
+    body{
+        overflow-x: hidden;
+    }
+    
     .cabecalho{
-        width: 100%;
         display: flex;
         flex-direction: row-reverse;
-        justify-content: space-around;
+        height: auto;
     }
-    .cabecalho_menu-items{
+
+    .navbar{
         display: none;
     }
-    .cabecalho_menu-login{
-        display: none;
+
+    .logo{
+        width: 55%;
+        display: flex;
+        justify-content: center ;
     }
-    /* MENU LATERAL */
-    .cabecalho_sidebar{
+
+    .logo_image{
+        padding: 0;
+        width: 90px;
+    }
+
+    .sidebar{
+        width: 25%;
         display: flex;
         height: 100%;
         z-index: 1;
-        width: 50%;
     }
-    .sidebar{
+
+    .sidebar_container{
         display: flex;
         position: fixed;
+        top: 0px;
         left: -250px;
         width: 250px;
         background-color: #042331;
         height: 100%;
         transition: ease-in-out 0.5s;
     }
-    .sidebar header{
-        text-align: center;
-        font-size: 1.5rem;
-        color: #fff;
-        padding: 30px;
-        background-color: #063146;
-    }
-    .sidebar ul{
+
+    .sidebar_container ul{
         position: absolute;
+        top: 8%;
         width: 100%;
-        height: 100%;
     }
-    .sidebar ul a{
+
+    .sidebar_container ul a{
         display: block;
         color: #fff;
         height: 100%;
@@ -354,79 +340,101 @@ details p{
         border-bottom: 1px solid #000;
         transition: ease-in-out 0.3s;
     }
-    .sidebar li:hover a{
+
+    .sidebar_container li:hover a{
         padding-left: 50px;
     }
-    .sidebar ul li i{
+
+    .sidebar_container ul li i{
         margin-right: 10px;
     }
+
     #check{
         display: none;
     }
+
     label #btn, label #cancel{
         display: flex;
         align-items: center;
         position: absolute;
         cursor: pointer;
     }
+
     label #btn{
         top: 25px;
-        left: 25px;
+        left: 20px;
         color: #000;
-        font-size: 26px;
+        font-size: 1.5rem;
+        font-weight: 400;
     }
+
     label #cancel{
-        z-index: 1111;
-        left: -32px;
-        top: 25px;
-        font-size: 20px;
-        border: 2px solid #000;
-        color: #f00;
-        padding: 5px;
+        z-index: 2;
+        top: 10px;
+        left: -35px;
+        font-size: 1rem;
+        text-align: center;
+        color: #d83a3a;
+        border: 2px solid #ddd;
+        padding: 1px 5px;
     }
-    #check:checked ~ .sidebar{
+
+    #check:checked ~ .sidebar_container{
         transition: ease-in-out 0.5s;
         transform: translateX(250px);
     }
+
     #check:checked ~ label #btn{
         left: 250px;
         opacity: 0;
         pointer-events: none;
     }
+
     #check:checked ~ label #cancel{
         position: fixed;
         transition: ease-in-out 0.5s;
-        left: 30px;
+        left: 210px;
     }    
-    .sidebar ul li a:checked ~ .sidebar{
+
+    .sidebar_container ul li a:checked ~ .sidebar_container{
         left: -250px;
     }
-    /* LOGO */
-    .cabecalho_menu-logo{
+
+    .account{
+        display: none;
+    }
+
+    .account_mobile{
+        width: 20%;
         display: flex;
-        width: 50%;
+        align-items: center;
+        justify-content: flex-end;
+        padding-right: 20px;
     }
-    .cabecalho_menu-logo--imagem{
-        width: 160px;
-        margin-left: 0px;
+
+    .account_mobile a i{
+        color: #000;
+        font-size: 1.25rem;
     }
-    /* corpo do site */
+    
+
     .conteudo_site{
         margin: none;
-        padding-left: 10px;
-        padding-bottom: 5px;
-        padding-right: 10px;
+        padding: 5px 10px;
     }
+
     section h1{
         text-align: left;
         font-size: 1.8rem;
         margin-bottom: 40px;
         text-decoration: underline #0ff 2px;
     }
+
     .introducao{
         font-size: 1.05rem;
         font-family: Arial, Helvetica, sans-serif;
     }
+
     .txtquest{
         font-family: Arial, Helvetica, sans-serif;
         margin-top: 40px;
@@ -434,6 +442,7 @@ details p{
         line-height: 1.5;
         width: auto;
     }
+
     .alternativas{
         font-family: Arial, Helvetica, sans-serif;
         font-size: 1.05rem;
@@ -441,27 +450,33 @@ details p{
         margin-top: 15px;
         margin-bottom: 10px;
     }
-    .btnverificar{
+
+    .btn_verificar{
         font-size: 1.05rem;
         padding: 5px;
     }
+
     .resposta{
         font-size: 1.05rem;
     }
+
     details{
         padding-top: 10px;
         background-color: #aaa;
         width: auto;
     }
+
     summary{
         width: auto;
         height: 30px;
         padding: 5px;
         font-size: 1.1rem;
     }
+
     summary::-webkit-details-marker{
         display: none;
     }
+
     details p{
         font-family: Arial, Helvetica, sans-serif;
         font-size: 1.05rem;
@@ -472,137 +487,46 @@ details p{
         padding-bottom: 20px;
         padding-right: 60px;
     }
-    .perfil_foto-imagem{
-        border-radius: 50%;
-        margin-left: 10px;
-    }
-    .perfil_txt{
-        margin-left: 5px;
-        font-size: 1.05rem;
-        font-family: 'Times New Roman', Times, serif;
-    }
-    /* Rodapé */
-    .rodape_secao{
-        display: block;
-    }
-    .rodape_introducao h2{
-        margin-bottom: 0px;
-        margin-left: 5px;
-    }
-    .rodape_introducao p{ 
-        padding: 10px;
-        text-align: justify;
-        font-size: 1.05rem;
-        font-weight: bold;
-    }
-    .rodape_redesSociais h2{
-        padding: 5px;
-        margin-top: 20px;
-        margin-bottom: 0px;
-    }
-    .rodape_redesSociais p{
-        padding: 10px;
-        text-align: justify;
-        font-size: 1.05rem;
-        font-weight: bold;
-    }
-    .rodape_icone{
-        margin-left: 10px;
-    }
-    .rodape_endereco h2{
-        font-size: 1.7rem;
-        margin: 40px 0px 10px 5px;
-    }
-    .rodape_endereco p{
-        font-size: 1.05rem;
-        line-height: 1.15;
-        font-style: italic;
-        margin-left: 10px;
-        font-weight: bold;
-    }
-    .rodape_copy{
-        text-align: center;
-        margin-top: 30px;
-        font-size: 1.05rem;
-        font-weight: bold;
-    }
-}
 
-@media(min-width: 769px) and (max-width: 880px){
-    /* Cabecalho */
-    .cabecalho{
+    
+    .rodape{
+        box-sizing: border-box;
+        padding: 40px 10px;
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+    }
+
+    .rodape .text,
+    .rodape .list,
+    .rodape .redes_sociais{
         width: 100%;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.365);
+        margin-bottom: 30px;
     }
-    /* Cabecalho logo */
-    .cabecalho_menu-logo{
-        width: 30%;
+
+    .rodape .text{
+        align-items: flex-start;
     }
-    .cabecalho_menu-logo--imagem{
+
+    .rodape .text img{
+        margin: auto;
+    }
+
+    .rodape .text p{
+        width: 100%;
+    }
+
+    .rodape .list h3{
+        width: 180px;
+    }
+
+    .rodape .redes_sociais h3{
+        width: 250px;
+    }
+
+    .rodape .redes_sociais ul{
+        width: 100%;
+        justify-content: center;
         margin-left: 0px;
-        width: 200px;
-    }
-    /* Cabecalho navbar */
-    .cabecalho_menu-items{
-        display: flex;
-        width: 40%;
-    }
-    .cabecalho_menu-lista{
-        width: 100%;
-    }
-    .cabecalho_menu-items--lista{
-        display: flex;
-        padding-right: 30px;
-    }
-    .cabecalho_menu-items--lista a{
-        font-size: 1.05rem;
-        font-weight: bold;
-    }
-    /* Cabecalho login */
-    .cabecalho_menu-login{
-        display: flex;
-        width: 20%;
-    }
-    .btnSingIN{
-        font-size: 0.8rem;
-        padding: 10px;
-        margin-left: 10px;
-        border-radius: 15px;
-        background-color: #00f;
-        color: #fff;
-        border: none;
-        cursor: pointer;
-        transition: ease-in-out background-color 0.5s, color 0.5s;
-    }
-    .btnSingIN:hover{
-        background-color: #3f8dd6;
-        color: #fff;
-        box-shadow: 0.5px 0.5px 5px rgba(0, 0, 0, 0.385);
-    }
-    .btnSingIN:focus{
-        outline: none;
-    }
-    .btnSignUP{
-        font-size: 0.8rem;
-        padding: 10px;
-        margin-left: 10px;
-        border-radius: 15px;
-        background-color: #00f;
-        color: #fff;
-        border: none;
-        cursor: pointer;
-        transition: ease-in-out background-color 0.5s, color 0.5s;
-    }
-    .btnSignUP:hover{
-        background-color: #3f8dd6;
-        color: #fff;
-        box-shadow: 0.5px 0.5px 5px rgba(0, 0, 0, 0.433);
-    }
-    .btnSignUP:focus{
-        outline: none;
-    }
-    .conteudo_banner img{
-        width: 100%;
-        height: 350px;
     }
 }
