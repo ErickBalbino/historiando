@@ -1,0 +1,496 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.cabecalho{
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0px;
+}
+
+.logo{
+    width: 20%;
+}
+
+.logo_image{
+    padding-left: 40px;
+    width: 100px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    width: 55%;
+}
+
+.navbar_list{
+    display: flex;
+    justify-content: center;
+}
+
+.navbar_list a{
+    color: #000;
+    transition: 0.2s ease-in-out color;
+}
+
+.navbar_list a:hover{
+    color: #a52a2a;
+}
+
+.navbar_list_item{
+    margin: 0px 15px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #000;
+    transition: 0.2s ease-in-out color;
+}
+
+.navbar_list_item:hover{
+    color: #a52a2a;
+}
+
+.account{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+}
+
+.btn_account{
+    width: 120px;
+    background-color: #00f ;
+    box-shadow: 3px 3px 6px rgba(141, 141, 141, 0.281);
+    color: #fff;
+    border: transparent;
+    border-radius: 5px;
+    outline: transparent;
+    padding: 8px 10px;
+    font-size: 0.9rem;
+    margin: 0px 5px;
+    transition: ease-in-out 0.2s background-color;
+}
+
+.btn_account:hover{
+    background-color: rgb(3, 3, 190);
+    cursor: pointer;
+}
+
+.sidebar{
+    display: none;
+}
+
+.account_mobile{
+    display: none;
+}
+
+
+main{
+    display: flex;
+    justify-content: center;
+    margin: 70px 0px;
+}
+
+.container{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    background-color: #935A50;
+    height: 580px;
+    width: 40vw;
+    border-radius: 5px;
+    box-shadow: 4px 4px 8px #5f19192c;
+}
+
+.container .buttons{
+    display: flex;
+}
+
+.container .buttons button{
+    box-sizing: border-box;
+    width: 50%;
+    border: transparent;
+    border-radius: 5px 5px 0px 0px;
+    outline: transparent;
+    font-size: 1.05rem;
+    font-weight: 500;
+    height: 50px;
+    color: #fff;
+    background-color: transparent;
+    border-bottom: 1px solid #fff;
+}
+
+.container .buttons button:hover{
+    background-color: #88554d;
+    cursor: pointer;
+}
+
+.container_account{
+    box-sizing: border-box; 
+    position: relative;
+}
+
+.container_account_entrar,
+.container_account_registrar{
+    width: 100%;
+    height: 530px;
+    position: absolute;
+    color: #fff;
+}
+
+.container_account_entrar{
+    background-color: #935A50;
+    z-index: 2;
+}
+
+.container_account_registrar{
+    background-color: #935A50;
+    z-index: 1;
+}
+
+.container_account form{
+    box-sizing: border-box;
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 480px;
+    position: relative;
+}
+
+.container_account form label{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px;
+}
+
+.container_account form label span{
+    padding: 5px 0px;
+}
+
+.container_account form label input{
+    border: 1px solid #eee;
+    border-radius: 5px;
+    padding: 0px 10px;
+    height: 38px;
+    outline: transparent;
+    font-size: 1rem;
+    color: #555;
+}
+
+.container_account form input[type="submit"]{
+    background-color: #7c4e47;
+    color: #fff;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    width: 200px;
+    height: 38px;
+    font-size: 1.05rem;
+    text-transform: uppercase;
+    position: absolute;
+    top: 95%;
+    left: 33%;
+    transition: 0.2s ease-in-out background-color;
+}
+
+.container_account form input[type="submit"]:hover{
+    cursor: pointer;
+    background-color: #69423c;
+}
+
+
+.rodape{
+  background-color: #f9f9f9;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.rodape .text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rodape .text img{
+    width: 170px;
+}
+
+.rodape .text p{
+    width: 80%;
+}
+
+.rodape .text a{
+    color: #a52a2a
+}
+
+.rodape .list{
+    width: 25%;
+}
+
+.rodape .list ul{
+    width: 80px;
+}
+
+.rodape .list li{
+    font-size: 1rem;
+    line-height: 2;
+    width: 80px;
+    color: #000;
+    transition: 0.2s ease-in-out color;
+}    
+
+.rodape .list li:hover{
+    cursor: pointer;
+    color: #a52a2a;
+}
+
+.rodape .list h3{
+    font-size: 1.6rem;
+    font-weight: 500;
+    border-bottom: 3px solid #a52a2a;
+    width: 200px;
+    margin: 5px 0px;
+}
+
+.rodape .redes_sociais{
+    width: 25%;
+    height: 165px;
+}
+
+.rodape .redes_sociais h3{
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 30px;
+    width: 80%;
+    border-bottom: 3px solid #a52a2a;
+}
+
+.rodape .redes_sociais ul{
+    display: flex;
+    margin-left: 20px;
+}
+
+.rodape .redes_sociais i{
+    width: 20px;
+    height: 20px;
+    margin: 0px 5px;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background-color: #a52a2a;
+    border: 2px solid #a52a2a;
+    color: #f9f9f9;
+    padding: 7px;
+}
+
+.rodape .redes_sociais i:hover{
+    background-color: #f9f9f9;
+    color: #a52a2a;
+}
+
+@media(max-width: 768px){
+    body{
+        overflow-x: hidden;
+    }
+    
+    .cabecalho{
+        display: flex;
+        flex-direction: row-reverse;
+        height: auto;
+    }
+
+    .navbar{
+        display: none;
+    }
+
+    .logo{
+        width: 55%;
+        display: flex;
+        justify-content: center ;
+    }
+
+    .logo_image{
+        padding: 0;
+        width: 90px;
+    }
+
+    .sidebar{
+        width: 25%;
+        display: flex;
+        height: 100%;
+        z-index: 4;
+    }
+
+    .sidebar_container{
+        display: flex;
+        position: fixed;
+        top: 0px;
+        left: -250px;
+        width: 250px;
+        background-color: #042331;
+        height: 100%;
+        transition: ease-in-out 0.5s;
+    }
+
+    .sidebar_container ul{
+        position: absolute;
+        top: 8%;
+        width: 100%;
+    }
+
+    .sidebar_container ul a{
+        display: block;
+        color: #fff;
+        height: 100%;
+        width: 100%;
+        text-align: left;
+        padding-left: 40px;
+        line-height: 60px;
+        box-sizing: border-box;
+        border-top: 1px solid rgb(200, 200, 200, 0.5);
+        border-bottom: 1px solid #000;
+        transition: ease-in-out 0.3s;
+    }
+
+    .sidebar_container li:hover a{
+        padding-left: 50px;
+    }
+
+    .sidebar_container ul li i{
+        margin-right: 10px;
+    }
+
+    #check{
+        display: none;
+    }
+
+    label #btn, label #cancel{
+        display: flex;
+        align-items: center;
+        position: absolute;
+        cursor: pointer;
+    }
+
+    label #btn{
+        top: 25px;
+        left: 20px;
+        color: #000;
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+
+    label #cancel{
+        z-index: 2;
+        top: 10px;
+        left: -35px;
+        font-size: 1rem;
+        text-align: center;
+        color: #d83a3a;
+        border: 2px solid #ddd;
+        padding: 1px 5px;
+    }
+
+    #check:checked ~ .sidebar_container{
+        transition: ease-in-out 0.5s;
+        transform: translateX(250px);
+    }
+
+    #check:checked ~ label #btn{
+        left: 250px;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    #check:checked ~ label #cancel{
+        position: fixed;
+        transition: ease-in-out 0.5s;
+        left: 210px;
+    }    
+
+    .sidebar_container ul li a:checked ~ .sidebar_container{
+        left: -250px;
+    }
+
+    .account{
+        display: none;
+    }
+
+    .account_mobile{
+        width: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding-right: 20px;
+    }
+
+    .account_mobile a i{
+        color: #000;
+        font-size: 1.25rem;
+    }
+
+
+    .container{
+        width: 95vw;
+    }
+
+    .container_account form input[type="submit"]{
+        left: 25%;
+    }
+
+
+    .rodape{
+        box-sizing: border-box;
+        padding: 40px 10px;
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+    }
+
+    .rodape .text,
+    .rodape .list,
+    .rodape .redes_sociais{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .rodape .text{
+        align-items: flex-start;
+    }
+
+    .rodape .text img{
+        margin: auto;
+    }
+
+    .rodape .text p{
+        width: 100%;
+    }
+
+    .rodape .list h3{
+        width: 180px;
+    }
+
+    .rodape .redes_sociais h3{
+        width: 250px;
+    }
+
+    .rodape .redes_sociais ul{
+        width: 100%;
+        justify-content: center;
+        margin-left: 0px;
+    }
+}  
